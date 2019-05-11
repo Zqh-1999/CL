@@ -1,5 +1,124 @@
 /* 头部 */
 
-.het-left ul li {
+/* 左 */
+.het {
+  position: relative;
+  height: 90px;
+  border: 1px solid #EAEAEB;
+}
+
+.het-left {
+  position: relative;
   float: left;
+  width: 230px;
+}
+
+.dl-jm {
+  margin-top: 10px;
+  margin-left: 40px;  
+}
+
+.dl-jm li {
+  float: left;
+}
+
+.dl-jm>li:nth-child(1) {
+  margin-right: 40px;
+}
+
+.dl-jm li:nth-child(2) {
+  position: relative;
+}
+
+.dl-jm li span {
+  color: rgb(95, 91, 91);
+}
+
+.dl-jm li i {
+  font-size: 16px;
+}
+
+.dl-jm li a .fa-caret-down {
+  transition: all 0.6s ease
+}
+
+.dl-jm li:hover .fa-caret-down{
+  transform: rotate(-178deg);
+}
+
+.help {
+  position: absolute;
+  top: -10px;
+  width: 300px;
+  height: 0px;
+  opacity: 0;
+  box-shadow: 0 0 5px 1px rgba(30, 30, 30, 0.15);
+  box-sizing: border-box;
+  transition: all 0.6s;
+  /* background-color: #ffffff; */
+}
+
+.help ul {
+  padding: 50px 45px 20px 26px;
+}
+
+.help ul li {
+  float: left;
+  width: 110px;
+  height: 18px;
+  
+}
+
+.dl-jm li:hover .help {
+  height: 142px;
+  opacity: 1;
+}
+
+/* 中 */
+.het-center {
+  position: absolute;
+  top: 10px;
+  left: 700px;
+}
+
+/* 左边的导航 */
+.center-left {
+  float: left;
+  margin-top: 40px;
+}
+
+.center-left ul li{
+  float: left;
+  padding: 0 14px;
+}
+
+/* 中间的logo */
+.center-logo {
+  float: left;
+  width: 158px;
+  height: 158px;
+  text-align: center
+}
+
+/* 右边的导航 */
+.center-right {
+  float: left;
+  margin-top: 40px;
+}
+
+.center-right ul li{
+  float: left;
+  padding: 0 12px;
+}
+
+.right {
+  float: right;
+  height: 20px;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.right-ico li {
+  float: left;
+  margin-left: 15px;
 }
