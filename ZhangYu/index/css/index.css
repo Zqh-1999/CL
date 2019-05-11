@@ -29,7 +29,11 @@
 .dl-jm li:nth-child(2) {
   position: relative;
 }
-
+.dl-jm li:nth-child(2) a {
+  position: absolute;
+  z-index:1000;
+  width: 100px;
+}
 .dl-jm li span {
   color: rgb(95, 91, 91);
 }
@@ -55,7 +59,7 @@
   box-shadow: 0 0 5px 1px rgba(30, 30, 30, 0.15);
   box-sizing: border-box;
   transition: all 0.6s;
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
 }
 
 .help ul {
