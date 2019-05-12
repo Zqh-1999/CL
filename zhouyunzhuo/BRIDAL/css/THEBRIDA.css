@@ -64,6 +64,7 @@
     box-sizing: border-box;
     transition: all 0.6s;
     background-color: #ffffff;
+    z-index: 12;
   }
   
   .help ul {
