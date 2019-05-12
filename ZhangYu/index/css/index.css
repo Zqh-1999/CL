@@ -1,6 +1,13 @@
 /* 头部 */
 
 /* 左 */
+.het-fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: white;
+}
+
 .het {
   position: relative;
   height: 90px;
@@ -82,7 +89,7 @@
 .het-center {
   position: absolute;
   top: 10px;
-  left: 700px;
+  left: 740px;
 }
 
 /* 左边的导航 */
@@ -98,10 +105,14 @@
 
 /* 中间的logo */
 .center-logo {
+  position: relative;
   float: left;
-  width: 158px;
-  height: 158px;
-  text-align: center
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 /* 右边的导航 */
@@ -125,4 +136,35 @@
 .right-ico li {
   float: left;
   margin-left: 15px;
+}
+/* 头部end */
+
+
+/* common */
+.common {
+  padding: 120px 40px 40px;
+}
+
+.common2 {
+  max-width: 1024px;
+  margin: 55px auto 0 !important;
+}
+/* commonEND */
+
+
+
+/* 轮播图 */
+.lunbo {
+  position: relative;
+  height: 800px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.lunbo li{
+  position: absolute;
+}
+
+.lunbo img{
+  width: 1200px;
+  height: 800px;
 }
