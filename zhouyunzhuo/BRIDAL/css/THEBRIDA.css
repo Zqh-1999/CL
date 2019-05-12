@@ -1,0 +1,81 @@
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 商品展示---头部--开始 */
+.THEBRIDA_Center {
+    width: 100%
+}
+.THEBRIDA_com {
+    width: 90%;
+    margin: 0 auto;
+}
+.THEBRIDA_com_first_left>ul>li,
+.THEBRIDA_com_first_right>ul>li{
+    float: left;
+    margin-right: 25px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 1.4px;
+    position: relative;
+    font-weight: lighter;
+    top: 0px;
+    padding-right: 20px;
+    z-index: 10;
+}
+.THEBRIDA_com_first_left{
+    float: left;
+}
+.THEBRIDA_com_first_right{
+    float: right;
+}
+.THEBRIDA_com_first_left>ul>li a,
+.THEBRIDA_com_first_right>ul>li a  {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+.THEBRIDA_com_first_left>ul>li:nth-child(1) a {
+    font-weight: 600;
+}
+.THEBRIDA_com_first_left>ul>li:nth-child(1){
+    border-bottom: 3px solid black;
+    padding-right: 0px;
+}
+.dropdown>button {
+    padding-right: 20px;
+    /* border: none; */
+    background-color: white;
+    position: relative;
+}
+.dropdown>button span {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+}
+/* 商品展示---头部--结束 */
+
+/* 商品展示---图片--开始 */
+.THEBRIDA_com_second li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.THEBRIDA_com_second li img{
+    width:100%;
+}
+.THEBRIDA_com_second li a{
+    font-size: 18px; 
+}
+.THEBRIDA_com_second li p{
+    color: #888;
+    font-size: 13px;
+    padding-top: 10px;
+}
+.THEBRIDA_com_second li span{
+    color: #ed1e24;
+    font-size: 13px;
+}
+/* 商品展示---图片--结束*/
