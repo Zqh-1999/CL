@@ -137,6 +137,7 @@
 
 /* 中间部分 top start */
 .content {
+  position: relative;
     width: 1024px;
     height: 513px;
     margin: 70px auto;
