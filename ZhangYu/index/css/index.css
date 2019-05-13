@@ -40,6 +40,7 @@
   position: absolute;
   z-index:1000;
   width: 100px;
+  overflow: hidden;
 }
 .dl-jm li span {
   color: rgb(95, 91, 91);
@@ -53,12 +54,13 @@
   transition: all 0.6s ease
 }
 
-.dl-jm li:hover .fa-caret-down{
+.hover-help:hover .fa-caret-down{
   transform: rotate(-178deg);
 }
 
 .help {
   position: absolute;
+  display: block;
   top: -10px;
   width: 300px;
   height: 0px;
@@ -71,16 +73,18 @@
 
 .help ul {
   padding: 50px 45px 20px 26px;
+  width: 300px;
+  height: 142px;
+  box-sizing: border-box;
 }
 
 .help ul li {
   float: left;
   width: 110px;
   height: 18px;
-  
 }
 
-.dl-jm li:hover .help {
+.hover-help:hover .help {
   height: 142px;
   opacity: 1;
 }
@@ -107,8 +111,8 @@
 .center-logo {
   position: relative;
   float: left;
-  width: 100px;
-  height: 100px;
+  width: 102px;
+  height: 102px;
   text-align: center;
   background-color: white;
   border-radius: 50%;
@@ -140,9 +144,35 @@
 /* 头部end */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* common */
 .common {
-  padding: 120px 40px 40px;
+  padding: 100px 40px 40px;
 }
 
 .common2 {
@@ -156,7 +186,7 @@
 /* 轮播图 */
 .lunbo {
   position: relative;
-  height: 800px;
+  height: 950px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -165,6 +195,110 @@
 }
 
 .lunbo img{
-  width: 1200px;
-  height: 800px;
+  width: 1220px;
+  height: 820px;
+}
+
+/* 介绍葡萄牙语 */
+.xibanya {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto 60px;
+  
+}
+
+.xibanya a:hover span{
+  color: #ed1e24;
+  border-bottom: 2px solid #ed1e24;
+}
+
+.xibanya span {
+  display: block;
+  width: 240px;
+  font-family: 'DidotHP';
+  font-size: 40px;
+  color: black;
+  transition: all 0.4s;
+  margin: 0 auto;
+  margin-bottom: 2px;
+  border-bottom: 2px solid black
+}
+
+.introduction {
+  width: 1024px;
+  height: 1180px;
+}
+
+/* Bom Dia Portugaba */
+.bom {
+  position: relative;
+  float: right;
+}
+
+.bom-text {
+  padding: 20px;
+  position: absolute;
+  top: -2px;
+  left: -6px;
+  background-color: white;
+}
+
+.bom-text span{
+  display: inline-block;
+  height: 34px;
+  color: #888;
+  border-bottom: 2px solid black;
+  font-size: 24px;
+  font-family: 'Gill Sans',sans-serif;
+  font-weight: lighter;
+  transition: all 0.4s
+}
+
+.bom-text span:hover {
+  color: rgb(80, 77, 77);
+}
+
+.bom-img img{
+  width: 575px;
+  height: 378px;
+}
+
+/* Nudes Collection */
+.nudes {
+  position: relative;
+  float: right;
+}
+
+.nudes-text {
+  padding: 20px;
+  position: absolute;
+  bottom: 36px;
+  right: 70px;
+  background-color: white;
+}
+
+.nudes-text span{
+  display: inline-block;
+  height: 34px;
+  color: #888;
+  border-bottom: 2px solid black;
+  font-size: 24px;
+  font-family: 'Gill Sans',sans-serif;
+  font-weight: lighter;
+  transition: all 0.4s
+}
+
+.nudes-text span:hover {
+  color: rgb(80, 77, 77);
+}
+
+.nudes-img {
+  margin-top: 185px;
+  margin-right: 78px;
+  margin-bottom: 50px;
+}
+
+.nudes-img img {
+  width: 370px;
+  height: 300px;
 }
