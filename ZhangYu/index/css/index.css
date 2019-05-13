@@ -10,6 +10,7 @@
 
 .het {
   position: relative;
+  width: 100%;
   height: 90px;
   border: 1px solid #EAEAEB;
 }
@@ -91,9 +92,11 @@
 
 /* 中 */
 .het-center {
+  float: left;
   position: absolute;
   top: 10px;
   left: 740px;
+  width: 50%;
 }
 
 /* 左边的导航 */
