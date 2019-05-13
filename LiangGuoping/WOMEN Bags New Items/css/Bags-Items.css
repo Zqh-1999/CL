@@ -1,0 +1,564 @@
+/* 头部 */
+
+/* 左 */
+.het {
+  position: relative;
+  height: 90px;
+  border: 1px solid #EAEAEB;
+}
+
+.het-left {
+  position: relative;
+  float: left;
+  width: 230px;
+}
+
+.dl-jm {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.dl-jm li {
+  float: left;
+}
+
+.dl-jm>li:nth-child(1) {
+  margin-right: 40px;
+}
+
+.dl-jm li:nth-child(2) {
+  position: relative;
+}
+
+.dl-jm li:nth-child(2) a {
+  position: absolute;
+  z-index: 1000;
+  width: 100px;
+}
+
+.dl-jm li span {
+  color: rgb(95, 91, 91);
+}
+
+.dl-jm li i {
+  font-size: 16px;
+}
+
+.dl-jm li a .fa-caret-down {
+  transition: all 0.6s ease
+}
+
+.dl-jm li:hover .fa-caret-down {
+  transform: rotate(-178deg);
+}
+
+.help {
+  position: absolute;
+  top: -10px;
+  width: 300px;
+  height: 0px;
+  opacity: 0;
+  box-shadow: 0 0 5px 1px rgba(30, 30, 30, 0.15);
+  box-sizing: border-box;
+  transition: all 0.6s;
+  background-color: #ffffff;
+}
+
+.help ul {
+  padding: 50px 45px 20px 26px;
+}
+
+.help ul li {
+  float: left;
+  width: 110px;
+  height: 18px;
+
+}
+
+.dl-jm li:hover .help {
+  height: 142px;
+  opacity: 1;
+}
+
+/* 中 */
+.het-center {
+  position: absolute;
+  top: 10px;
+  left: 700px;
+}
+
+/* 左边的导航 */
+.center-left {
+  float: left;
+  margin-top: 40px;
+}
+
+.center-left ul li {
+  float: left;
+  padding: 0 14px;
+}
+
+/* 中间的logo */
+.center-logo {
+  float: left;
+  width: 158px;
+  height: 158px;
+  text-align: center
+}
+
+/* 右边的导航 */
+.center-right {
+  float: left;
+  margin-top: 40px;
+}
+
+.center-right ul li {
+  float: left;
+  padding: 0 12px;
+}
+
+.right {
+  float: right;
+  height: 20px;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.right-ico li {
+  float: left;
+  margin-left: 15px;
+}
+
+/* 妇女乃依分类 */
+.menu {
+  width: auto;
+  height: 65px;
+  padding: 0 40px;
+  margin: 0 40px;
+  margin-top: 40px;
+}
+
+.conmet::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.menu-left i {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 20;
+  font-size: 18px;
+  border-bottom: 3px;
+  font-family: '微软雅黑';
+  text-align: center;
+  line-height: 40px;
+}
+
+/* 分类左面 */
+
+.menu-left {
+  float: left;
+  height: 65px;
+}
+
+.menu-left-box {
+  width: 500px;
+  height: 65px;
+}
+
+/* 妇女 */
+.menu-left-box-one {
+  position: relative;
+  z-index: 20;
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-bottom: 3px solid #000;
+  margin: 0 20px;
+}
+
+
+.menu-left-box-one a {
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 3px;
+  font-family: '微软雅黑';
+  text-align: center;
+  line-height: 40px;
+}
+
+
+/* 图标 */
+.menu-left-box-two {
+  position: relative;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 0 20px;
+}
+
+.menu-left-box-two a {
+  font-size: 18px;
+  border-bottom: 3px;
+  font-family: '微软雅黑';
+  text-align: center;
+  line-height: 40px;
+}
+
+
+.menu-left-box-two span {
+  position: absolute;
+  top: 18px;
+  right: -16px;
+  border-top: 5px solid black;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  width: 0;
+  height: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.menu-left-box-two:hover .menu-left-box-ul1 {
+  display: block;
+}
+
+.menu-left-box-ul1 {
+  display: none;
+  position: absolute;
+  top: -4px;
+  left: -20px;
+  width: 116px;
+  height: 120px;
+  padding-top: 56px;
+  border: 1px solid #cccccc;
+  background-color: white;
+  z-index: 10;
+}
+
+.menu-left-box-ul1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 25px;
+  height: 50px;
+  border: 1px solid #cccccc;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  z-index: 10;
+}
+
+.menu-left-box .menu-left-box-ul1 li {
+  height: 28px;
+  padding-left: 20px;
+}
+
+.menu-left-box .menu-left-box-ul1 li a {
+  font-size: 14px;
+}
+
+.menu-left-box .menu-left-box-ul1 li a:hover {
+  color: red
+}
+
+/* 乃依 */
+.menu-left-box-three {
+  position: relative;
+  z-index: 20;
+  float: left;
+  width: 60px;
+  height: 40px;
+  margin: 0 20px;
+}
+
+.menu-left-box-three a {
+  font-size: 18px;
+  border-bottom: 3px;
+  font-family: '微软雅黑';
+  text-align: center;
+  line-height: 40px;
+
+}
+
+
+.menu-left-box-three i{
+width: 56px;
+}
+
+.menu-left-box-three span {
+  position: absolute;
+  top: 18px;
+  right: -16px;
+  border-top: 5px solid black;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  width: 0;
+  height: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+
+.menu-left-box-ul2 {
+  display: none;
+  position: absolute;
+  top: -4px;
+  left: -20px;
+  width: 190px;
+  height: 268px;
+  padding-top: 56px;
+  border: 1px solid #cccccc;
+  z-index: 10;
+  background-color: white;
+}
+
+.menu-left-box-ul2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 82px;
+  height: 50px;
+  border: 1px solid #cccccc;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  z-index: 10;
+}
+
+.menu-left-box-three:hover .menu-left-box-ul2 {
+  display: block;
+}
+
+.menu-left-box .menu-left-box-ul2 li {
+  height: 28px;
+  padding-left: 20px;
+}
+
+.menu-left-box .menu-left-box-ul2 li a {
+  font-size: 14px;
+
+}
+
+.menu-left-box .menu-left-box-ul2 li a:hover {
+  color: red
+}
+
+
+/* 分类右面 */
+
+.menu-right {
+  float: right;
+  height: 65px;
+}
+
+.menu-right-box {
+  width: 160px;
+  height: 65px;
+}
+
+.menu-right i {
+  display: block;
+  position: relative;
+  z-index: 20;
+  font-size: 18px;
+  border-bottom: 3px;
+  font-family: '微软雅黑';
+  text-align: center;
+  line-height: 40px;
+}
+
+
+
+/* 颜色 */
+.menu-right-box-two {
+  position: relative;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 0 20px;
+}
+
+.menu-right-box-two a {
+  position: relative;
+  z-index: 20;
+  font-size: 12px;
+  border-bottom: 3px;
+  font-family: '微软雅黑';
+  text-align: center;
+  line-height: 40px;
+
+}
+
+.menu-right-box-two span {
+  position: absolute;
+  top: 18px;
+  right: -16px;
+  border-top: 5px solid black;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  width: 0;
+  height: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.menu-right-box-two:hover .menu-right-box-ul2 {
+  display: block;
+}
+
+.menu-right-box-ul2 {
+  display: none;
+  position: absolute;
+  top: -4px;
+  left: -169px;
+  width: 235px;
+  height: 140px;
+  padding-top: 56px;
+  border: 1px solid #cccccc;
+  z-index: 10;
+  background-color: white;
+}
+
+
+.menu-right-box-ul2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 152px;
+  height: 50px;
+  border: 1px solid #cccccc;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  z-index: 10;
+}
+
+.menu-right-box .menu-right-box-ul2 li {
+  position: relative;
+  float: left;
+  width: 72px;
+  height: 26px;
+  line-height: 26px;
+  padding-left: 38px;
+  padding-top: 10px;
+}
+
+.menu-right-box .menu-right-box-ul2 li span {
+  display: inline-block;
+  position: absolute;
+  top: 24px;
+  left: 10px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+}
+
+.menu-right-box .menu-right-box-ul2 li:nth-child(1) span{
+  background-color: #000;
+}
+
+.menu-right-box .menu-right-box-ul2 li:nth-child(2) span{
+  background-color: #B97B2D;
+}
+
+.menu-right-box .menu-right-box-ul2 li:nth-child(3) span{
+  background-color:rgb(248, 167, 201);
+}
+
+.menu-right-box .menu-right-box-ul2 li:nth-child(4) span{
+  background-color: #DFB79B;
+}
+
+.menu-right-box .menu-right-box-ul2 li:nth-child(5) span{
+  background-color: #ffffff;
+}
+
+.menu-right .menu-right-box-ul2 li a {
+  font-size: 12px;
+}
+
+.menu-right-box .menu-right-box-ul2 li a:hover {
+  color: red
+}
+
+/* 图标 */
+.menu-right-box-five {
+  position: relative;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 0 20px;
+}
+
+
+.menu-right-box-five img {
+  margin-top: 6px;
+}
+
+/* 鞋款介绍 */
+.shoes {
+  width: auto;
+  padding: 0 40px;
+  margin: 0 40px;
+}
+
+.shoes-one {
+  position: relative;
+  width: 416px;
+  height: 545px;
+  float: left;
+}
+
+.shoes-one:hover .shoes-one-img1 {
+  z-index: 0;
+}
+
+.shoes img {
+  width: 420px;
+}
+
+.shoes-one-img1 {
+  position: absolute;
+  z-index: 2;
+}
+
+.shoes-one-img2 {
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+.shoes p {
+  height: 30px;
+  font-size: 16px;
+  font-family: '微软雅黑';
+  text-align: center;
+}
+
+.shoes i {
+  display: block;
+  text-align: center;
+  color: rgb(136, 136, 136);
+}
+
+.show-img {
+  height: 420px;
+}
+
+.shoe-wri {
+  width: 416px;
+  position: absolute;
+  left: 0px;
+  bottom: 74px;
+  z-index: 999;
+}
