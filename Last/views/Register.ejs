@@ -22,20 +22,20 @@
         <div class="account-center">
             <div class="account-center-left">
                 <h3>注册客户</h3>
-                <form action="">
+                <form action="" class="login-wrap">
                     <p>如果您有我们的帐户，请使用您的电子邮件地址登录。</p>
 
                     <div class="form-group">
                         <div class="input-box">
-                            <input type="text" id="email" name="lastname" title="电子邮箱地址" placeholder="Email Address"
-                                class="input-text required-entry">
+                            <input type="email" id="email" name="email" title="电子邮箱地址" placeholder="Email Address"
+                                class="input-text required-entry" required aria-required="true">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="input-box">
-                            <input type="text" id="email" name="lastname" title="密码" placeholder="Password"
-                                class="input-text required-entry">
+                            <input type="password" id="password" name="password" title="密码" placeholder="password"
+                                class="input-text required-entry" required aria-required="true">
                         </div>
                     </div>
 
@@ -45,7 +45,7 @@
 
                 </form>
                 <div class="form-group form-buttons last">
-                    <input type="button" class="savebtn" value="登录">
+                    <input type="button" class="savebtn btn-login" value="登录">
                 </div>
             </div>
             <div class="account-center-right">
@@ -56,6 +56,10 @@
                     <input type="button" class="savebtn" value="创建一个账户">
                 </div>
             </div>
+            <div class="navg">
+                <span>登陆名或密码错误</span>
+                <button class="buttons">x</button>
+            </div>
         </div>
     </div>
 
@@ -64,7 +68,7 @@
 
     <!-- 底部链接 -->
     <%- include('./layouts/footerLink.ejs')%>
-
+   
     <script src="/js/register.js"></script>
 </body>
 

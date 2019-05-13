@@ -1,10 +1,8 @@
 /* 内容部分 start */
-.content {
-    width: 1766px;
-    height: 958px;
-    /* border: 1px solid red; */
-    font-family: 'Frutiger', Helvetica, Arial, sans-serif;
-    /* margin: 0 auto; */
+
+#content {
+    width: 1740px;
+    height: 967px;
 }
 
 .content-title {
@@ -19,7 +17,6 @@
     margin: 16px 0px;
     font-size: 1.5em;
     font-weight: 200;
-
     line-height: 1.4
 }
 
@@ -208,13 +205,14 @@
 }
 
 /* 右边 */
-.bigimg{
+.bigimg {
     float: right;
     width: 860px;
     height: 858px;
     padding-left: 20px;
 }
-.bigimg img{
+
+.bigimg img {
     width: 776px;
     display: block;
     margin: 82px auto 0 auto;
