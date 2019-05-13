@@ -1,0 +1,143 @@
+/* 右边 start */
+.newadd-right {
+    float: right;
+    width: 824px;
+    height: 881px;
+    /* border: 1px solid red; */
+}
+
+.wrapper-grid1 {
+    position: relative;
+    width: 824px;
+    height: 50px;
+}
+
+.wrapper-grid1 h2 {
+    width: 80px;
+    height: 25px;
+    padding-right: 25px;
+    font-size: 18px;
+    margin: 0 0 25px 0;
+    color: #000001;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-family: 'Frutiger', Helvetica, Arial, sans-serif;
+}
+
+.newadd-right-title {
+    position: relative;
+    width: 100px;
+    height: 36px;
+    margin-bottom: 20px;
+    overflow: visible;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: #373737;
+    border-radius: 2px;
+
+}
+
+.newadd-right-title .prefix {
+    position: absolute;
+    background: transparent;
+    border: none;
+    width: 100%;
+    border-radius: 0;
+    -webkit-appearance: none;
+    color: #FFF;
+    padding: 10px 18px;
+    padding-right: 0;
+    cursor: pointer;
+    text-indent: 0.01px;
+    font: 14px/1.14 arial, \5b8b\4f53;
+    outline: 0;
+
+
+}
+
+.newadd-right-title .prefix option {
+    color: #000;
+    background: #fff;
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.newadd-right-title i {
+    display: inline-block;
+}
+
+.fa-caret-down::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+    left: 70px;
+}
+
+
+.form-group {
+    width: 824px;
+    height: 38px;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    width: 824px;
+    height: 38px;
+}
+
+.input-box input {
+    width: 100%;
+    border: 1px solid #ededed;
+    border-radius: 2px;
+    font-size: 11px;
+    color: #888;
+    padding: 10px 20px 10px 20px;
+    outline: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    -webkit-transition-property: border-color;
+    transition-property: border-color;
+    transition-duration: 0.7s;
+    line-height: normal;
+    letter-spacing: 1px;
+    font-family: 'Frutiger', Helvetica, Arial, sans-serif;
+}
+
+.newadd-right-title2 {
+    width: 824px;
+}
+
+#fa-fw2::before {
+    left: 789px;
+}
+
+.form-help>p {
+    font-style: italic;
+    color: #888;
+    font-size: 13px;
+    font-family: 'Frutiger',Helvetica,Arial,sans-serif;
+}
+.form-buttons>.savebtn{
+    float: right;
+    position: relative;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    padding: 11px 30px 8px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    background: #F3F3F3;
+    color: #888;
+    font-family: "Frutiger";
+    box-shadow: 0 2px 0 0 #DDD;
+}
