@@ -17,6 +17,11 @@ app.use(routerLogin)
 const routerDashBoaro = require('./router/routerDashBoaro')
 app.use(routerDashBoaro)
 
+//挂载路由
+//地址簿
+const routerAddressBook = require('./router/routerAddressBook')
+app.use(routerAddressBook)
+
 //设置静态资源目录
 app.use(express.static('./public'));
 
