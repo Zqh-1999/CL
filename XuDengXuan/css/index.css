@@ -200,6 +200,7 @@
   font-weight: bold;
 }
 .helpProblem_nav_contact button{
+  display: block;
   width: 122px;
   height: 40px;
   border: 1px solid #ed1e24;
@@ -341,12 +342,12 @@
   border-right:none;
   display: inline-table;
 }
-.return-content{
+.return-content {
   position: absolute;
   width: 1120px;
-  height: 782px;
-  top: 592px;
-  left: 361px;
+  height: 569px;
+  top: 95px;
+  left: -1px;
   /* border: 1px solid black; */
 }
 .return-content li{
@@ -361,13 +362,13 @@
   font-family: Microsoft YaHei;
   letter-spacing: 2px;
 }
-.returnr-content_concat button{
+.return-content_concat button{
     width: 122px;
     height: 40px;
     border: 1px solid #ed1e24;
     text-align: center;
     position: absolute;
-    top: 768px;
+    top: 562px;
     margin-bottom: 10px;
     left: 508px;
     background-color: white;
@@ -381,7 +382,7 @@
   border: 1px solid #ed1e24;
   text-align: center;
   position: absolute;
-  top: 768px;
+  top: 562px;
   margin-bottom: 10px;
   left: 508px;
   background-color: white;
@@ -397,3 +398,258 @@
   margin-top: -62px;
 }
 /* 返回结束 */
+/* 制品*/
+.goods-tab{
+  position: relative;
+}
+.goods-nav{
+  position: absolute;
+  /* bottom: -541px; */
+  top: 498px;
+  left: 361px;
+  width: 1120px;
+  height: 40px;
+  /* border: 1px solid black; */
+  line-height: 37px;
+  font-size: 24px;
+  font-family: Microsoft YaHei;
+  letter-spacing: 2px;
+  /* font-family: 宋体; */
+}
+.goods-nav span:hover{
+  color: black;
+}
+.goods-nav span{
+  color: #b3b5b3;
+  border: 1px solid black;
+   border-top:none;
+  border-left:none;
+  border-right:none;
+  display: inline-table;
+}
+.goods-content {
+  position: absolute;
+  width: 1120px;
+  height: 143px;
+  top: 95px;
+  left: -1px;
+  /* border: 1px solid black; */
+}
+.goods-content li{
+  width: 100%;
+  height: 64px;
+  border: 1px solid #dadada;
+  /* text-align: center; */
+  font-size: 16px;
+  line-height: 63px;
+  border-left: none;
+  border-right: none;
+  font-family: Microsoft YaHei;
+  letter-spacing: 2px;
+}
+.goods-content_concat button{
+    width: 122px;
+    height: 40px;
+    border: 1px solid #ed1e24;
+    text-align: center;
+    position: absolute;
+    top: 167px;
+    margin-bottom: 10px;
+    left: 508px;
+    background-color: white;
+    color: #ed1e24;
+    font-size: 15px;
+    font-family: 'Microsoft YaHei';
+}
+.goods-content_concat button:hover{
+  width: 129px;
+  height: 43px;
+  border: 1px solid #ed1e24;
+  text-align: center;
+  position: absolute;
+  top: 167px;
+  margin-bottom: 10px;
+  left: 508px;
+  background-color: white;
+  color: #ed1e24;
+  font-size: 16px;
+  font-family: 'Microsoft YaHei';
+}
+.goods-content_add div{
+  font-size: 27px;
+  font-weight: 200;
+  color: #979797;
+  text-align: right;
+  margin-top: -62px;
+}
+/* 制品结束 */
+/* 精品店*/
+.boutique-tab{
+  position: relative;
+}
+.boutique-nav{
+  position: absolute;
+  /* bottom: -541px; */
+  top: 498px;
+  left: 361px;
+  width: 1120px;
+  height: 40px;
+  /* border: 1px solid black; */
+  line-height: 37px;
+  font-size: 24px;
+  font-family: Microsoft YaHei;
+  letter-spacing: 2px;
+  /* font-family: 宋体; */
+}
+.boutique-nav span:hover{
+  color: black;
+}
+.boutique-nav span{
+  color: #b3b5b3;
+  border: 1px solid black;
+   border-top:none;
+  border-left:none;
+  border-right:none;
+  display: inline-table;
+}
+.boutique-content {
+  position: absolute;
+  width: 1120px;
+  height: 214px;
+  top: 95px;
+  left: -1px;
+  /* border: 1px solid black; */
+}
+.boutique-content li{
+  width: 100%;
+  height: 64px;
+  border: 1px solid #dadada;
+  /* text-align: center; */
+  font-size: 16px;
+  line-height: 63px;
+  border-left: none;
+  border-right: none;
+  font-family: Microsoft YaHei;
+  letter-spacing: 2px;
+}
+.boutique-content_concat button{
+    width: 122px;
+    height: 40px;
+    border: 1px solid #ed1e24;
+    text-align: center;
+    position: absolute;
+    top: 231px;
+    margin-bottom: 10px;
+    left: 508px;
+    background-color: white;
+    color: #ed1e24;
+    font-size: 15px;
+    font-family: 'Microsoft YaHei';
+}
+.boutique-content_concat button:hover{
+  width: 129px;
+  height: 43px;
+  border: 1px solid #ed1e24;
+  text-align: center;
+  position: absolute;
+  top: 231px;
+  margin-bottom: 10px;
+  left: 508px;
+  background-color: white;
+  color: #ed1e24;
+  font-size: 16px;
+  font-family: 'Microsoft YaHei';
+}
+.boutique-content_add div{
+  font-size: 27px;
+  font-weight: 200;
+  color: #979797;
+  text-align: right;
+  margin-top: -62px;
+}
+/* 精品店结束 */
+/* 一般问题*/
+.someProblems-tab{
+  position: relative;
+}
+.someProblems-nav{
+  position: absolute;
+  /* bottom: -541px; */
+  top: 498px;
+  left: 361px;
+  width: 1120px;
+  height: 40px;
+  /* border: 1px solid black; */
+  line-height: 37px;
+  font-size: 24px;
+  font-family: Microsoft YaHei;
+  letter-spacing: 2px;
+  /* font-family: 宋体; */
+}
+.someProblems-nav span:hover{
+  color: black;
+}
+.someProblems-nav span{
+  color: #b3b5b3;
+  border: 1px solid black;
+   border-top:none;
+  border-left:none;
+  border-right:none;
+  display: inline-table;
+}
+.someProblems-content {
+  position: absolute;
+  width: 1120px;
+  height: 427px;
+  top: 95px;
+  left: -1px;
+  /* border: 1px solid black; */
+}
+.someProblems-content li{
+  width: 100%;
+  height: 64px;
+  border: 1px solid #dadada;
+  /* text-align: center; */
+  font-size: 16px;
+  line-height: 63px;
+  border-left: none;
+  border-right: none;
+  font-family: Microsoft YaHei;
+  letter-spacing: 2px;
+}
+.someProblems-content_concat button{
+    width: 122px;
+    height: 40px;
+    border: 1px solid #ed1e24;
+    text-align: center;
+    position: absolute;
+    top: 425px;
+    margin-bottom: 10px;
+    left: 508px;
+    background-color: white;
+    color: #ed1e24;
+    font-size: 15px;
+    font-family: 'Microsoft YaHei';
+}
+.someProblems-content_concat button:hover{
+  width: 129px;
+  height: 43px;
+  border: 1px solid #ed1e24;
+  text-align: center;
+  position: absolute;
+  top: 425px;
+  margin-bottom: 10px;
+  left: 508px;
+  background-color: white;
+  color: #ed1e24;
+  font-size: 16px;
+  font-family: 'Microsoft YaHei';
+}
+.someProblems-content_add div{
+  font-size: 27px;
+  font-weight: 200;
+  color: #979797;
+  text-align: right;
+  margin-top: -62px;
+}
+/* 一般问题结束 */
