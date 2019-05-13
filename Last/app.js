@@ -39,6 +39,43 @@ app.use(routerDashBoaro)
 const routerAddressBook = require('./router/routerAddressBook')
 app.use(routerAddressBook)
 
+//挂载路由
+//注册页面
+const routerCreateNewCustomer = require('./router/routerCreateNewCustomer')
+app.use(routerCreateNewCustomer)
+
+
+//挂载路由
+//我的时事通讯
+const routerMyNewsletter = require('./router/routerMyNewsletter')
+app.use(routerMyNewsletter)
+
+
+//挂载路由
+//我的订单
+const routerMyOrders = require('./router/routerMyOrders')
+app.use(routerMyOrders)
+
+
+
+//挂载路由
+//我的产品
+const routerMyProducts = require('./router/routerMyProducts')
+app.use(routerMyProducts)
+
+
+//挂载路由
+//我的回报
+const routerMyReturns = require('./router/routerMyReturns')
+app.use(routerMyReturns)
+
+
+//挂载路由
+//我的收藏
+const routerMyWishlist = require('./router/routerMyWishlist')
+app.use(routerMyWishlist)
+
+
 //设置静态资源目录
 app.use(express.static('./public'));
 
