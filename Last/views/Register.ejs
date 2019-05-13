@@ -15,88 +15,46 @@
     <!-- 头部 -->
     <%- include('./layouts/header.ejs')%>
     <!-- 注册部分 -->
-    <div class="contain">
-        <div class="account-login">
-            <!-- 注册头部 -->
-            <div class="page-header">
-                <htag2>
-                    <span class="wrap">
-                        <span class="title">Login or create an Account</span>
-                    </span>
-                </htag2>
-            </div>
-            <div class="grid noOuterBorder">
-                <!-- 登陆左边 -->
-                <section class="registered unit  half  bordered">
-                    <htag3>
-                        <font style="vertical-aligh:inherit;">
-                            <font style="vertical-aligh:inherit;">注册客户</font>
-                        </font>
-                    </htag3>
-                    <form action="" class="form ae-form  login-wrap" method="POST" m id="login-from">
-                        <input type="hidden" name="form_key">
-                        <div class="form-group">
-                            <font style="vertical-aligh:inherit;">
-                                <font style="vertical-aligh:inherit;">如果您有我们的账户，请使用您的电子邮件地址登陆</font>
-                            </font>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" class="input-text  required-text" title="电子邮件地址"
-                                placeholder="Email Address" aria-required="true" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" name="password" class="input-text  required-entry" id="pass"
-                                title="密码" placeholder="password" aria-required="true" required>
-                        </div>
-                        <div class="form-group">
-                            <a href="./forget.ejs." class="modal-link  mobile-open">
-                                <font style="vertical-aligh:inherit;">
-                                    <font style="vertical-aligh:inherit;">忘记密码了吗？</font>
-                                </font>
-                                <span style="display:none;" class="ae-compliance-indent">
-                                    <font style="vertical-aligh:inherit;">
-                                        <font style="vertical-aligh:inherit;">忘记密码</font>
-                                    </font>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="form-group form-buttons">
-                            <div class="sign-in-buttons  clearfix">
-                                <button type="submit" class="button  btn btn-sign-in  ae-button  btn-login" title="登陆"
-                                    name="" id="send2">
-                                    <span>
-                                        <span>登陆</span>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </section>
-                <!--  登陆右边 -->
-                <section class="new-customers unit half">
-                    <htag3>
-                        <font style="vertical-aligh:inherit;">
-                            <font style="vertical-aligh:inherit;" color='fff'>新客户</font>
-                        </font>
-                    </htag3>
+    <div class="account-login">
+        <div class="account-hearder">
+            <h2>登录或者创建一个帐户</h2>
+        </div>
+        <div class="account-center">
+            <div class="account-center-left">
+                <h3>注册客户</h3>
+                <form action="">
+                    <p>如果您有我们的帐户，请使用您的电子邮件地址登录。</p>
+
                     <div class="form-group">
-                        <font style="vertical-aligh:inherit;">
-                            <font style="vertical-aligh:inherit;">通过在我们的商店中创建帐户，您可以更快地完成结帐流程，存储多个送货地址，查看和跟踪您帐户中的订单等。
-                            </font>
-                        </font>
+                        <div class="input-box">
+                            <input type="text" id="email" name="lastname" title="电子邮箱地址" placeholder="Email Address"
+                                class="input-text required-entry">
+                        </div>
                     </div>
-                    <div class="register form-group form-buttons">
-                        <button type="button" title="创建一个账户" class="button  btn  btn-main-action  ae-button">
-                            <span>
-                                <span>
-                                    <font style="vertical-aligh:inherit;">
-                                        <font style="vertical-aligh:inherit;">创建新账户</font>
-                                    </font>
-                                </span>
-                            </span>
-                        </button>
+
+                    <div class="form-group">
+                        <div class="input-box">
+                            <input type="text" id="email" name="lastname" title="密码" placeholder="Password"
+                                class="input-text required-entry">
+                        </div>
                     </div>
-                </section>
+
+                    <div class="form-a">
+                        <a href="javascript:;">忘记密码了吗？</a>
+                    </div>
+
+                </form>
+                <div class="form-group form-buttons last">
+                    <input type="button" class="savebtn" value="登录">
+                </div>
+            </div>
+            <div class="account-center-right">
+                <h3>新客户</h3>
+                <p>通过在我们的商店中创建帐户，您可以更快地完成结帐流程，存储多个送货地址，查看和跟踪您帐户中的订单等。
+                </p>
+                <div class="form-group form-buttons last">
+                    <input type="button" class="savebtn" value="创建一个账户">
+                </div>
             </div>
         </div>
     </div>
