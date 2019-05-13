@@ -16,58 +16,64 @@
   <%- include('./layouts/header.ejs')%>
 
   <!-- 中间部分 top -->
-  <%- include('./layouts/title.ejs')%>
-
-  <!-- 左边 导航栏 -->
-  <%- include('./layouts/navbar.ejs')%>
-
-  <!-- 右边部分 -->
-  <div class="wrapper">
-    <div class="wrapper-grid1">
-      <h2>帐户信息</h2>
-      <div class="hr hrtwo"></div>
-    </div>
-    <div class="wrapper-grid2 clearfix">
-      <div class="wrapper-grid2-left">
-        <div class="info">
-          <h4>联系信息</h4>
-          <p>Dan Xu</p>
-          <p>2427873127@qq.com</p>
-          <a href="javascript:;" class="updata-ps">更改密码</a>
-        </div>
-        <button class="aditbtn">编辑</button>
-      </div>
-      <div class="wrapper-grid2-right">
-        <div class="info">
-          <h4>简讯</h4>
-          <p>您目前尚未订阅任何简报</p>
-        </div>
-        <button class="aditbtn">编辑</button>
-      </div>
-    </div>
-    <div class="wrapper-grid1">
-      <h2>地址簿</h2>
-      <div class="hr hrtwo"></div>
-    </div>
-    <div class="wrapper-grid2 clearfix">
-      <div class="wrapper-grid2-left">
-        <div class="info">
-          <h4>默认账单地址</h4>
-          <p>您目前尚未设置默认账单邮寄地址</p>
-        </div>
-        <button class="aditbtn">编辑</button>
-      </div>
-      <div class="wrapper-grid2-right">
-        <div class="info">
-          <h4>默认送货地址</h4>
-          <p>您目前尚未设置默认送货地址</p>
-        </div>
-        <button class="aditbtn">编辑</button>
-      </div>
+  <div class="content clearfix">
+    <!-- 标题 -->
+    <div class="page-header">
+      <h1>你好，Dan Xu！</h1>
+      <div class="hr"></div>
     </div>
 
+    <!-- 左边 导航栏 -->
+    <%- include('./layouts/navbar.ejs')%>
+
+    <!-- 右边部分 -->
+    <div class="wrapper">
+      <div class="wrapper-grid1">
+        <h2>帐户信息</h2>
+        <div class="hr hrtwo"></div>
+      </div>
+      <div class="wrapper-grid2 clearfix">
+        <div class="wrapper-grid2-left">
+          <div class="info">
+            <h4>联系信息</h4>
+            <p>Dan Xu</p>
+            <p>2427873127@qq.com</p>
+            <a href="javascript:;" class="updata-ps">更改密码</a>
+          </div>
+          <button class="aditbtn">编辑</button>
+        </div>
+        <div class="wrapper-grid2-right">
+          <div class="info">
+            <h4>简讯</h4>
+            <p>您目前尚未订阅任何简报</p>
+          </div>
+          <button class="aditbtn">编辑</button>
+        </div>
+      </div>
+      <div class="wrapper-grid1">
+        <h2>地址簿</h2>
+        <div class="hr hrtwo"></div>
+      </div>
+      <div class="wrapper-grid2 clearfix">
+        <div class="wrapper-grid2-left">
+          <div class="info">
+            <h4>默认账单地址</h4>
+            <p>您目前尚未设置默认账单邮寄地址</p>
+          </div>
+          <button class="aditbtn">编辑</button>
+        </div>
+        <div class="wrapper-grid2-right">
+          <div class="info">
+            <h4>默认送货地址</h4>
+            <p>您目前尚未设置默认送货地址</p>
+          </div>
+          <button class="aditbtn">编辑</button>
+        </div>
+      </div>
+
+    </div>
   </div>
-  </div>
+
 
 
 

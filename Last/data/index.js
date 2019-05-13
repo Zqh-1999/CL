@@ -8,4 +8,5 @@ const connection = mysql.createConnection({
     database: "pullradish"
 })
 
+
 module.exports = connection;
