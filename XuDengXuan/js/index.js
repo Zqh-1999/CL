@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $('.helpProblem_nav_onlineOrder').click(function(){
     $('.helpProblem_nav_contact button').css('display','none');
     $('.onlineOrder-tab').css('display','block');
@@ -39,5 +38,3 @@ $('.helpProblem_nav_someProblems').click(function(){
     $('.boutique-tab').css('display','none');
     $('.someProblems-tab').css('display','block');
 })
-=======
->>>>>>> 46e86436698878e762c7709c7f98327180fae5ed
