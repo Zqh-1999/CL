@@ -4,9 +4,10 @@ const express = require('express')
 const router = express.Router();
 
 //引入controller
-const contion = require('../controller/CtrlRegister')
+const controller = require('../controller/CtrlDashBoaro')
 
-
+// 显示页面
+router.get("/admin/DashBoaro", controller.DashBoaro);
 
 // 暴露
 module.exports = router;

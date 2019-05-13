@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Customer Login</title>
     <link rel="stylesheet" href="/css/register.css">
     <!-- 链接 -->
-    <%- include('./layouts/link.ejs')%>
+    <%- include('./layouts/hearderLink.ejs')%>
 </head>
 
 <body>
@@ -101,10 +101,12 @@
         </div>
     </div>
 
-    <script src="/lib/jquery/jquery.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/lib/bootstrapvalidator-master/dist/js/bootstrapValidator.min.js"></script>
-    <script src="/lib/template/template-web.js"></script>
+    <!-- 底部 -->
+    <%- include('./layouts/footer.ejs')%>
+
+    <!-- 底部链接 -->
+    <%- include('./layouts/footerLink.ejs')%>
+
     <script src="/js/register.js"></script>
 </body>
 

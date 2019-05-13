@@ -19,7 +19,6 @@ $('.btn-login').on('click', function () {
   })
 })
 
-
 // #endregion
 }
 usershow()

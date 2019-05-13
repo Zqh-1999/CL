@@ -12,6 +12,11 @@ app.use(bodyparser.urlencoded({ extended: false }))
 const routerLogin = require('./router/routerRegister')
 app.use(routerLogin)
 
+//挂载路由
+//仪表板
+const routerDashBoaro = require('./router/routerDashBoaro')
+app.use(routerDashBoaro)
+
 //设置静态资源目录
 app.use(express.static('./public'));
 
