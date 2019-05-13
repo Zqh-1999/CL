@@ -146,15 +146,16 @@
   position: absolute;
   top: 89px;
   width: 100%;
-  display: none;
 }
 
 .women {
+  display: none;
   width: 100%;
   height: 304px;
   background-color: white;
   padding: 25px 520px;
 }
+
 .women-total {
   float: left;
   margin-right: 40px;
@@ -227,6 +228,7 @@
 }
 
 .women-good {
+  display: none;
   width: 100%;
   height: 181px;
   border-top: 1px solid #E1E1E1;
@@ -265,6 +267,125 @@
 }
 
 
+/* 男士 */
+.man {
+  display: none;
+  width: 100%;
+  height: 304px;
+  background-color: white;
+  padding: 25px 520px;
+}
+
+
+.man-total {
+  float: left;
+  margin-right: 40px;
+}
+
+.man-total {
+  margin-right: 74px;
+  margin-top: 30px;
+}
+
+.man-total li {
+  padding-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+}
+
+.man a {
+  color: #323232;
+  transition: all 0.6s;
+}
+
+.man a:hover {
+  color: #e60b0b;
+}
+
+.man-total li:nth-child(1) {
+  position: relative;
+  top: -10px;
+  width: 30px;
+  height: 1px;
+  left: 0;
+  background-color: #DDD;
+  display: inline-block;
+  padding: 0px;
+}
+
+.man-part{
+  float: left;
+}
+
+.man-part ul {
+  float: left;
+  width: 120px;
+  margin-right: 40px;
+}
+
+.man-part ul li {
+  padding-bottom: 8px;
+}
+
+.man-part ul li:nth-child(1) {
+  margin: 1em 0;
+  margin-bottom: 14px;
+  padding: 0px;
+}
+
+.man-part ul li:nth-child(1) a {
+ color: #888;
+ font-weight: 700;
+}
+
+.man-part ul li:nth-child(2) {
+  width: 100%;
+  height: 1px;
+  background-color: #DDD;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.man-good {
+  display: none;
+  width: 100%;
+  height: 181px;
+  border-top: 1px solid #E1E1E1;
+  background-color: #F7F7F7;
+}
+
+.man-good li {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.man-good li:nth-child(1) img{
+  float: right;
+}
+
+.man-good img {
+  height: 180px;
+  transition: all 0.5s
+}
+
+.man-good img:hover {
+  height: 185px;
+}
+
+.man-good span {
+  position: absolute;
+  top: 80px;
+  right: 196px;
+}
+
+.man-good {
+  font-weight: 700;
+}
 
 /* 头部end */
 
