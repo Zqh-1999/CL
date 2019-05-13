@@ -512,7 +512,8 @@ width: 56px;
 }
 
 .shoes-one:hover .shoes-one-img1 {
-  z-index: 0;
+  opacity: 0;
+  /* z-index: 0; */
 }
 
 .shoes img {
@@ -522,6 +523,8 @@ width: 56px;
 .shoes-one-img1 {
   position: absolute;
   z-index: 2;
+  opacity: 1;
+  transition: all 0.3s;
 }
 
 .shoes-one-img2 {
