@@ -517,12 +517,32 @@
 }
 
 .menu-right-box .menu-right-box-ul2 li {
+  position: relative;
   float: left;
   width: 72px;
   height: 30px;
   line-height: 30px;
-  padding-left: 20px;
+  padding-left: 38px;
   padding-top: 10px;
+}
+
+.menu-right-box .menu-right-box-ul2 li span {
+  display: inline-block;
+  position: absolute;
+  top: 24px;
+  left: 10px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+}
+
+.menu-right-box .menu-right-box-ul2 li:nth-child(1) span{
+  background-color: #000;
+}
+
+.menu-right-box .menu-right-box-ul2 li:nth-child(2) span{
+  background-color: #DFB79B;
 }
 
 .menu-right .menu-right-box-ul2 li a {
@@ -577,7 +597,7 @@
   top: -4px;
   left: -178px;
   width: 268px;
-  height: 56px;
+  height: 120px;
   padding-top: 56px;
   border: 1px solid #cccccc;
   z-index: 10;
@@ -599,14 +619,28 @@
   z-index: 10;
 }
 
-.menu-right-box .menu-right-box-ul3 li {
+.menu-right-box .menu-right-box-ul3 li:nth-child(1){
+  float: left;
+  width: 240px;
+  height: 40px;
+  line-height: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
+  background-image: url(../images/lgp-women-Snipaste2.png);
+  background-repeat: no-repeat;
+  background-position: 8px 14px;
+  text-indent: 34px;
+}
+
+
+.menu-right-box .menu-right-box-ul3 li:nth-child(2){
   float: left;
   width: 240px;
   height: 30px;
   line-height: 30px;
   padding-left: 20px;
   padding-top: 10px;
-  background-image: url(../images/lgp-women-Snipaste2.png);
+  background-image: url(../images/lgp-women-Snipaste3.png);
   background-repeat: no-repeat;
   background-position: 8px 14px;
   text-indent: 34px;
@@ -663,7 +697,7 @@
   top: -4px;
   left: -60px;
   width: 128px;
-  height: 56px;
+  height: 98px;
   padding-top: 56px;
   border: 1px solid #cccccc;
   z-index: 10;
