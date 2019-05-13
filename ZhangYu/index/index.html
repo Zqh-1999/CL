@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -14,96 +15,149 @@
 <body>
   <!-- 头部 -->
   <div class="het-fixed">
-      <div class="het">
-          <!-- 左 -->
-          <div class="het-left">
-            <ul class="dl-jm">
-              <!-- 用户登录 -->
-              <li>
-                <a href="">
-                  <i class="fa fa-user-o fa-fw"></i>
-                  <span>我的账户</span>
-                </a>
-              </li>
-              <!-- 帮助 -->
-              <li>
-                <a href="">
-                  <i class="fa fa-exclamation fa-fw"></i>
-                  <span>帮助</span>
-                  <i class="fa fa-caret-down  fa-1x fa-fw"></i>
-                </a>
-                <!-- 鼠标移入的列表 -->
-                <div class="help">
-                  <ul>
-                    <li><a href="">常见问题</a> </li>
-                    <li><a href="">送货政策</a> </li>
-                    <li><a href="">产品保养</a> </li>
-                    <li><a href="">退货政策</a> </li>
-                    <li><a href="">创造回报</a> </li>
-                    <li><a href="">隐私政策</a> </li>
-                    <li><a href="">Stopfake</a> </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- 中 -->
-          <div class="het-center">
-            <!-- 左边的导航 -->
-            <div class="center-left">
+    <div class="het">
+      <!-- 左 -->
+      <div class="het-left">
+        <ul class="dl-jm">
+          <!-- 用户登录 -->
+          <li>
+            <a href="">
+              <i class="fa fa-user-o fa-fw"></i>
+              <span>我的账户</span>
+            </a>
+          </li>
+          <!-- 帮助 -->
+          <li class="hover-help">
+            <a href="">
+              <i class="fa fa-exclamation fa-fw"></i>
+              <span>帮助</span>
+              <i class="fa fa-caret-down  fa-1x fa-fw"></i>
+            </a>
+            <!-- 鼠标移入的列表 -->
+            <div class="help">
               <ul>
-                <li><a href="">女士</a></li>
-                <li><a href="">男士</a></li>
-                <li><a href="">新娘</a></li>
+                <li><a href="">常见问题</a> </li>
+                <li><a href="">送货政策</a> </li>
+                <li><a href="">产品保养</a> </li>
+                <li><a href="">退货政策</a> </li>
+                <li><a href="">创造回报</a> </li>
+                <li><a href="">隐私政策</a> </li>
+                <li><a href="">Stopfake</a> </li>
               </ul>
             </div>
-            <!-- 中间的logo -->
-            <div class="center-logo">
-              <a href=""><img src="./images/logo.png" alt=""></a>
-            </div>
-            <!-- 右边的导航 -->
-            <div class="center-right">
-              <ul>
-                <li><a href="">美妆</a></li>
-                <li><a href="">LOUBOUTINWORLD</a></li>
-                <li><a href="">商店</a></li>
-              </ul>
-            </div>
-          </div>
-          <!-- 右 -->
-          <div class="right">
-            <div class="right-ico">
-              <ul>
-                <li><a href=""><i class="fa fa-search fa-2x"></i></a></li>
-                <li><a href=""><i class="fa fa-heart-o fa-2x"></i></a></li>
-                <li><a href=""><i class="fa fa-shopping-cart fa-2x"></i></a></li>
-              </ul>
-            </div>
-          </div>
+          </li>
+        </ul>
+      </div>
+      <!-- 中 -->
+      <div class="het-center">
+        <!-- 左边的导航 -->
+        <div class="center-left">
+          <ul>
+            <li><a href="">女士</a></li>
+            <li><a href="">男士</a></li>
+            <li><a href="">新娘</a></li>
+          </ul>
         </div>
+        <!-- 中间的logo -->
+        <div class="center-logo">
+          <a href=""><img src="./images/logo.png" alt=""></a>
+        </div>
+        <!-- 右边的导航 -->
+        <div class="center-right">
+          <ul>
+            <li><a href="">美妆</a></li>
+            <li><a href="">LOUBOUTINWORLD</a></li>
+            <li><a href="">商店</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 右 -->
+      <div class="right">
+        <div class="right-ico">
+          <ul>
+            <li><a href=""><i class="fa fa-search fa-2x"></i></a></li>
+            <li><a href=""><i class="fa fa-heart-o fa-2x"></i></a></li>
+            <li><a href=""><i class="fa fa-shopping-cart fa-2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-  
+
   <!-- 中间 -->
   <div class="common">
     <!-- 轮播图 -->
     <div class="lunbo">
-      <ul>
-        <li><a href=""><img src="./images/artisans_portugaba_jose_castellar_003.jpg" alt=""></a></li>
-        <li><a href=""><img src="./images/artisans_portugaba_jose_castellar_012.jpg" alt=""></a></li>
-        <li><a href=""><img src="./images/artisans_portugaba_jose_castellar_013.jpg" alt=""></a></li>
-        <li><a href=""><img src="./images/artisans_portugaba_jose_castellar_003.jpg" alt=""></a></li>
-      </ul>
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <a href="">
+              <img src="./images/artisans_portugaba_jose_castellar_003.jpg" alt="...">
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <img src="./images/artisans_portugaba_jose_castellar_012.jpg" alt="...">
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <img src="./images/artisans_portugaba_jose_castellar_013.jpg" alt="...">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 介绍葡萄牙语 -->
+      <div class="xibanya">
+        <a href="">
+          <span>介绍葡萄牙语</span>
+        </a>
+      </div>
     </div>
     <div class="common2">
-
+      <div class="introduction">
+        <!-- Bom Dia Portugaba -->
+        <div class="bom">
+          <div class="bom-text">
+            <a href="">
+              <span>Bom Dia Portugaba！</span>
+            </a>
+          </div>
+          <div class="bom-img">
+            <a href="">
+              <img src="./images/SH_FW19_S1__Portugaba_4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <!-- Nudes Collection -->
+        <div class="nudes">
+          <div class="nudes-text">
+            <a href="">
+              <span>Nudes Collection</span>
+            </a>
+          </div>
+          <div class="nudes-img">
+            <a href="">
+              <img src="./images/SH__SS19_S2__NUDES_3_10.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
 
-  <script src="./lib/jquery/jquery.min.js"></script>
-  <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="./js/index.js"></script>
-
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+    // $('.hover-help').mouseenter(function () {
+    //   $('.help').show()
+    // })
+    // $('.help').mouseleave(function () {
+    //   $('.help').hide()
+    // })
+    </script>
 </body>
 
 </html>

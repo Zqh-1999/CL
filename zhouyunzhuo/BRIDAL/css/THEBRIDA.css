@@ -1,6 +1,19 @@
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 /* 左 */
+.het-fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: white;
+}
+
 .het {
   position: relative;
+  width: 100%;
   height: 90px;
   border: 1px solid #EAEAEB;
 }
@@ -13,7 +26,7 @@
 
 .dl-jm {
   margin-top: 10px;
-  margin-left: 40px;
+  margin-left: 40px;  
 }
 
 .dl-jm li {
@@ -27,13 +40,12 @@
 .dl-jm li:nth-child(2) {
   position: relative;
 }
-
 .dl-jm li:nth-child(2) a {
   position: absolute;
-  z-index: 1000;
+  z-index:1000;
   width: 100px;
+  overflow: hidden;
 }
-
 .dl-jm li span {
   color: rgb(95, 91, 91);
 }
@@ -46,12 +58,13 @@
   transition: all 0.6s ease
 }
 
-.dl-jm li:hover .fa-caret-down {
+.hover-help:hover .fa-caret-down{
   transform: rotate(-178deg);
 }
 
 .help {
   position: absolute;
+  display: block;
   top: -10px;
   width: 300px;
   height: 0px;
@@ -64,25 +77,29 @@
 
 .help ul {
   padding: 50px 45px 20px 26px;
+  width: 300px;
+  height: 142px;
+  box-sizing: border-box;
 }
 
 .help ul li {
   float: left;
   width: 110px;
   height: 18px;
-
 }
 
-.dl-jm li:hover .help {
+.hover-help:hover .help {
   height: 142px;
   opacity: 1;
 }
 
 /* 中 */
 .het-center {
+  float: left;
   position: absolute;
   top: 10px;
-  left: 700px;
+  left: 740px;
+  width: 50%;
 }
 
 /* 左边的导航 */
@@ -91,17 +108,21 @@
   margin-top: 40px;
 }
 
-.center-left ul li {
+.center-left ul li{
   float: left;
   padding: 0 14px;
 }
 
 /* 中间的logo */
 .center-logo {
+  position: relative;
   float: left;
-  width: 158px;
-  height: 158px;
-  text-align: center
+  width: 102px;
+  height: 102px;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 /* 右边的导航 */
@@ -110,7 +131,7 @@
   margin-top: 40px;
 }
 
-.center-right ul li {
+.center-right ul li{
   float: left;
   padding: 0 12px;
 }
@@ -126,21 +147,14 @@
   float: left;
   margin-left: 15px;
 }
-
-/* 商品导航 */
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
+/* 头部end */
 .THEBRIDA {
   width: 90%;
   margin: 0 auto;
   height: 65px;
   padding-top: 50px;
 }
-
+/* 左 */
 .THEBRIDA_first_left {
   width: 50%;
   height: 65px;
