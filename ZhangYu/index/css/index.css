@@ -85,7 +85,7 @@
   height: 18px;
 }
 
-.hover-help:hover .help {
+.help-a:hover .help {
   height: 142px;
   opacity: 1;
 }
@@ -351,6 +351,7 @@
 /* 鞋子 */
 .xie-lunbo {
   position: relative;
+  height: 666px;
 }
 
 .xie-text {
