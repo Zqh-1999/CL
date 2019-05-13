@@ -28,25 +28,26 @@
           </li>
           <!-- 帮助 -->
           <li class="hover-help">
-        
-                <a href="" class="help-a">
-                    <i class="fa fa-exclamation fa-fw"></i>
-                    <span>帮助</span>
-                    <i class="fa fa-caret-down  fa-1x fa-fw"></i>
-                  </a>
-          
-           
+            <a href="" class="help-a">
+              <i class="fa fa-exclamation fa-fw"></i>
+              <span>帮助</span>
+              <i class="fa fa-caret-down  fa-1x fa-fw"></i>
+            </a>
             <!-- 鼠标移入的列表 -->
             <div class="help">
-              <ul>
-                <li><a href="">常见问题</a> </li>
-                <li><a href="">送货政策</a> </li>
-                <li><a href="">产品保养</a> </li>
-                <li><a href="">退货政策</a> </li>
-                <li><a href="">创造回报</a> </li>
-                <li><a href="">隐私政策</a> </li>
-                <li><a href="">Stopfake</a> </li>
-              </ul>
+              <div>
+
+
+                <ul>
+                  <li><a href="">常见问题</a> </li>
+                  <li><a href="">送货政策</a> </li>
+                  <li><a href="">产品保养</a> </li>
+                  <li><a href="">退货政策</a> </li>
+                  <li><a href="">创造回报</a> </li>
+                  <li><a href="">隐私政策</a> </li>
+                  <li><a href="">Stopfake</a> </li>
+                </ul>
+              </div>
             </div>
           </li>
         </ul>
@@ -63,7 +64,11 @@
         </div>
         <!-- 中间的logo -->
         <div class="center-logo">
-          <a href=""><img src="./images/logo.png" alt=""></a>
+          <a href="">
+            <img src="./images/logo.png" alt="">
+            <img src="./images/logo2.png" alt="" style="display: none">
+          </a>
+
         </div>
         <!-- 右边的导航 -->
         <div class="center-right">
@@ -123,7 +128,7 @@
   <div class="common2">
     <div class="introduction">
       <!-- Bom Dia Portugaba -->
-      <div class="bom">
+      <div class="bom up1">
         <div class="bom-text">
           <a href="">
             <span>Bom Dia Portugaba！</span>
@@ -136,7 +141,7 @@
         </div>
       </div>
       <!-- Nudes Collection -->
-      <div class="nudes">
+      <div class="nudes up2">
         <div class="nudes-text">
           <a href="">
             <span>Nudes Collection</span>
@@ -149,7 +154,7 @@
         </div>
       </div>
       <!-- 包 -->
-      <div class="bao">
+      <div class="bao up3">
         <ul>
           <li>
             <div class="bao-img">
@@ -181,7 +186,7 @@
       </div>
     </div>
     <!-- 鞋子 -->
-    <div class="xie-lunbo">
+    <div class="xie-lunbo up4">
       <div class="xie-text">
         <span>新品上市</span>
       </div>
@@ -273,12 +278,12 @@
       <a href=""></a>
     </div>
   </div>
-
+  <!-- 夏天在你脚下 -->
   <div class="common" style="padding: 0px 40px 40px;     height: 1000px;">
     <div class="lunbo">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Wrapper for slides -->
-      <div class="carousel-inner" ro000000le="listbox">
+        <div class="carousel-inner" ro000000le="listbox">
           <div class="item active">
             <a href="">
               <img src="./images/jpg-sh_ss19_s2__summersnooze_3_6.jpg" alt="...">
@@ -302,7 +307,7 @@
   <div class="common2">
     <div class="introduction">
       <!-- Bom Dia Portugaba -->
-      <div class="bom" style="float: left;">
+      <div class="bom up6" style="float: left;">
         <div class="bom-text-a">
           <a href="">
             <span>Bom Dia Portugaba！</span>
@@ -315,7 +320,7 @@
         </div>
       </div>
       <!-- Nudes Collection -->
-      <div class="nudes" style="float: left; margin-left: 79px;">
+      <div class="nudes up7" style="float: left; margin-left: 79px;">
         <div class="nudes-text">
           <a href="">
             <span>Run Loubi Run For Him</span>
@@ -328,7 +333,7 @@
         </div>
       </div>
       <!-- 包 -->
-      <div class="bao" style="float: left;">
+      <div class="bao up8" style="float: left;">
         <ul>
           <li>
             <div class="bao-img">
@@ -384,7 +389,7 @@
         <div class="find-shop">
           <span>找一家商店</span>
           <a href="">
-              <img src="./images/find-store01.jpeg" alt="">
+            <img src="./images/find-store01.jpeg" alt="">
           </a>
         </div>
       </div>
@@ -396,8 +401,8 @@
         <div class="contact">
           <p>联系方式: </p>
           <div class="down-form">
-              <input type="text" placeholder="您的邮箱">
-              <button>o k</button>
+            <input type="text" placeholder="您的邮箱">
+            <button>o k</button>
           </div>
         </div>
         <div class="np-right">
@@ -419,7 +424,98 @@
     $('.contact input').focus(function () {
       $(this).attr('placeholder', '')
     })
+
+
+    // 头部hover帮助
+    $('.help-a').mouseenter(function () {
+      $('.help').show()
+      $('.fa-caret-down').css('transform', 'rotate(-178deg)')
+    })
+    $('.help').mouseleave(function () {
+      $('.help').hide()
+      $('.fa-caret-down').css('transform', '')
+    })
+
+    // 固定导航栏 变化
+    var top1 = document.querySelector('.het-fixed');
+    var topHeight = top1.offsetHeight;
+    console.log(topHeight)
+    $(window).scroll(function () {
+      var docScroll = $(document).scrollTop();
+      if (docScroll >= topHeight) {
+        $(".het-fixed").css({
+          'height': '50px'
+        });
+        $(".center-left").css("margin-top", '12px');
+        $(".center-right").css("margin-top", '12px');
+        $('.center-logo').css({
+          'width': '50px',
+          'height': '50px',
+          'lineHeight': '50px'
+        })
+        $('.center-logo img:nth-child(1)').hide();
+        $('.center-logo img:nth-child(2)').show();
+
+      } else {
+        $(".het-fixed").css({
+          'height': '90px'
+        });
+        $(".center-left").css("margin-top", '40px');
+        $(".center-right").css("margin-top", '40px');
+        $('.center-logo').css({
+          'width': '100px',
+          'height': '100px',
+          'lineHeight': '94px'
+        })
+        $('.center-logo img:nth-child(1)').show(600);
+        $('.center-logo img:nth-child(2)').hide();
+      }
+      if (docScroll >= 300) {
+        $('.up1').css({
+          'top': '0px',
+          'opacity': 1
+        })
+      }
+      if (docScroll >= 460) {
+        $('.up2').css({
+          'top': '0px',
+          'opacity': 1
+        })
+      }
+      if (docScroll >= 680) {
+        $('.up3').css({
+          'top': '0px',
+          'opacity': 1
+        })
+      }
+      if (docScroll >= 1060) {
+        $('.up4').css({
+          'top': '0px',
+          'opacity': 1
+        })
+      }
+      if (docScroll >= 2960) {
+        $('.up6').css({
+          'top': '0px',
+          'opacity': 1
+        })
+      }
+      if (docScroll >= 3200) {
+        $('.up7').css({
+          'top': '0px',
+          'opacity': 1
+        })
+      }
+      if (docScroll >= 3280) {
+        $('.up8').css({
+          'top': '0px',
+          'opacity': 1
+        })
+      }
+    });
+
   </script>
+
 </body>
 
 </html>
