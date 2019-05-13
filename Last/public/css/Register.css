@@ -1,341 +1,149 @@
-/* 头部 */
-
-/* 左 */
-.het {
-  position: relative;
-  height: 90px;
-  border: 1px solid #EAEAEB;
-}
-
-.het-left {
-  position: relative;
-  float: left;
-  width: 230px;
-}
-
-.dl-jm {
-  margin-top: 10px;
-  margin-left: 40px;  
-}
-
-.dl-jm li {
-  float: left;
-}
-
-.dl-jm>li:nth-child(1) {
-  margin-right: 40px;
-}
-
-.dl-jm li:nth-child(2) {
-  position: relative;
-}
-.dl-jm li:nth-child(2) a {
-  position: absolute;
-  z-index:1000;
-  width: 100px;
-}
-.dl-jm li span {
-  color: rgb(95, 91, 91);
-}
-
-.dl-jm li i {
-  font-size: 16px;
-}
-
-.dl-jm li a .fa-caret-down {
-  transition: all 0.6s ease
-}
-
-.dl-jm li:hover .fa-caret-down{
-  transform: rotate(-178deg);
-}
-
-.help {
-  position: absolute;
-  top: -10px;
-  width: 300px;
-  height: 0px;
-  opacity: 0;
-  box-shadow: 0 0 5px 1px rgba(30, 30, 30, 0.15);
-  box-sizing: border-box;
-  transition: all 0.6s;
-  background-color: #ffffff;
-}
-
-.help ul {
-  padding: 50px 45px 20px 26px;
-}
-
-.help ul li {
-  float: left;
-  width: 110px;
-  height: 18px;
-  
-}
-
-.dl-jm li:hover .help {
-  height: 142px;
-  opacity: 1;
-}
-
-/* 中 */
-.het-center {
-  position: absolute;
-  top: 10px;
-  left: 700px;
-}
-
-/* 左边的导航 */
-.center-left {
-  float: left;
-  margin-top: 40px;
-}
-
-.center-left ul li{
-  float: left;
-  padding: 0 14px;
-}
-
-/* 中间的logo */
-.center-logo {
-  float: left;
-  width: 158px;
-  height: 158px;
-  text-align: center
-}
-
-/* 右边的导航 */
-.center-right {
-  float: left;
-  margin-top: 40px;
-}
-
-.center-right ul li{
-  float: left;
-  padding: 0 12px;
-}
-
-.right {
-  float: right;
-  height: 20px;
-  margin-right: 40px;
-  margin-top: 10px;
-}
-
-.right-ico li {
-  float: left;
-  margin-left: 15px;
-}
-
-/*comment*/
-* {
-  font-size: 14px !important;
-  font-family: Microsoft YaHei;
-}
-.contain {
-  margin-top: 65px;
-}
+/* 注册部分start */
 .account-login {
-  width:95%;
-  margin:auto;
-}
-div {
-  display: block;
-}
-.page-header {
-  overflow: hidden;
-  padding-top: 0px;
-  margin-bottom: 40px;
-}
-htag2, h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0;
+  width: 1822px;
+  height: 420px;
+  /* border: 1px solid pink; */
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
-htag2, h2 {
-  font-size: 20px;
+.account-hearder {
+  width: 1822px;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.account-hearder>h2 {
+  width: 1822px;
+  height: 27px;
+  margin: 15px 0px;
+  font-size: 18px;
   font-weight: 200;
-}
-.grid {
-  display: block;
-  clear: both;
-  box-sizing: border-box;
   color: #888;
+  font-family: 'Frutiger', Helvetica, Arial, sans-serif;
+  line-height: 1.4;
 }
 
-.grid.noOuterBorder .unit:first-child {
-  padding-left: 0;
+.account-center {
+  width: 1822px;
+  height: 321px;
+  /* border: 1px solid red; */
 }
-.grid .half {
-  width: 50%;
-}
-.grid .unit {
+
+.account-center-left {
   float: left;
-  padding: 0 20px;
-  box-sizing: border-box;
+  width: 891px;
+  height: 321px;
+  padding-right: 20px;
+  /* border: 1px solid red; */
+  border-right: 1px dashed #888;
 }
 
-htag1, htag2, htag3, htag4, htag5 {
-  display: block;
+.account-center-left h3 {
+  height: 891px;
+  height: 21px;
+  margin-bottom: 15px;
+  margin-top: 0;
+  color: #222;
+  font-size: 1.17em;
   font-weight: bold;
 }
 
-form {
-  margin: 0;
+.account-center-left form {
+  width: 891px;
+  height: 172px;
 }
 
-button, input {
-    line-height: normal;
+.account-center-left form p {
+  width: 891px;
+  height: 18px;
+  margin-bottom: 20px;
+  color: #888;
+  font-family: 'Frutiger', Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
 }
 
 .form-group {
+  width: 824px;
+  height: 38px;
   margin-bottom: 20px;
 }
 
-htag3, h3 {
-  font-size: 1.17em;
-  margin: 1em 0;
+.input-box {
+  width: 863px;
+  height: 38px;
 }
 
-input {
+.input-box input {
+  width: 100%;
+  border: 1px solid #ededed;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #888;
+  padding: 10px 20px 10px 20px;
+  outline: 0;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  transition-duration: 0.7s;
   line-height: normal;
+  letter-spacing: 1px;
+  font-family: 'Frutiger', Helvetica, Arial, sans-serif;
 }
 
-.form-group {
+.form-a {
+  width: 891px;
+  height: 18px;
   margin-bottom: 20px;
 }
 
-form.form a {
+.form-a>a {
+  color: #888;
   text-decoration: underline;
+  /* text-indent: 2px; */
 }
 
-a.modal-link {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-
-
-.sign-in-buttons {
-  margin-bottom: 40px;
+.form-buttons>.savebtn {
   float: right;
-}
-
-.form-group .form-buttons {
-  margin-top: 40px;
-  text-align: right;
-}
-
-.btn {
   position: relative;
   box-sizing: border-box;
   border: none;
   cursor: pointer;
   padding: 11px 30px 8px 30px;
+  display: inline-block;
   text-transform: uppercase;
-  text-decoration: none !important;
   letter-spacing: 1px;
   outline: none;
   text-align: center;
+  font-size: 12px;
   line-height: 14px;
   background: #F3F3F3;
-  border-radius: 0;
-  transition-duration: 0.5s;
-}
-
-input[type=email],input[type=password] {
-  border: 1px solid #ededed;
-  border-radius: 2px;
   color: #888;
-  padding: 10px 20px 10px 20px;
-  outline: 0;
-  box-sizing: border-box;
-  transition-property: border-color;
-  transition-duration: 0.7s;
-  width: 100%;
+  font-family: "Frutiger";
+  box-shadow: 0 2px 0 0 #DDD;
 }
 
-.grid .half {
-  width: 50%;
-}
-
-.grid .unit {
+/* 右边 */
+.account-center-right {
   float: left;
+  width: 890px;
+  height: 147px;
+  /* border: 1px solid red; */
+  margin-left: 20px;
+  font-family: 'Frutiger', Helvetica, Arial, sans-serif;
+  font-size: 14px;
 }
 
-.grid .unit.bordered {
-  background: url(/img/divider-dotted-vertical.png) repeat-y top right;
+.account-center-right h3 {
+  width: 891px;
+  height: 21px;
+  margin-bottom: 15px;
 }
 
-.form-group.form-buttons {
-  margin-top: 40px;
-  text-align: right;
-}
-
-.page-header {
-  overflow: hidden;
-  padding-top: 0px;
-  margin-bottom: 40px;
-}
-
-#ajax-overlay {
-  overflow: auto;
-  z-index: 10000;
-}
-
-#ajax-overlay {
-  position: fixed;
-  z-index: 2000;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #FFF;
- width:80%;
- height:500px;
- margin: auto;
- margin-top:70px;
-}
-
-#ajax-overlay .close {
-  position: absolute;
-  right: 50px;
-  top: 50px;
-  z-index: 20000;
-  cursor: pointer;
-}
-
-#algolia-autocomplete-container {
-  z-index: 10000 !important;
-}
-
-.overlay {
-  width: 100%;
-  height:60%;
-}
-
-.p-forgotPwd .grid {
-  max-width: 450px;
-  margin: 0 auto;
-}
-
-form {
-  margin: 0;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-.upform{
-  padding-left: 480px;
-}
-
-.input-text {
-  border-color:#ededed;
-  transition: border-color 1s  linear;
-}
-
-.input-text:hover {
-  border-color :black;
+.account-center-right p {
+  color: #888;
+  margin-bottom: 50px;
 }
