@@ -1,0 +1,403 @@
+/* 头部  start*/
+/* 头部 */
+
+/* 左 */
+.het {
+    position: relative;
+    height: 90px;
+    border: 1px solid #EAEAEB;
+  }
+  
+  .het-left {
+    position: relative;
+    float: left;
+    width: 230px;
+  }
+  
+  .dl-jm {
+    margin-top: 10px;
+    margin-left: 40px;  
+  }
+  
+  .dl-jm li {
+    float: left;
+  }
+  
+  .dl-jm>li:nth-child(1) {
+    margin-right: 40px;
+  }
+  
+  .dl-jm li:nth-child(2) {
+    position: relative;
+  }
+  .dl-jm li:nth-child(2) a {
+    position: absolute;
+    z-index:1000;
+    width: 100px;
+  }
+  .dl-jm li span {
+    color: rgb(95, 91, 91);
+  }
+  
+  .dl-jm li i {
+    font-size: 16px;
+  }
+  
+  .dl-jm li a .fa-caret-down {
+    transition: all 0.6s ease
+  }
+  
+  .dl-jm li:hover .fa-caret-down{
+    transform: rotate(-178deg);
+  }
+  
+  .help {
+    position: absolute;
+    top: -10px;
+    width: 300px;
+    height: 0px;
+    opacity: 0;
+    box-shadow: 0 0 5px 1px rgba(30, 30, 30, 0.15);
+    box-sizing: border-box;
+    transition: all 0.6s;
+    background-color: #ffffff;
+  }
+  
+  .help ul {
+    padding: 50px 45px 20px 26px;
+  }
+  
+  .help ul li {
+    float: left;
+    width: 110px;
+    height: 18px;
+    
+  }
+  
+  .dl-jm li:hover .help {
+    height: 142px;
+    opacity: 1;
+  }
+  
+  /* 中 */
+  .het-center {
+    position: absolute;
+    top: 10px;
+    left: 700px;
+  }
+  
+  /* 左边的导航 */
+  .center-left {
+    float: left;
+    margin-top: 40px;
+  }
+  
+  .center-left ul li{
+    float: left;
+    padding: 0 14px;
+  }
+  
+  /* 中间的logo */
+  .center-logo {
+    float: left;
+    width: 158px;
+    height: 158px;
+    text-align: center
+  }
+  
+  /* 右边的导航 */
+  .center-right {
+    float: left;
+    margin-top: 40px;
+  }
+  
+  .center-right ul li{
+    float: left;
+    padding: 0 12px;
+  }
+  
+  .right {
+    float: right;
+    height: 20px;
+    margin-right: 40px;
+    margin-top: 10px;
+  }
+  
+  .right-ico li {
+    float: left;
+    margin-left: 15px;
+  }
+/* 头部 end */
+/* 清除浮动 */
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 中间部分 top start */
+.content {
+    width: 1024px;
+    height: 513px;
+    margin: 70px auto;
+    /* border: 1px solid pink; */
+}
+
+.page-header {
+    position: relative;
+    width: 1024px;
+    height: 53px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.page-header h1 {
+    width: 210px;
+    height: 33px;
+    font-size: 24px;
+    font-family: 'Frutiger', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: lighter;
+
+}
+
+.hr {
+    position: absolute;
+    top: 0px;
+    left: 240px;
+    height: 33px;
+    width: 800px;
+    background: url("../images/title_border.gif") repeat-x 0 20px;
+}
+.hrtwo {
+    left: 100px;
+    width: 725px;
+    top: 0px;
+}
+
+/* 中间部分 top end */
+
+/* 左边 导航栏 start */
+.left-nav {
+    float: left;
+    width: 168px;
+    height: 420px;
+    border: 1px solid #EEEEEE;
+}
+
+
+.left-nav picture {
+    position: relative;
+    width: 123px;
+    height: 123px;
+    margin: 22px auto;
+}
+
+.picture img {
+    border-radius: 50%;
+    transition-property: all;
+    width: 123px;
+    box-sizing: border-box;
+    border: 4px solid #e9e9ea;
+    transition-duration: 0.4s;
+    margin-left: 22px;
+    margin-top: 20px;
+}
+
+.left-nav-l .picture-ul {
+    width: 166px;
+    height: 260px;
+    margin: 13px 0px;
+    /* border: 1px solid red; */
+    border-top: 1px dashed #D2D2D2;
+}
+
+.left-nav-l li {
+    width: 166px;
+    height: 16px;
+    margin-bottom: 10px;
+}
+
+.left-nav-l li:first-child {
+  margin-top: 15px;
+}
+
+.left-nav-l li:last-child {
+    border-top: 1px dashed #D2D2D2;
+    margin-top: 20px;
+    padding-top: 16px;
+}
+
+.left-nav-l li a {
+    margin-left: 18px;
+    text-decoration: none;
+    color: #000001;
+    letter-spacing: 2px;
+}
+
+/* 左边 导航栏 end */
+
+/* 底部 */
+
+.down {
+  width: 100%;
+  height: 540px;
+  background-color: #fafafa;
+  padding: 52px 40px 62px;
+  box-sizing: border-box;
+}
+
+.common3 {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.up {
+  height: 400px;
+}
+
+.list {
+  float: left;
+  margin-top: 70px;
+}
+
+.list ul {
+  float: left;
+}
+
+.list ul:nth-child(1) {
+  margin-right: 120px;
+}
+
+.list ul li a{
+  display: block;
+  margin-bottom: 9px;
+  color: #999999;
+  letter-spacing: 0.42px;
+  font-family: "Avenir-Book";
+  font-size: 11px;
+  transition: all 0.3s;
+}
+
+.list ul li a:hover {
+  color: rgb(94, 88, 88)
+}
+
+.find-shop {
+  float: right;
+  width: 554px;
+  height: 320px;
+  color: #000;
+  overflow: hidden;
+}
+
+.find-shop span {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.find-shop img {
+  width: 554px;
+  height: 312px;
+  transition: all 0.5s;
+}
+
+.find-shop img:hover {
+  width: 562px;
+  height: 320px;
+  opacity: 0.7;
+}
+
+.np {
+  height: 30px;
+}
+
+.np-left {
+  float: left;
+}
+
+.contact {
+  margin-left: 20%;
+  margin-right: 30%;
+  display: inline;
+}
+
+.contact p {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 22px;
+  line-height: 30px;
+}
+
+.down-form {
+  position: relative;
+  display: inline-block;
+  width: 260px;
+  height: 30px;
+}
+
+.contact input {
+  width: 260px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(215, 215, 215, 0.5);
+  padding: 2px 10px;
+}
+
+.contact button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  color: rgb(94, 92, 92);
+  font-weight: 600;
+  width: 45px;
+  text-align: center;
+  line-height: 30px;
+  transition: all 0.4s ease;
+}
+
+.contact button:hover {
+  color: #ed1e24
+}
+
+.np-right {
+  float: right;
+}
+
+.np-right ul li {
+  float: left;
+  line-height: 20px;
+}
+
+.np-right li:nth-child(1) i {
+  float: left;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-image: url('../images/cn.png');
+  margin-right: 8px;
+}
+
+.np-right li:nth-child(2) {
+  margin-left: 26px;
+}
+
+.np-right li:nth-child(2) i {
+  float: left;
+  width: 32px;
+  height: 24px;
+  margin-right: 8px;
+  background-image: url('../images/Snipaste_2019-05-13_14-16-33.png')
+}
