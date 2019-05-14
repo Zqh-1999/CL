@@ -1,0 +1,192 @@
+/* 注册部分start */
+.account-login {
+  width: 1822px;
+  height: 420px;
+  /* border: 1px solid pink; */
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.account-hearder {
+  width: 1822px;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.account-hearder>h2 {
+  width: 1822px;
+  height: 27px;
+  margin: 15px 0px;
+  font-size: 18px;
+  font-weight: 200;
+  color: #888;
+  font-family: 'Frutiger', Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+.account-center {
+  width: 1822px;
+  height: 321px;
+  /* border: 1px solid red; */
+}
+
+.account-center-left {
+  float: left;
+  width: 891px;
+  height: 321px;
+  padding-right: 20px;
+  /* border: 1px solid red; */
+  border-right: 1px dashed #888;
+}
+
+.account-center-left h3 {
+  height: 891px;
+  height: 21px;
+  margin-bottom: 15px;
+  margin-top: 0;
+  color: #222;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.account-center-left form {
+  width: 891px;
+  height: 172px;
+}
+
+.account-center-left form p {
+  width: 891px;
+  height: 18px;
+  margin-bottom: 20px;
+  color: #888;
+  font-family: 'Frutiger', Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.form-group {
+  width: 824px;
+  height: 38px;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  width: 863px;
+  height: 38px;
+}
+
+.input-box input {
+  width: 100%;
+  border: 1px solid #ededed;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #888;
+  padding: 10px 20px 10px 20px;
+  outline: 0;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  transition-duration: 0.7s;
+  line-height: normal;
+  letter-spacing: 1px;
+  font-family: 'Frutiger', Helvetica, Arial, sans-serif;
+}
+
+.form-a {
+  width: 891px;
+  height: 18px;
+  margin-bottom: 20px;
+}
+
+.form-a>a {
+  color: #888;
+  text-decoration: underline;
+  /* text-indent: 2px; */
+}
+
+.form-buttons>.savebtn {
+  float: right;
+  position: relative;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  padding: 11px 30px 8px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  background: #F3F3F3;
+  color: #888;
+  font-family: "Frutiger";
+  box-shadow: 0 2px 0 0 #DDD;
+}
+
+/* 右边 */
+.account-center-right {
+  float: left;
+  width: 890px;
+  height: 147px;
+  /* border: 1px solid red; */
+  margin-left: 20px;
+  font-family: 'Frutiger', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.account-center-right h3 {
+  width: 891px;
+  height: 21px;
+  margin-bottom: 15px;
+}
+
+.account-center-right p {
+  color: #888;
+  margin-bottom: 50px;
+}
+
+
+.navg {
+  background-color: red;
+  width: 70%;
+  height: 40px;
+  border-radius: 40px;
+  position: absolute;
+  top: 130px;
+  left: 253px;
+  padding-top: 11px;
+   display: none;
+}
+.navg .buttons {
+     float: right;
+     margin-right: 35px;
+     font-weight: 900;
+     font-size: 20px;
+     color: white;
+     background-color: red;
+     border: transparent;
+    margin-top: -3px;
+}
+
+
+.navg span {
+  margin-left: 600px;
+  color: white;
+  font-weight: 900;
+}
+
+.input-text {
+  border-color:#ededed;
+  transition: border-color 1s  linear;
+}
+
+.input-text:hover {
+  border-color :black;
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 21c306f7ebac2adabd900fd62c26d1e21a3fc909
