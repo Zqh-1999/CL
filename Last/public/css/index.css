@@ -3,7 +3,6 @@
 /* 左 */
 .het-fixed {
   position: fixed;
-  top: 0px;
   width: 100%;
   z-index: 100;
   background: white;
@@ -11,7 +10,6 @@
   border: 1px solid #EAEAEB;
   transition: all 0.6s
 }
-
 
 .het-left {
   position: relative;
@@ -21,7 +19,7 @@
 
 .dl-jm {
   margin-top: 10px;
-  margin-left: 40px;
+  margin-left: 40px;  
 }
 
 .dl-jm li {
@@ -36,14 +34,12 @@
 .dl-jm li:nth-child(2) {
   position: relative;
 }
-
 .dl-jm li:nth-child(2) a {
   position: absolute;
-  z-index: 1000;
+  z-index:1000;
   width: 100px;
   overflow: hidden;
 }
-
 .dl-jm li span {
   color: rgb(95, 91, 91);
 }
@@ -101,7 +97,7 @@
   transition: all 0.6s
 }
 
-.center-left ul li {
+.center-left ul li{
   float: left;
   padding: 0 14px;
 }
@@ -127,7 +123,7 @@
   transition: all 0.6s
 }
 
-.center-right ul li {
+.center-right ul li{
   float: left;
   padding: 0 12px;
 }
@@ -198,7 +194,7 @@
   padding: 0px;
 }
 
-.women-part {
+.women-part{
   float: left;
 }
 
@@ -219,8 +215,8 @@
 }
 
 .women-part ul li:nth-child(1) a {
-  color: #888;
-  font-weight: 700;
+ color: #888;
+ font-weight: 700;
 }
 
 .women-part ul li:nth-child(2) {
@@ -247,7 +243,7 @@
   overflow: hidden;
 }
 
-.women-good li:nth-child(1) img {
+.women-good li:nth-child(1) img{
   float: right;
 }
 
@@ -320,7 +316,7 @@
   padding: 0px;
 }
 
-.man-part {
+.man-part{
   float: left;
 }
 
@@ -341,8 +337,8 @@
 }
 
 .man-part ul li:nth-child(1) a {
-  color: #888;
-  font-weight: 700;
+ color: #888;
+ font-weight: 700;
 }
 
 .man-part ul li:nth-child(2) {
@@ -369,7 +365,7 @@
   overflow: hidden;
 }
 
-.man-good li:nth-child(1) img {
+.man-good li:nth-child(1) img{
   float: right;
 }
 
@@ -439,7 +435,7 @@
   padding: 0px;
 }
 
-.bridal-part {
+.bridal-part{
   float: left;
 }
 
@@ -460,8 +456,8 @@
 }
 
 .bridal-part ul li:nth-child(1) a {
-  color: #888;
-  font-weight: 700;
+ color: #888;
+ font-weight: 700;
 }
 
 .bridal-part ul li:nth-child(2) {
@@ -488,7 +484,7 @@
   overflow: hidden;
 }
 
-.bridal-good li:nth-child(1) img {
+.bridal-good li:nth-child(1) img{
   float: right;
 }
 
@@ -562,7 +558,7 @@
   padding: 0px;
 }
 
-.beauty-part {
+.beauty-part{
   float: left;
 }
 
@@ -583,8 +579,8 @@
 }
 
 .beauty-part ul li:nth-child(1) a {
-  color: #888;
-  font-weight: 700;
+ color: #888;
+ font-weight: 700;
 }
 
 .beauty-part ul li:nth-child(2) {
@@ -611,7 +607,7 @@
   overflow: hidden;
 }
 
-.beauty-good li:nth-child(1) img {
+.beauty-good li:nth-child(1) img{
   float: right;
 }
 
@@ -637,7 +633,6 @@
 .center-right li:nth-child(2) a:hover {
   color: #e60b0b
 }
-
 .center-right li:nth-child(3) a:hover {
   color: #e60b0b
 }
@@ -645,126 +640,274 @@
 /* 头部end */
 
 
-/* 清除浮动 */
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* common */
+.common {
+  padding: 100px 40px 40px;
 }
 
-/* 中间部分 top start */
-.content {
+.common2 {
+  max-width: 1024px;
+  margin: 20px auto 0 !important;
+}
+/* commonEND */
+
+
+
+/* 轮播图 */
+.lunbo {
   position: relative;
-  width: 1024px;
-  /* height: 650px; */
-  margin: 0px auto;
-  padding-top: 90px;
-  margin-bottom: 100px;
-  /* border: 1px solid pink; */
+  height: 950px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-.page-header {
-  position: relative;
-  width: 1024px;
-  height: 53px;
-  padding-top: 0px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  /* border: 1px solid red; */
-}
-
-.page-header h1 {
-  width: 210px;
-  height: 33px;
-  font-size: 24px;
-  font-family: 'Frutiger', Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  color: #888;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: lighter;
-
-}
-
-.hr {
+.lunbo li{
   position: absolute;
-  top: 0px;
-  left: 240px;
-  height: 33px;
-  width: 800px;
-  background: url("../images/title_border.gif") repeat-x 0 20px;
 }
 
-.hrtwo {
-  left: 100px;
-  width: 725px;
-  top: 0px;
+.lunbo img{
+  width: 1220px;
+  height: 820px;
 }
 
-/* 中间部分 top end */
-
-/* 左边 导航栏 start */
-.left-nav {
-  float: left;
-  width: 168px;
-  height: 420px;
-  border: 1px solid #EEEEEE;
+/* 介绍葡萄牙语 */
+.xibanya {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto 60px;
+  
 }
 
-.left-nav:hover {
-  box-shadow: 2px 2px 0px 0px #EEEEEE;
+.xibanya a:hover span{
+  color: #ed1e24;
+  border-bottom: 2px solid #ed1e24;
 }
 
-.left-nav picture {
+.xibanya span {
+  display: block;
+  width: 240px;
+  font-family: 'DidotHP';
+  font-size: 40px;
+  color: black;
+  transition: all 0.4s;
+  margin: 0 auto;
+  margin-bottom: 2px;
+  border-bottom: 2px solid black
+}
+
+.introduction {
+  width: 1024px;
+  height: 780px;
+}
+
+/* Bom Dia Portugaba */
+.bom {
   position: relative;
-  width: 123px;
-  height: 123px;
-  margin: 22px auto;
+  top: 160px;
+  opacity: 0;
+  transition: all 0.8s;
+  float: right;
 }
 
-.picture img {
-  border-radius: 50%;
-  transition-property: all;
-  width: 123px;
-  box-sizing: border-box;
-  border: 4px solid #e9e9ea;
-  transition-duration: 0.4s;
-  margin-left: 22px;
-  margin-top: 20px;
+.bom-text {
+  padding: 20px;
+  position: absolute;
+  top: -2px;
+  left: -36px;
+  background-color: white;
 }
 
-.left-nav-l .picture-ul {
-  width: 166px;
-  height: 260px;
-  margin: 13px 0px;
-  /* border: 1px solid red; */
-  border-top: 1px dashed #D2D2D2;
+.bom-text span{
+  display: inline-block;
+  height: 34px;
+  color: #888;
+  border-bottom: 2px solid black;
+  font-size: 24px;
+  font-family: 'Gill Sans',sans-serif;
+  font-weight: lighter;
+  transition: all 0.4s
 }
 
-.left-nav-l li {
-  width: 166px;
-  height: 16px;
-  margin-bottom: 10px;
+.bom-text span:hover {
+  color: rgb(80, 77, 77);
 }
 
-.left-nav-l li:first-child {
-  margin-top: 15px;
+.bom-img img{
+  width: 575px;
+  height: 378px;
 }
 
-.left-nav-l li:last-child {
-  border-top: 1px dashed #D2D2D2;
-  margin-top: 20px;
-  padding-top: 16px;
+/* Nudes Collection */
+.nudes {
+  position: relative;
+  top: 160px;
+  opacity: 0;
+  transition: all 0.8s;
+  float: right;
 }
 
-.left-nav-l li a {
-  margin-left: 18px;
-  text-decoration: none;
-  color: #000001;
-  letter-spacing: 2px;
+.nudes-text {
+  padding: 20px;
+  position: absolute;
+  bottom: 36px;
+  right: 70px;
+  background-color: white;
 }
 
-/* 左边 导航栏 end */
+.nudes-text span{
+  display: inline-block;
+  height: 34px;
+  color: #888;
+  border-bottom: 2px solid black;
+  font-size: 24px;
+  font-family: 'Gill Sans',sans-serif;
+  font-weight: lighter;
+  transition: all 0.4s
+}
+
+.nudes-text span:hover {
+  color: rgb(80, 77, 77);
+}
+
+.nudes-img {
+  margin-top: 185px;
+  margin-right: 78px;
+  margin-bottom: 50px;
+}
+
+.nudes-img img {
+  width: 370px;
+  height: 300px;
+}
+
+/* 包 */
+.bao {
+  position: relative;
+  top: 160px;
+  opacity: 0;
+  transition: all 0.6s;
+  width: calc(56.2%);
+  margin-top: -80px;
+  float: right;
+}
+
+.bao li {
+  float: left;
+  width: 268px;
+  height: 315px;
+  text-align: center;
+}
+
+.bao li:nth-child(1) {
+  margin-right: 39px;
+}
+
+.bao-img img {
+  width: 180px;
+  height: 180px;
+  transition: all 0.5s;
+}
+
+.bao-img a:hover img {
+  opacity: 0.8;
+}
+
+.bao-text {
+  position: relative;
+ 
+}
+
+.bao-text a {
+  display: block;
+  margin-top: 6px;
+  color: #888;
+  transition: all 0.6s
+}
+
+.bao-text a:hover {
+  color: black;
+}
+
+.bao-text div {
+  position: absolute;
+  top: 18px;
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+  z-index: -1;
+}
+
+/* 鞋子 */
+.xie-lunbo {
+  position: relative;
+  top: 160px;
+  opacity: 0;
+  transition: all 0.8s;
+  height: 666px;
+}
+
+.xie-text {
+  width: 96px;
+  height: 30px;
+  margin: 4px auto;
+  font-family: 'Gill Sans';
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+.xie-text span {
+  padding: 0px 0px 3px 0px;
+  border-bottom: 3px solid black;
+}
+
+.xie li {
+  float: left;
+  width: 33.33%;
+  height: 315px;
+  text-align: center;
+  padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.bom-text-a {
+  padding: 20px;
+  position: absolute;
+  bottom: -10px;
+  background-color: white;
+}
+
+.bom-text-a span {
+  display: inline-block;
+  height: 34px;
+  color: #888;
+  border-bottom: 2px solid black;
+  font-size: 24px;
+  font-family: 'Gill Sans',sans-serif;
+  font-weight: lighter;
+  transition: all 0.4s;
+}
 
 /* 底部 */
 
@@ -798,7 +941,7 @@
   margin-right: 120px;
 }
 
-.list ul li a {
+.list ul li a{
   display: block;
   margin-bottom: 9px;
   color: #999999;
@@ -925,40 +1068,3 @@
   margin-right: 8px;
   background-image: url('../images/Snipaste_2019-05-13_14-16-33.png')
 }
-
-
-/* 遮罩层start */
-.masklayer {
-  position: absolute;
-  top: 50px;
-  height: 598px;
-  width: 1300px;
-  margin: 0px auto;
-  display: none;
-  z-index: 1000;
-  background-color: #fff;
-  border: #fff;
-  margin-top: 60px;
-  text-align: center;
-  margin-left: -152px;
-  color: #888;
-}
-
-
-.masklayer-h2 {
-  width: 1300px;
-  height: 30px;
-  margin-top: 30px;
-  font-size: 14px;
-
-
-}
-
-.masklayer-p {
-  width: 1300px;
-  height: 30px;
-  margin-top: 15px;
-  font-size: 12px;
-}
-
-/* 遮罩层end */
