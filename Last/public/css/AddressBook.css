@@ -1,4 +1,4 @@
-/* 中间部分 */
+    /* 中间部分 */
 #content {
     height: 950px;
 }
@@ -115,6 +115,9 @@
 
 .newadd-right-title2 {
     width: 824px;
+}
+.input-text:hover{
+    border-color: #000; 
 }
 
 #fa-fw2::before {

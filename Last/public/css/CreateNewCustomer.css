@@ -112,7 +112,9 @@
     width: 863px;
     height: 38px;
 }
-
+.input-text:hover{
+border-color: #000;
+}
 .input-box input {
     width: 100%;
     border: 1px solid #ededed;
