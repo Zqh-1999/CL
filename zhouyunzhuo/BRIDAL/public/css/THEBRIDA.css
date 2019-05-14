@@ -1,0 +1,391 @@
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 左 */
+.het-fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: white;
+}
+
+.het {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  border: 1px solid #EAEAEB;
+}
+
+.het-left {
+  position: relative;
+  float: left;
+  width: 230px;
+}
+
+.dl-jm {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.dl-jm li {
+  float: left;
+}
+
+.dl-jm>li:nth-child(1) {
+  margin-right: 40px;
+}
+
+.dl-jm li:nth-child(2) {
+  position: relative;
+}
+
+.dl-jm li:nth-child(2) a {
+  position: absolute;
+  z-index: 1000;
+  width: 100px;
+  overflow: hidden;
+}
+
+.dl-jm li span {
+  color: rgb(95, 91, 91);
+}
+
+.dl-jm li i {
+  font-size: 16px;
+}
+
+.dl-jm li a .fa-caret-down {
+  transition: all 0.6s ease
+}
+
+.hover-help:hover .fa-caret-down {
+  transform: rotate(-178deg);
+}
+
+.help {
+  position: absolute;
+  display: block;
+  top: -10px;
+  width: 300px;
+  height: 0px;
+  opacity: 0;
+  box-shadow: 0 0 5px 1px rgba(30, 30, 30, 0.15);
+  box-sizing: border-box;
+  transition: all 0.6s;
+  background-color: #ffffff;
+}
+
+.help ul {
+  padding: 50px 45px 20px 26px;
+  width: 300px;
+  height: 142px;
+  box-sizing: border-box;
+}
+
+.help ul li {
+  float: left;
+  width: 110px;
+  height: 18px;
+}
+
+.hover-help:hover .help {
+  height: 142px;
+  opacity: 1;
+}
+
+/* 中 */
+.het-center {
+  float: left;
+  position: absolute;
+  top: 10px;
+  left: 740px;
+  width: 50%;
+}
+
+/* 左边的导航 */
+.center-left {
+  float: left;
+  margin-top: 40px;
+}
+
+.center-left ul li {
+  float: left;
+  padding: 0 14px;
+}
+
+/* 中间的logo */
+.center-logo {
+  position: relative;
+  float: left;
+  width: 102px;
+  height: 102px;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* 右边的导航 */
+.center-right {
+  float: left;
+  margin-top: 40px;
+}
+
+.center-right ul li {
+  float: left;
+  padding: 0 12px;
+}
+
+.right {
+  float: right;
+  height: 20px;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.right-ico li {
+  float: left;
+  margin-left: 15px;
+}
+
+/* 头部end */
+.THEBRIDA {
+  width: 90%;
+  margin: 0 auto;
+  height: 65px;
+  padding-top: 50px;
+}
+
+/* 左 */
+.THEBRIDA_first_left {
+  width: 50%;
+  height: 65px;
+  float: left;
+}
+
+.THEBRIDA_first_left>ul>li {
+  float: left;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.THEBRIDA_first_left>ul>li:nth-child(1) i {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  border-bottom: 3px solid black;
+}
+
+.THEBRIDA_first_left .classify {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  position: relative;
+  padding: 0px;
+}
+
+.classify>i {
+  display: block;
+  padding-right: 30px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+.classify:hover>i {
+  border: 1px solid #ccc;
+  border-bottom: none;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 4;
+}
+
+.classify ul li a {
+  font-size: 14px;
+  letter-spacing: 1.56px;
+  font-weight: normal;
+  cursor: pointer;
+  color: black;
+}
+
+.THEBRIDA_first_left .fist {
+  display: none;
+  padding: 15px;
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  border: 1px solid #ccc;
+  width: 200px;
+  background-color: white;
+  z-index: 1;
+}
+
+.THEBRIDA_first_left .fist li {
+  font-size: 14px;
+  letter-spacing: 1.56px;
+  font-weight: normal;
+  color: #000;
+}
+
+.THEBRIDA_first_left .fist li a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.classify:hover .fist {
+  display: block;
+}
+
+.classify span {
+  border-top: 5px solid black;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  z-index: 5;
+}
+
+
+
+
+/* 右 */
+.THEBRIDA_first_right {
+  float: right;
+  height: 65px;
+
+}
+
+.THEBRIDA_first_right li {
+  float: left;
+  cursor: pointer;
+}
+
+.THEBRIDA_first_right .classify {
+  position: relative;
+  width: 100px;
+}
+
+.THEBRIDA_first_right .measure li {
+  padding-right: 80px;
+}
+
+.THEBRIDA_first_right .classify span {
+  border-top: 5px solid black;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 18px;
+  right: 22px;
+}
+
+.THEBRIDA_first_right .second {
+  display: none;
+  padding-left: 20px;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  border: 1px solid #ccc;
+  width: 300px;
+  z-index: 3;
+  background-color: white;
+}
+
+.THEBRIDA_first_right .second li {
+  width: 50px;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.THEBRIDA_first_right .second p {
+  display: block;
+  width: 50px;
+}
+
+.THEBRIDA_first_right .second a {
+  color: black;
+}
+
+.THEBRIDA_first_right .second a:hover {
+  color: red;
+  text-decoration: none
+}
+
+.THEBRIDA_first_right li:hover .second {
+  display: block;
+}
+
+.height .second li {
+  width: 100%;
+}
+
+.height .second i {
+  display: inline-block;
+}
+
+.height .second i:hover {
+  color: red;
+}
+
+.THEBRIDA_first_right .iem img {
+  position: absolute;
+  top: 7px;
+  left: 30px;
+}
+
+/* 鞋子展示 */
+.THEBRIDA_scend li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.THEBRIDA_scend li img {
+  width: 100%;
+}
+
+.THEBRIDA_scend li a {
+  color: #222;
+  font-size: 18px;
+}
+.THEBRIDA_scend li a:hover{
+  text-decoration: none;
+}
+.THEBRIDA_scend li p {
+  padding-top: 10px;
+  font-size: 13px;
+  color: #888;
+}
+
+.THEBRIDA_scend li i {
+  color: #ed1e24;
+}
+
+.THEBRIDA_scend li .img1 {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.THEBRIDA_scend li .img2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.THEBRIDA_scend li:hover>.img2 {
+  opacity: 0;
+}
