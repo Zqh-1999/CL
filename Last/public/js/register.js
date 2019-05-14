@@ -1,7 +1,7 @@
 $('.buttons').click(function () {
   $('.navg').hide()
 })
-$(".navg").delay(3000).hide(600);
+
 
 $('.buttons').click(function () {
   location.href = '/admin/login';
@@ -19,8 +19,10 @@ $('.btn-login').on('click', function () {
       if (data.code == '1201') {
         $('.navg').show()
       } else if (data.code == '1202') {
+        // 清空数据
         $('.login-wrap')[0].reset();
-
+        alert(data.message);
+        location.href = "/admin/DashBoaro";
       }
     }
   })

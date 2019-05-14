@@ -240,10 +240,10 @@
         <div class="bridal-good">
           <ul>
             <li>
-              <div><a href=""><img src="./images/Expend2.jpg" alt=""><span class="new">新娘</span></a></div>
+              <div><a href=""><img src="./images/Expend3.jpg" alt=""><span class="new">新娘</span></a></div>
             </li>
             <li>
-              <div><a href=""><img src="./images/Expend3.jpg" alt=""><span style="right: 400px;">发现新娘！</span></a></div>
+              <div><a href=""><img src="./images/Expend2.jpg" alt=""><span style="right: 400px;">发现新娘！</span></a></div>
             </li>
           </ul>
         </div>
@@ -700,13 +700,13 @@
     // 固定导航栏 变化
     var top1 = document.querySelector('.het-fixed');
     var topHeight = top1.offsetHeight;
-    console.log(topHeight)
     $(window).scroll(function () {
       var docScroll = $(document).scrollTop();
       if (docScroll >= topHeight) {
         $(".het-fixed").css({
           'height': '50px'
         });
+        $('.women, .man, .beauty').css('margin-top', '0px');
         $(".center-left").css("margin-top", '12px');
         $(".center-right").css("margin-top", '12px');
         $('.center-logo').css({
@@ -721,6 +721,7 @@
         $(".het-fixed").css({
           'height': '90px'
         });
+        $('.women, .man, .beauty').css('margin-top', '1px');
         $(".center-left").css("margin-top", '40px');
         $(".center-right").css("margin-top", '40px');
         $('.center-logo').css({
@@ -778,10 +779,7 @@
 
   </script>
 
-
   <script>
-    var flag = true
-    var flag1 = true
     function show1() {
       $('.women').slideDown()
       $('.women-good').show()
@@ -869,9 +867,6 @@
     })
   </script>
 
-  <script>
-
-  </script>
 
 </body>
 
