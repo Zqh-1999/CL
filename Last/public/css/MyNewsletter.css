@@ -1,0 +1,92 @@
+.wrap {
+    float: right;
+    width: 854px;
+    height: 163px;
+}
+
+.wrapper-grid1 {
+
+    position: relative;
+    width: 824px;
+    height: 50px;
+}
+
+.wrapper-grid1 h2 {
+    width: 115px;
+    height: 25px;
+    padding-right: 25px;
+    font-size: 18px;
+    margin: 0 0 25px 0;
+    color: #000001;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-family: 'Frutiger', Helvetica, Arial, sans-serif;
+}
+
+.order-center {
+    width: 824px;
+    height: 30px;
+}
+
+.order-center>p{
+    text-indent: 2em;
+    font-size: 14px;
+    font-family: 'Frutiger',Helvetica,Arial,sans-serif;
+    line-height: 1.4;
+}
+.order-center>p>a{
+    text-decoration: underline;
+}
+
+.checkbox-group-left {
+    width: 863px;
+    height: 18px;
+    margin: 15px 0px;
+}
+
+.input-box2 {
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.subscr-wrapper {
+    float: left;
+    width: 810px;
+    height: 18px;
+}
+
+.subscr-wrapper>p {
+    color: #888;
+    vertical-align: inherit;
+    font-size: 14px;
+    font-family: 'Frutiger', Helvetica, Arial, sans-serif;
+
+}
+
+.subscr-wrapper>p>a {
+    color: #888;
+    text-decoration: underline;
+}
+
+.form-buttons>.savebtn {
+    /* float: right; */
+    position: relative;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    padding: 11px 30px 8px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    background: #F3F3F3;
+    color: #888;
+    font-family: "Frutiger";
+    box-shadow: 0 2px 0 0 #DDD;
+    margin-left: 30px;
+}

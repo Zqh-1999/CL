@@ -1,4 +1,5 @@
 // 引入mysql
+
 const mysql = require("mysql");
 
 const connection = mysql.createConnection({
@@ -6,7 +7,7 @@ const connection = mysql.createConnection({
     port: 3306,
     user: "root",
     password: "123456",
-    database: "pullradish"
+    database: "PullRadish"
 })
 
 // 暴露
