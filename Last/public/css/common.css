@@ -195,6 +195,9 @@
   border: 1px solid #EEEEEE;
 }
 
+.left-nav:hover{
+  box-shadow: 2px 2px 0px 0px #EEEEEE;
+}
 
 .left-nav picture {
   position: relative;
