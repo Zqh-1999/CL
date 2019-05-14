@@ -26,7 +26,7 @@
     /* border: 1px solid red; */
 }
 
-.content-centre-left { 
+.content-centre-left {
     float: left;
     width: 865px;
     height: 809px;
@@ -102,6 +102,10 @@
     left: 70px;
 }
 
+#form-group {
+    margin-bottom: 35px;
+}
+
 .form-group {
     width: 824px;
     height: 38px;
@@ -112,9 +116,11 @@
     width: 863px;
     height: 38px;
 }
-.input-text:hover{
-border-color: #000;
+
+.input-text:hover {
+    border-color: #000;
 }
+
 .input-box input {
     width: 100%;
     border: 1px solid #ededed;
@@ -179,12 +185,6 @@ border-color: #000;
     text-decoration: underline;
 }
 
-.verif {
-    width: 863px;
-    height: 200px;
-    border: 1px solid red;
-    margin-bottom: 20px;
-}
 
 .form-buttons>.savebtn {
     float: right;
