@@ -3,6 +3,7 @@
   display: block;
   clear: both;
 }
+
 /* 左 */
 .het-fixed {
   position: fixed;
@@ -26,7 +27,7 @@
 
 .dl-jm {
   margin-top: 10px;
-  margin-left: 40px;  
+  margin-left: 40px;
 }
 
 .dl-jm li {
@@ -40,12 +41,14 @@
 .dl-jm li:nth-child(2) {
   position: relative;
 }
+
 .dl-jm li:nth-child(2) a {
   position: absolute;
-  z-index:1000;
+  z-index: 1000;
   width: 100px;
   overflow: hidden;
 }
+
 .dl-jm li span {
   color: rgb(95, 91, 91);
 }
@@ -58,7 +61,7 @@
   transition: all 0.6s ease
 }
 
-.hover-help:hover .fa-caret-down{
+.hover-help:hover .fa-caret-down {
   transform: rotate(-178deg);
 }
 
@@ -108,7 +111,7 @@
   margin-top: 40px;
 }
 
-.center-left ul li{
+.center-left ul li {
   float: left;
   padding: 0 14px;
 }
@@ -131,7 +134,7 @@
   margin-top: 40px;
 }
 
-.center-right ul li{
+.center-right ul li {
   float: left;
   padding: 0 12px;
 }
@@ -147,6 +150,7 @@
   float: left;
   margin-left: 15px;
 }
+
 /* 头部end */
 .THEBRIDA {
   width: 90%;
@@ -154,6 +158,7 @@
   height: 65px;
   padding-top: 50px;
 }
+
 /* 左 */
 .THEBRIDA_first_left {
   width: 50%;
@@ -164,7 +169,7 @@
 .THEBRIDA_first_left>ul>li {
   float: left;
   padding: 10px;
-cursor:pointer;
+  cursor: pointer;
 }
 
 .THEBRIDA_first_left>ul>li:nth-child(1) i {
@@ -182,7 +187,8 @@ cursor:pointer;
   position: relative;
   padding: 0px;
 }
-.classify>i{
+
+.classify>i {
   display: block;
   padding-right: 30px;
   padding-left: 10px;
@@ -190,7 +196,8 @@ cursor:pointer;
   padding-bottom: 10px;
   background-color: white;
 }
-.classify:hover>i{
+
+.classify:hover>i {
   border: 1px solid #ccc;
   border-bottom: none;
   box-sizing: border-box;
@@ -198,13 +205,15 @@ cursor:pointer;
   z-index: 4;
 }
 
-.classify i ul li i{
+.classify ul li a {
   font-size: 14px;
   letter-spacing: 1.56px;
   font-weight: normal;
-  cursor:pointer;
+  cursor: pointer;
+  color: black;
 }
-.THEBRIDA_first_left .fist{
+
+.THEBRIDA_first_left .fist {
   display: none;
   padding: 15px;
   position: absolute;
@@ -215,19 +224,24 @@ cursor:pointer;
   background-color: white;
   z-index: 1;
 }
-.THEBRIDA_first_left .fist li{
+
+.THEBRIDA_first_left .fist li {
   font-size: 14px;
   letter-spacing: 1.56px;
   font-weight: normal;
   color: #000;
 }
-.THEBRIDA_first_left .fist li i:hover{
+
+.THEBRIDA_first_left .fist li a:hover {
   color: red;
+  text-decoration: none;
 }
-.classify:hover .fist{
+
+.classify:hover .fist {
   display: block;
 }
-.classify span{
+
+.classify span {
   border-top: 5px solid black;
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
@@ -246,17 +260,24 @@ cursor:pointer;
 .THEBRIDA_first_right {
   float: right;
   height: 65px;
-  
+
 }
-.THEBRIDA_first_right li{
+
+.THEBRIDA_first_right li {
   float: left;
-cursor:pointer;
+  cursor: pointer;
 }
-.THEBRIDA_first_right .classify{
- position: relative;
- width: 100px;
+
+.THEBRIDA_first_right .classify {
+  position: relative;
+  width: 100px;
 }
-.THEBRIDA_first_right .classify span{
+
+.THEBRIDA_first_right .measure li {
+  padding-right: 80px;
+}
+
+.THEBRIDA_first_right .classify span {
   border-top: 5px solid black;
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
@@ -266,7 +287,8 @@ cursor:pointer;
   top: 18px;
   right: 22px;
 }
-.THEBRIDA_first_right .second{
+
+.THEBRIDA_first_right .second {
   display: none;
   padding-left: 20px;
   position: absolute;
@@ -277,57 +299,70 @@ cursor:pointer;
   z-index: 3;
   background-color: white;
 }
-.THEBRIDA_first_right .second li{
+
+.THEBRIDA_first_right .second li {
   width: 50px;
-  padding-right: 82px;
   float: left;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.THEBRIDA_first_right .second p{
+
+.THEBRIDA_first_right .second p {
   display: block;
   width: 50px;
-  height: 50px;
 }
-.THEBRIDA_first_right .second a{
+
+.THEBRIDA_first_right .second a {
   color: black;
 }
-.THEBRIDA_first_right .second a:hover{
-    color: red;
-    text-decoration:none
+
+.THEBRIDA_first_right .second a:hover {
+  color: red;
+  text-decoration: none
 }
-.THEBRIDA_first_right li:hover .second{
+
+.THEBRIDA_first_right li:hover .second {
   display: block;
 }
-.height .second li{
+
+.height .second li {
   width: 100%;
 }
-.height .second i{
-  display: inline-block; 
+
+.height .second i {
+  display: inline-block;
 }
-.height .second i:hover{
+
+.height .second i:hover {
   color: red;
 }
-.THEBRIDA_first_right .iem img{
-position: absolute;
-top: 7px;
-left: 30px;
+
+.THEBRIDA_first_right .iem img {
+  position: absolute;
+  top: 7px;
+  left: 30px;
 }
-/* 鞋款介绍 */
+
+/* 鞋子展示 */
 .THEBRIDA_scend li {
   float: left;
   width: 25%;
   text-align: center;
+  cursor: pointer;
   position: relative;
 }
-.THEBRIDA_scend li img{
+
+.THEBRIDA_scend li img {
   width: 100%;
 }
+
 .THEBRIDA_scend li a {
   color: #222;
   font-size: 18px;
 }
-
+.THEBRIDA_scend li a:hover{
+  text-decoration: none;
+}
 .THEBRIDA_scend li p {
   padding-top: 10px;
   font-size: 13px;
@@ -337,12 +372,20 @@ left: 30px;
 .THEBRIDA_scend li i {
   color: #ed1e24;
 }
-.THEBRIDA_scend li .scend-now{
+
+.THEBRIDA_scend li .img1 {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.THEBRIDA_scend li .img2 {
   position: absolute;
   top: 0px;
   left: 0px;
-  display: none;
+  opacity: 1;
+  transition: all 0.5s;
 }
-.THEBRIDA_scend li:hover>.scend-now{
-  display: block;
+
+.THEBRIDA_scend li:hover>.img2 {
+  opacity: 0;
 }
