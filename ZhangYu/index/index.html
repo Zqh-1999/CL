@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Christian Louboutin</title>
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/index.css">
@@ -204,6 +204,49 @@
             </li>
           </ul>
         </div>
+        <!-- 新娘 -->
+        <div class="bridal">
+          <div class="beauty-total">
+            <ol>
+              <li></li>
+              <li><a href="">新来港定居人士</a></li>
+              <li><a href="">Loubigraffiti</a></li>
+              <li><a href="">Goldomania</a></li>
+              <li><a href="">婚礼现场</a></li>
+            </ol>
+          </div>
+          <div class="bridal-part">
+            <ul>
+              <li><a href="">新娘</a></li>
+              <li></li>
+              <li><a href="">独家我们的</a></li>
+            </ul>
+            <ul>
+              <li><a href="">新郎</a></li>
+              <li></li>
+              <li><a href="">独家我们的</a></li>
+            </ul>
+            <ul>
+              <li><a href="">宝宝</a></li>
+              <li></li>
+            </ul>
+            <ul>
+              <li><a href="">就像这个时候</a></li>
+              <li></li>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bridal-good">
+          <ul>
+            <li>
+              <div><a href=""><img src="./images/Expend2.jpg" alt=""><span class="new">新娘</span></a></div>
+            </li>
+            <li>
+              <div><a href=""><img src="./images/Expend3.jpg" alt=""><span style="right: 400px;">发现新娘！</span></a></div>
+            </li>
+          </ul>
+        </div>
         <!-- 美妆 -->
         <div class="beauty">
           <div class="beauty-total">
@@ -252,7 +295,7 @@
               <li><a href="">比基尼Questa Sera</a></li>
               <li><a href="">Tornade金发女郎</a></li>
               <li><a href="">在天堂遇到麻烦</a></li>
-                </a></li>
+              </a></li>
             </ul>
           </div>
         </div>
@@ -262,7 +305,8 @@
               <div><a href=""><img src="./images/Expand.jpeg" alt=""><span class="new">上新</span></a></div>
             </li>
             <li>
-              <div><a href=""><img src="./images/Expand2.jpeg" alt=""><span style="right: 400px;">发现Loubigraffiti</span></a></div>
+              <div><a href=""><img src="./images/Expand2.jpeg" alt=""><span
+                    style="right: 400px;">发现Loubigraffiti</span></a></div>
             </li>
           </ul>
         </div>
@@ -762,6 +806,14 @@
       $('.beauty').slideUp(90)
       $('.beauty-good').hide()
     }
+    function show4() {
+      $('.bridal').slideDown()
+      $('.bridal-good').show()
+    }
+    function hide4() {
+      $('.bridal').slideUp(90)
+      $('.bridal-good').hide()
+    }
     // 头部下拉导航 women 鼠标移入对应的tab栏让对应的下拉显示 让所有的下拉隐藏
     $('.center-left li:nth-child(1) a').mouseenter(function () {
       show1()
@@ -778,6 +830,7 @@
       show2()
       hide1()
       hide3()
+      hide4()
     })
     // 鼠标移出下拉 隐藏
     $('.topLeft-list').mouseleave(function () {
@@ -789,10 +842,23 @@
       show3()
       hide1()
       hide2()
+      hide4()
     })
     // 鼠标移出下拉 隐藏
     $('.topLeft-list').mouseleave(function () {
       hide3()
+    })
+
+    // 头部下拉导航 man 鼠标移入对应的tab栏让对应的下拉显示 让所有的下拉隐藏
+    $('.center-left li:nth-child(3) a').mouseenter(function () {
+      show4()
+      hide1()
+      hide2()
+      hide3()
+    })
+    // 鼠标移出下拉 隐藏
+    $('.topLeft-list').mouseleave(function () {
+      hide4()
     })
   </script>
 

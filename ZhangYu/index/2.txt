@@ -1,4 +1,4 @@
-.beauty {
+.bridal {
   display: none;
   width: 100%;
   height: 304px;
@@ -6,17 +6,17 @@
   padding: 25px 520px;
 }
 
-.beauty-total {
+.bridal-total {
   float: left;
   margin-right: 40px;
 }
 
-.beauty-total {
+.bridal-total {
   margin-right: 74px;
   margin-top: 30px;
 }
 
-.beauty-total li {
+.bridal-total li {
   padding-bottom: 10px;
   font-size: 12px;
   font-weight: 700;
@@ -24,16 +24,16 @@
   letter-spacing: 0.5px;
 }
 
-.beauty a {
+.bridal a {
   color: #323232;
   transition: all 0.6s;
 }
 
-.beauty a:hover {
+.bridal a:hover {
   color: #e60b0b;
 }
 
-.beauty-total li:nth-child(1) {
+.bridal-total li:nth-child(1) {
   position: relative;
   top: -10px;
   width: 30px;
@@ -44,32 +44,32 @@
   padding: 0px;
 }
 
-.beauty-part{
+.bridal-part{
   float: left;
 }
 
-.beauty-part ul {
+.bridal-part ul {
   float: left;
   width: 120px;
   margin-right: 40px;
 }
 
-.beauty-part ul li {
+.bridal-part ul li {
   padding-bottom: 8px;
 }
 
-.beauty-part ul li:nth-child(1) {
+.bridal-part ul li:nth-child(1) {
   margin: 1em 0;
   margin-bottom: 14px;
   padding: 0px;
 }
 
-.beauty-part ul li:nth-child(1) a {
+.bridal-part ul li:nth-child(1) a {
  color: #888;
  font-weight: 700;
 }
 
-.beauty-part ul li:nth-child(2) {
+.bridal-part ul li:nth-child(2) {
   width: 100%;
   height: 1px;
   background-color: #DDD;
@@ -77,7 +77,7 @@
   padding: 0px;
 }
 
-.beauty-good {
+.bridal-good {
   display: none;
   width: 100%;
   height: 181px;
@@ -85,7 +85,7 @@
   background-color: #F7F7F7;
 }
 
-.beauty-good li {
+.bridal-good li {
   position: relative;
   float: left;
   width: 50%;
@@ -93,25 +93,25 @@
   overflow: hidden;
 }
 
-.beauty-good li:nth-child(1) img{
+.bridal-good li:nth-child(1) img{
   float: right;
 }
 
-.beauty-good img {
+.bridal-good img {
   height: 180px;
   transition: all 0.5s
 }
 
-.beauty-good img:hover {
+.bridal-good img:hover {
   height: 185px;
 }
 
-.beauty-good span {
+.bridal-good span {
   position: absolute;
   top: 80px;
   right: 196px;
 }
 
-.beauty-good {
+.bridal-good {
   font-weight: 700;
 }
