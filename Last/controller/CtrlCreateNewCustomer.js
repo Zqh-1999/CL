@@ -7,11 +7,11 @@ module.exports.CreateNewCustomer = (req, res) => {
   }
 
   module.exports.BEUserAdd = (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
     let sqlData = [null, req.body.prefix, req.body.firstname,req.body.lastname,req.body.prefox,req.body.email, req.body.password];
-    console.log(sqlData);
+    // console.log(sqlData);
     let sql = 'insert into users values (?,?,?,?,?,?,?);'
-    console.log(req.body);
+    // console.log(req.body);
     conn.query(sql, sqlData, (error, results) => {
       if (error) {
         return console.log(error);
