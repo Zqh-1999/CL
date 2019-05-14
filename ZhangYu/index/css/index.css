@@ -85,9 +85,8 @@
 /* 中 */
 .het-center {
   float: left;
-  position: absolute;
-  top: 10px;
-  left: 720px;
+  padding-top: 10px;
+  margin-left: 27%;
   width: 28%;
 }
 
@@ -154,6 +153,7 @@
   height: 304px;
   background-color: white;
   padding: 25px 520px;
+  margin-top: 1px;
 }
 
 .women-total {
@@ -274,6 +274,7 @@
   height: 304px;
   background-color: white;
   padding: 25px 520px;
+  margin-top: 1px;
 }
 
 
@@ -387,7 +388,159 @@
   font-weight: 700;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 美妆 */
+.beauty {
+  display: none;
+  width: 100%;
+  height: 304px;
+  background-color: white;
+  padding: 25px 520px;
+  margin-top: 1px;
+}
+
+.beauty-total {
+  float: left;
+  margin-right: 40px;
+}
+
+.beauty-total {
+  margin-right: 74px;
+  margin-top: 30px;
+}
+
+.beauty-total li {
+  padding-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+}
+
+.beauty a {
+  color: #323232;
+  transition: all 0.5s;
+}
+
+.beauty a:hover {
+  color: #e60b0b;
+}
+
+.beauty-total li:nth-child(1) {
+  position: relative;
+  top: -10px;
+  width: 30px;
+  height: 1px;
+  left: 0;
+  background-color: #DDD;
+  display: inline-block;
+  padding: 0px;
+}
+
+.beauty-part{
+  float: left;
+}
+
+.beauty-part ul {
+  float: left;
+  width: 120px;
+  margin-right: 40px;
+}
+
+.beauty-part ul li {
+  padding-bottom: 8px;
+}
+
+.beauty-part ul li:nth-child(1) {
+  margin: 1em 0;
+  margin-bottom: 14px;
+  padding: 0px;
+}
+
+.beauty-part ul li:nth-child(1) a {
+ color: #888;
+ font-weight: 700;
+}
+
+.beauty-part ul li:nth-child(2) {
+  width: 100%;
+  height: 1px;
+  background-color: #DDD;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.beauty-good {
+  display: none;
+  width: 100%;
+  height: 181px;
+  border-top: 1px solid #E1E1E1;
+  background-color: #F7F7F7;
+}
+
+.beauty-good li {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.beauty-good li:nth-child(1) img{
+  float: right;
+}
+
+.beauty-good img {
+  height: 180px;
+  transition: all 0.5s
+}
+
+.beauty-good img:hover {
+  height: 185px;
+}
+
+.beauty-good span {
+  position: absolute;
+  top: 80px;
+  right: 196px;
+}
+
+.beauty-good {
+  font-weight: 700;
+}
+
+
 /* 头部end */
+
+
+
+
+
+
+
+
+
 
 
 
