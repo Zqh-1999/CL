@@ -334,8 +334,8 @@
         <div class="center-right">
           <ul>
             <li><a href="">美妆</a></li>
-            <li><a href="">LOUBOUTINWORLD</a></li>
-            <li><a href="">商店</a></li>
+            <li style="font-weight: 600"><a href="">LOUBOUTINWORLD</a></li>
+            <li style="font-weight: 600"><a href="">商店</a></li>
           </ul>
         </div>
       </div>
@@ -858,6 +858,13 @@
     })
     // 鼠标移出下拉 隐藏
     $('.topLeft-list').mouseleave(function () {
+      hide4()
+    })
+
+    $('.center-right li:nth-child(2) a').mouseenter(function () {
+      hide1()
+      hide2()
+      hide3()
       hide4()
     })
   </script>
