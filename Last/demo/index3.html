@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #cover {
+            height: 250px;
+            width: 300px;
+            margin: 100px auto;
+            display: none;
+            z-index: 1000;
+            background-color: #fff;
+            border: #fff;
+        }
+        #cover h2,p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="javascript:;" id="btn">按钮</a>
+    <div id="cover">
+        <h2>您现在已退出</h2>
+        <p>您已退出,并将在5秒重定向到我们的主页</p>
+    </div>
+    <script>
+        var btn = document.querySelector("#btn");
+        btn.addEventListener('click', function () {
+            var cover = document.getElementById('cover');
+            cover.style.display = 'block';
+            setTimeout(function () {
+                cover.style.display = 'none';
+                location.href = "./index.html"
+            }, 5000)
+        })
+    </script>
+</body>
+
+</html>

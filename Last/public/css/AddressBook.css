@@ -1,7 +1,8 @@
 /* 中间部分 */
-#content{
+#content {
     height: 950px;
 }
+
 /* 右边 start */
 .newadd-right {
     float: right;
@@ -17,7 +18,7 @@
 }
 
 .wrapper-grid1 h2 {
-    width: 80px;
+    width: 120px;
     height: 25px;
     padding-right: 25px;
     font-size: 18px;
@@ -124,9 +125,10 @@
     font-style: italic;
     color: #888;
     font-size: 13px;
-    font-family: 'Frutiger',Helvetica,Arial,sans-serif;
+    font-family: 'Frutiger', Helvetica, Arial, sans-serif;
 }
-.form-buttons>.savebtn{
+
+.form-buttons>.savebtn {
     float: right;
     position: relative;
     box-sizing: border-box;
@@ -144,4 +146,9 @@
     color: #888;
     font-family: "Frutiger";
     box-shadow: 0 2px 0 0 #DDD;
+}
+
+/* 遮罩层 */
+#masklays {
+    height: 1000px;
 }
