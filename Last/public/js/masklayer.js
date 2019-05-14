@@ -6,8 +6,8 @@ exitbtn.addEventListener("click", function () {
     // 获取遮罩层
     var masklayer = document.querySelector(".masklayer");
     masklayer.style.display = "block";
-    // setTimeout(function () {
-    //     masklayer.style.display = "none";
-    //     location.href = ""
-    // }, 5000)
+    setTimeout(function () {
+        masklayer.style.display = "none";
+        location.href = "/"
+    }, 5000)
 })

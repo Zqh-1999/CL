@@ -44,7 +44,7 @@
   overflow: hidden;
 }
 
-.dl-jm li span {
+.dl-jm li>a {
   color: rgb(95, 91, 91);
 }
 
