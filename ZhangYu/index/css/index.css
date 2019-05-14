@@ -85,9 +85,8 @@
 /* 中 */
 .het-center {
   float: left;
-  position: absolute;
-  top: 10px;
-  left: 720px;
+  padding-top: 10px;
+  margin-left: 27%;
   width: 28%;
 }
 
@@ -146,15 +145,17 @@
   position: absolute;
   top: 89px;
   width: 100%;
-  display: none;
 }
 
 .women {
+  display: none;
   width: 100%;
   height: 304px;
   background-color: white;
   padding: 25px 520px;
+  margin-top: 1px;
 }
+
 .women-total {
   float: left;
   margin-right: 40px;
@@ -227,6 +228,7 @@
 }
 
 .women-good {
+  display: none;
   width: 100%;
   height: 181px;
   border-top: 1px solid #E1E1E1;
@@ -265,8 +267,403 @@
 }
 
 
+/* 男士 */
+.man {
+  display: none;
+  width: 100%;
+  height: 304px;
+  background-color: white;
+  padding: 25px 520px;
+  margin-top: 1px;
+}
+
+
+.man-total {
+  float: left;
+  margin-right: 40px;
+}
+
+.man-total {
+  margin-right: 74px;
+  margin-top: 30px;
+}
+
+.man-total li {
+  padding-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+}
+
+.man a {
+  color: #323232;
+  transition: all 0.6s;
+}
+
+.man a:hover {
+  color: #e60b0b;
+}
+
+.man-total li:nth-child(1) {
+  position: relative;
+  top: -10px;
+  width: 30px;
+  height: 1px;
+  left: 0;
+  background-color: #DDD;
+  display: inline-block;
+  padding: 0px;
+}
+
+.man-part{
+  float: left;
+}
+
+.man-part ul {
+  float: left;
+  width: 120px;
+  margin-right: 40px;
+}
+
+.man-part ul li {
+  padding-bottom: 8px;
+}
+
+.man-part ul li:nth-child(1) {
+  margin: 1em 0;
+  margin-bottom: 14px;
+  padding: 0px;
+}
+
+.man-part ul li:nth-child(1) a {
+ color: #888;
+ font-weight: 700;
+}
+
+.man-part ul li:nth-child(2) {
+  width: 100%;
+  height: 1px;
+  background-color: #DDD;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.man-good {
+  display: none;
+  width: 100%;
+  height: 181px;
+  border-top: 1px solid #E1E1E1;
+  background-color: #F7F7F7;
+}
+
+.man-good li {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.man-good li:nth-child(1) img{
+  float: right;
+}
+
+.man-good img {
+  height: 180px;
+  transition: all 0.5s
+}
+
+.man-good img:hover {
+  height: 185px;
+}
+
+.man-good span {
+  position: absolute;
+  top: 80px;
+  right: 196px;
+}
+
+.man-good {
+  font-weight: 700;
+}
+
+/* 新娘 */
+.bridal {
+  display: none;
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  padding: 25px 520px;
+}
+
+.bridal-total {
+  float: left;
+  margin-right: 40px;
+}
+
+.bridal-total {
+  margin-right: 74px;
+  margin-top: 30px;
+}
+
+.bridal-total li {
+  padding-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+}
+
+.bridal a {
+  color: #323232;
+  transition: all 0.6s;
+}
+
+.bridal a:hover {
+  color: #e60b0b;
+}
+
+.bridal-total li:nth-child(1) {
+  position: relative;
+  top: -10px;
+  width: 30px;
+  height: 1px;
+  left: 0;
+  background-color: #DDD;
+  display: inline-block;
+  padding: 0px;
+}
+
+.bridal-part{
+  float: left;
+}
+
+.bridal-part ul {
+  float: left;
+  width: 120px;
+  margin-right: 40px;
+}
+
+.bridal-part ul li {
+  padding-bottom: 8px;
+}
+
+.bridal-part ul li:nth-child(1) {
+  margin: 1em 0;
+  margin-bottom: 14px;
+  padding: 0px;
+}
+
+.bridal-part ul li:nth-child(1) a {
+ color: #888;
+ font-weight: 700;
+}
+
+.bridal-part ul li:nth-child(2) {
+  width: 100%;
+  height: 1px;
+  background-color: #DDD;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.bridal-good {
+  display: none;
+  width: 100%;
+  height: 181px;
+  border-top: 1px solid #E1E1E1;
+  background-color: #F7F7F7;
+}
+
+.bridal-good li {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.bridal-good li:nth-child(1) img{
+  float: right;
+}
+
+.bridal-good img {
+  height: 180px;
+  transition: all 0.5s
+}
+
+.bridal-good img:hover {
+  height: 185px;
+}
+
+.bridal-good span {
+  position: absolute;
+  top: 80px;
+  right: 196px;
+}
+
+.bridal-good {
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 美妆 */
+.beauty {
+  display: none;
+  width: 100%;
+  height: 304px;
+  background-color: white;
+  padding: 25px 520px;
+  margin-top: 1px;
+}
+
+.beauty-total {
+  float: left;
+  margin-right: 40px;
+}
+
+.beauty-total {
+  margin-right: 74px;
+  margin-top: 30px;
+}
+
+.beauty-total li {
+  padding-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+}
+
+.beauty a {
+  color: #323232;
+  transition: all 0.5s;
+}
+
+.beauty a:hover {
+  color: #e60b0b;
+}
+
+.beauty-total li:nth-child(1) {
+  position: relative;
+  top: -10px;
+  width: 30px;
+  height: 1px;
+  left: 0;
+  background-color: #DDD;
+  display: inline-block;
+  padding: 0px;
+}
+
+.beauty-part{
+  float: left;
+}
+
+.beauty-part ul {
+  float: left;
+  width: 120px;
+  margin-right: 40px;
+}
+
+.beauty-part ul li {
+  padding-bottom: 8px;
+}
+
+.beauty-part ul li:nth-child(1) {
+  margin: 1em 0;
+  margin-bottom: 14px;
+  padding: 0px;
+}
+
+.beauty-part ul li:nth-child(1) a {
+ color: #888;
+ font-weight: 700;
+}
+
+.beauty-part ul li:nth-child(2) {
+  width: 100%;
+  height: 1px;
+  background-color: #DDD;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.beauty-good {
+  display: none;
+  width: 100%;
+  height: 181px;
+  border-top: 1px solid #E1E1E1;
+  background-color: #F7F7F7;
+}
+
+.beauty-good li {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.beauty-good li:nth-child(1) img{
+  float: right;
+}
+
+.beauty-good img {
+  height: 180px;
+  transition: all 0.5s
+}
+
+.beauty-good img:hover {
+  height: 185px;
+}
+
+.beauty-good span {
+  position: absolute;
+  top: 80px;
+  right: 196px;
+}
+
+.beauty-good {
+  font-weight: 700;
+}
+
+.center-right li:nth-child(2) a:hover {
+  color: #e60b0b
+}
+.center-right li:nth-child(3) a:hover {
+  color: #e60b0b
+}
 
 /* 头部end */
+
+
+
+
+
+
+
+
+
 
 
 

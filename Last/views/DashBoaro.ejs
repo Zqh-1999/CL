@@ -16,7 +16,7 @@
   <%- include('./layouts/header.ejs')%>
 
   <!-- 中间部分 top -->
-  <div class="content clearfix" >
+  <div class="content clearfix">
     <!-- 标题 -->
     <div class="page-header">
       <h1>你好，Dan Xu！</h1>
@@ -70,16 +70,20 @@
           <button class="aditbtn">编辑</button>
         </div>
       </div>
-
     </div>
-  </div>
+    
+    <!-- 遮罩层 start -->
+    <%- include('./layouts/masklayer.ejs')%>
 
+  </div>
 
   <!-- 底部 -->
   <%- include('./layouts/footer.ejs')%>
 
   <!-- 底部链接 -->
   <%- include('./layouts/footerLink.ejs')%>
+
+
 </body>
 
 </html>
