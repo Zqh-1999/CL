@@ -49,6 +49,31 @@ module.exports.EyeCollection = (req, res) => {
     res.render('EyeCollection');
 }
 
+// 5.Groom页面
+module.exports.Groom = (req, res) => {
+    res.render('Groom');
+}
+
+// 6.Lips页面
+module.exports.Lips = (req, res) => {
+    res.render('Lips');
+}
+
+// 7.Nails页面
+module.exports.Nails = (req, res) => {
+    res.render('Nails');
+}
+
+// 8.Parfums页面
+module.exports.Parfums = (req, res) => {
+    res.render('Parfums');
+}
+
+// 2.beauty页面
+module.exports.beauty = (req, res) => {
+    res.render('beauty');
+}
+
 // 2.beauty页面
 module.exports.beauty = (req, res) => {
     res.render('beauty');

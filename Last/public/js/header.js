@@ -120,38 +120,35 @@ $(function () {
     function show1() {
         $('.women').slideDown()
         $('.women-good').show()
+        $('.fa-search').css('color', '#333333')
     }
-
     function hide1() {
         $('.women').slideUp(90)
         $('.women-good').hide()
     }
-
     function show2() {
         $('.man').slideDown()
         $('.man-good').show()
+        $('.fa-search').css('color', '#333333')
     }
-
     function hide2() {
         $('.man').slideUp(90)
         $('.man-good').hide()
     }
-
     function show3() {
         $('.beauty').slideDown()
         $('.beauty-good').show()
+        $('.fa-search').css('color', '#333333')
     }
-
     function hide3() {
         $('.beauty').slideUp(90)
         $('.beauty-good').hide()
     }
-
     function show4() {
         $('.bridal').slideDown()
         $('.bridal-good').show()
+        $('.fa-search').css('color', '#333333')
     }
-
     function hide4() {
         $('.bridal').slideUp(90)
         $('.bridal-good').hide()
@@ -163,26 +160,26 @@ $(function () {
     function hide5() {
         $('.search').slideUp()
     }
-    var flag = false
+    
+    // 点击搜索按钮 显示隐藏
     $('.fa-search').click(function () {
-        if (!flag) {
+        if ($('.search').css('display') == 'none') {
             show5()
             hide1()
             hide2()
             hide3()
             hide4()
+            $('.search-con input').attr('placeholder', '搜 索')
+            $('.search-con input').val('')
             $('.fa-search').css('color', 'red')
-            flag = true
-        } else {
+        } else if ($('.search').css('display') == 'block') {
             hide5()
-            flag = false
             $('.fa-search').css('color', '#333333')
         }
     })
     $('.search-con button').click(function () {
         hide5()
         $('.fa-search').css('color', '#333333')
-        flag = false
     })
     $('.search-con input').click(function () {
         $('.search-con input').attr('placeholder', '')
@@ -248,7 +245,7 @@ $(function () {
         hide4()
     })
 
-
+    // 
     function poRandom(ele) {
         var timId;
         $(ele).mouseenter(function () {
@@ -271,5 +268,49 @@ $(function () {
     poRandom('.area li:nth-child(4)')
     poRandom('.area li:nth-child(5)')
     poRandom('.area li:nth-child(6)')
+
+    // logo转圈圈
+    function SearchAnim(opts) {
+        for (var i in SearchAnim.DEFAULTS) {
+            if (opts[i] === undefined) {
+                opts[i] = SearchAnim.DEFAULTS[i];
+            }
+        }
+        this.opts = opts;
+        this.timer = null;
+        this.elem = document.getElementById(opts.elemId);
+        this.startAnim();
+    }
+    SearchAnim.prototype.startAnim = function () {
+        this.stopAnim();
+        this.timer = setInterval(() => {
+            var startIndex = this.opts.startIndex;
+            if (startIndex == 360) {
+                this.opts.startIndex = 0;
+            }
+            this.elem.style.transform = "rotate(" + (startIndex) + "deg)";
+            this.opts.startIndex += 5;
+        }, this.opts.delay);
+        setTimeout(() => {
+            this.stopAnim();
+        }, this.opts.duration);
+    }
+    SearchAnim.prototype.stopAnim = function () {
+        if (this.timer != null) {
+            clearInterval(this.timer);
+        }
+    }
+    SearchAnim.DEFAULTS = {
+        duration: 6000000000,
+        delay: 200,
+        direction: true,
+        startIndex: 0,
+        endIndex: 360
+    }
+    new SearchAnim({
+        elemId: "wait-icon",
+        delay: 20,
+    });
+
 
 })

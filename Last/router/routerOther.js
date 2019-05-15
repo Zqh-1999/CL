@@ -36,8 +36,31 @@ router.get("/BRIDA", controller.BRIDA);
 // 4.EyeCollection 页面
 router.get("/EyeCollection", controller.EyeCollection);
 
-// 2.beauty 页面
-router.get("/beauty", controller.beauty);
+// 5.Groom 页面
+router.get("/Groom", controller.Groom);
+
+
+// 6.Lips 页面
+router.get("/Lips", controller.Lips);
+
+// 7.Nails 页面
+router.get("/Nails", controller.Nails);
+
+// 8.Parfums 页面
+router.get("/Parfums", controller.Parfums);
+
+// 5.Groom 页面
+router.get("/Groom", controller.Groom);
+
+// 5.Groom 页面
+router.get("/Groom", controller.Groom);
+
+// 5.Groom 页面
+router.get("/Groom", controller.Groom);
+
+// 5.Groom 页面
+router.get("/Groom", controller.Groom);
+
 
 // 暴露
 module.exports = router;
