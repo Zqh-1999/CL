@@ -74,9 +74,9 @@ module.exports.LipsRouge = (req, res) => {
     res.render('LipsRouge');
 }
 
-// 2.beauty页面
-module.exports.beauty = (req, res) => {
-    res.render('beauty');
+// 10.LipsSliky页面
+module.exports.LipsSliky = (req, res) => {
+    res.render('LipsSliky');
 }
 
 // 2.beauty页面
