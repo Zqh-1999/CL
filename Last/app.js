@@ -76,6 +76,9 @@ const routerMyWishlist = require('./router/routerMyWishlist')
 app.use(routerMyWishlist)
 
 
+
+
+
 //设置静态资源目录
 app.use(express.static('./public'));
 
