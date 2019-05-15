@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/search.css">
   <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -344,10 +345,17 @@
       <div class="right">
         <div class="right-ico">
           <ul>
-            <li><a href=""><i class="fa fa-search fa-2x"></i></a></li>
+            <li><a href="javascript:;"><i class="fa fa-search fa-2x"></i></a></li>
             <li><a href=""><i class="fa fa-heart-o fa-2x"></i></a></li>
             <li><a href=""><i class="fa fa-shopping-cart fa-2x"></i></a></li>
           </ul>
+        </div>
+      </div>
+      <!-- 搜索 -->
+      <div class="search">
+        <div class="search-con">
+          <input type="text" placeholder="搜 索" title="搜索">
+          <button>×</button>
         </div>
       </div>
     </div>
@@ -668,7 +676,8 @@
         </div>
         <div class="np-right">
           <ul>
-            <li><a href=""><i></i><span>Mainland China</span></a></li>
+            <li><a href="javasirpt:;"><i></i><span data-toggle="modal" data-target="#myModal">Mainland China</span></a>
+            </li>
             <li><a href=""><i></i><span>Chinese</span></a></li>
           </ul>
         </div>
@@ -679,15 +688,15 @@
 
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="./js/index.js"></script>
+  <script src="./js/search.js"></script>
   <script>
-    // 底部input
+    // 底部input  无关紧要
     $('.contact input').focus(function () {
       $(this).attr('placeholder', '')
     })
 
 
-    // 头部hover帮助
+    // 头部hover帮助导航栏
     $('.help-a').mouseenter(function () {
       $('.help').show()
       $('.fa-caret-down').css('transform', 'rotate(-178deg)')
@@ -697,19 +706,26 @@
       $('.fa-caret-down').css('transform', '')
     })
 
-    // 固定导航栏 变化
+    // 下面是获取网页滚动出去多少 而有的一些指令
     var top1 = document.querySelector('.het-fixed');
     var topHeight = top1.offsetHeight;
     $(window).scroll(function () {
       var docScroll = $(document).scrollTop();
       if (docScroll >= topHeight) {
+        // 固定导航栏的高度变化
         $(".het-fixed").css({
           'height': '50px'
         });
+        // 搜索的高度变化
+        $('.search').css('top', '49px')
+        // 下拉高度变化
         $('.women, .man, .beauty').css('margin-top', '0px');
+        // 图标左右的外边距变化
         $(".center-left").css("margin-top", '12px');
         $(".center-right").css("margin-top", '12px');
+        // 图标的变化
         $('.center-logo').css({
+          'transition': 'all 0.5s',
           'width': '50px',
           'height': '50px',
           'lineHeight': '50px'
@@ -718,12 +734,24 @@
         $('.center-logo img:nth-child(2)').show();
         $('.topLeft-list').css('top', '49px')
       } else {
+        // 固定导航栏的高度变化
         $(".het-fixed").css({
           'height': '90px'
         });
+        // 搜索的高度变化
+        $('.search').css('top', '89px')
+        // 下拉高度变化
         $('.women, .man, .beauty').css('margin-top', '1px');
-        $(".center-left").css("margin-top", '40px');
-        $(".center-right").css("margin-top", '40px');
+        // 图标左右的外边距变化
+        $(".center-left").css({
+          "margin-top": '40px',
+          'transition': 'all 0.5s'
+        });
+        $(".center-right").css({
+          "margin-top": '40px',
+          'transition': 'all 0.5s'
+        });
+        // 图标的变化
         $('.center-logo').css({
           'width': '100px',
           'height': '100px',
@@ -733,6 +761,7 @@
         $('.center-logo img:nth-child(2)').hide();
         $('.topLeft-list').css('top', '89px')
       }
+      // 这是中间的 网页滚动出去一定高度时 做出的动画
       if (docScroll >= 300) {
         $('.up1').css({
           'top': '0px',
@@ -780,6 +809,7 @@
   </script>
 
   <script>
+    // 这是头部导航栏的下拉
     function show1() {
       $('.women').slideDown()
       $('.women-good').show()
@@ -812,11 +842,14 @@
       $('.bridal').slideUp(90)
       $('.bridal-good').hide()
     }
+
     // 头部下拉导航 women 鼠标移入对应的tab栏让对应的下拉显示 让所有的下拉隐藏
     $('.center-left li:nth-child(1) a').mouseenter(function () {
       show1()
       hide2()
       hide3()
+      hide4()
+      hide5()
     })
     // 鼠标移出下拉 隐藏
     $('.topLeft-list').mouseleave(function () {
@@ -829,6 +862,7 @@
       hide1()
       hide3()
       hide4()
+      hide5()
     })
     // 鼠标移出下拉 隐藏
     $('.topLeft-list').mouseleave(function () {
@@ -841,6 +875,7 @@
       hide1()
       hide2()
       hide4()
+      hide5()
     })
     // 鼠标移出下拉 隐藏
     $('.topLeft-list').mouseleave(function () {
@@ -853,6 +888,7 @@
       hide1()
       hide2()
       hide3()
+      hide5()
     })
     // 鼠标移出下拉 隐藏
     $('.topLeft-list').mouseleave(function () {
@@ -867,7 +903,64 @@
     })
   </script>
 
-
+  <!-- 这是底部语言的选择模板 -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document" style="width: 820px;">
+      <div class="modal-content" style="border-radius:0px; width: 900px">
+        <div class="modal-header" style="border: none">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">选择国家</h4>
+        </div>
+        <div class="modal-body">
+          <div class="bian">
+            <p></p>
+            <div class="meizhou">
+              <p>美洲</p>
+              <ul>
+                <li><a href=""><i></i><span>美国</span></a></li>
+                <li><a href=""><i></i><span>加拿大</span></a></li>
+                <li><a href=""><i></i><span>其他国家</span></a></li>
+              </ul>
+            </div>
+            <div class="ouzhou">
+              <p>欧洲</p>
+              <ul>
+                <li><a href=""><i></i><span>法国</span></a></li>
+                <li><a href=""><i></i><span>英国</span></a></li>
+                <li><a href=""><i></i><span>意大利</span></a></li>
+                <li><a href=""><i></i><span>德国</span></a></li>
+                <li><a href=""><i></i><span>西班牙</span></a></li>
+                <li><a href=""><i></i><span>瑞士</span></a></li>
+                <li><a href=""><i></i><span>荷兰</span></a></li>
+              </ul>
+              <ul>
+                <li><a href=""><i></i><span>卢森堡</span></a></li>
+                <li><a href=""><i></i><span>比利时</span></a></li>
+                <li><a href=""><i></i><span>奥地利</span></a></li>
+                <li><a href=""><i></i><span>爱尔兰</span></a></li>
+                <li><a href=""><i></i><span>葡萄牙</span></a></li>
+                <li><a href=""><i></i><span>摩纳哥</span></a></li>
+                <li><a href=""><i></i><span>希腊</span></a></li>
+              </ul>
+            </div>
+            <div class="yatai">
+              <p>亚太地区</p>
+              <ul>
+                <li><a href=""><i></i><span>中国大陆</span></a></li>
+                <li><a href=""><i></i><span>新加坡</span></a></li>
+                <li><a href=""><i></i><span>马来西亚</span></a></li>
+                <li><a href=""><i></i><span>台湾</span></a></li>
+                <li><a href=""><i></i><span>日本</span></a></li>
+                <li><a href=""><i></i><span>澳大利亚</span></a></li>
+                <li><a href=""><i></i><span>香港特别行政区和澳门特区</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
