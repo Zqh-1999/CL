@@ -6,6 +6,7 @@ const router = express.Router();
 //引入controller
 const controller = require('../controller/CtrlOther');
 
+// zhangyu
 // 1.shop 页面
 router.get("/shop", controller.shop);
 
@@ -21,17 +22,19 @@ router.get("/man", controller.man);
 // 5.women 页面
 router.get("/women", controller.women);
 
-// 2.beauty 页面
-router.get("/beauty", controller.beauty);
 
-// 2.beauty 页面
-router.get("/beauty", controller.beauty);
+// zhouyunzhuo
+// 1.AMonentLikeThie 页面
+router.get("/AMonentLikeThie", controller.AMonentLikeThie);
 
-// 2.beauty 页面
-router.get("/beauty", controller.beauty);
+// 2.body 页面
+router.get("/body", controller.body);
 
-// 2.beauty 页面
-router.get("/beauty", controller.beauty);
+// 3.BRIDA 页面
+router.get("/BRIDA", controller.BRIDA);
+
+// 4.EyeCollection 页面
+router.get("/EyeCollection", controller.EyeCollection);
 
 // 2.beauty 页面
 router.get("/beauty", controller.beauty);
