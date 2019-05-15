@@ -1,6 +1,3 @@
--- -- 创建数据库pullRadish
--- create database pullRadish;
-
 -- 选择数据库
 use pullRadish;
 

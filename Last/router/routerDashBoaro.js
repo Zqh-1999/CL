@@ -6,6 +6,10 @@ const router = express.Router();
 //引入controller
 const controller = require('../controller/CtrlDashBoaro')
 
+
+// 显示首页
+router.get("/", controller.index);
+
 // 显示页面
 router.get("/admin/DashBoaro", controller.DashBoaro);
 
