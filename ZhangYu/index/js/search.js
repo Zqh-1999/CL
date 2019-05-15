@@ -8,26 +8,24 @@ function show5() {
 function hide5() {
   $('.search').slideUp()
 }
-var flag = false
 $('.fa-search').click(function () {
-  if (!flag) {
+  if ($('.search').css('display') == 'none') {
     show5()
     hide1()
     hide2()
     hide3()
     hide4()
+    $('.search-con input').attr('placeholder','搜 索')
+    $('.search-con input').val('')
     $('.fa-search').css('color','red')
-    flag = true
-  } else {
+  } else  if($('.search').css('display') == 'block'){
     hide5()
-    flag = false
     $('.fa-search').css('color','#333333')
   }
 })
 $('.search-con button').click(function () {
   hide5()
   $('.fa-search').css('color','#333333')
-  flag = false
 })
 $('.search-con input').click(function () {
   $('.search-con input').attr('placeholder','')

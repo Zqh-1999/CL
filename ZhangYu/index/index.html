@@ -327,7 +327,7 @@
         <!-- 中间的logo -->
         <div class="center-logo">
           <a href="">
-            <img src="./images/logo.png" alt="">
+            <img src="./images/logo.png" alt="" id="wait-icon">
             <img src="./images/logo2.png" alt="" style="display: none">
           </a>
         </div>
@@ -813,6 +813,7 @@
     function show1() {
       $('.women').slideDown()
       $('.women-good').show()
+      $('.fa-search').css('color','#333333')
     }
     function hide1() {
       $('.women').slideUp(90)
@@ -821,6 +822,7 @@
     function show2() {
       $('.man').slideDown()
       $('.man-good').show()
+      $('.fa-search').css('color','#333333')
     }
     function hide2() {
       $('.man').slideUp(90)
@@ -829,6 +831,7 @@
     function show3() {
       $('.beauty').slideDown()
       $('.beauty-good').show()
+      $('.fa-search').css('color','#333333')
     }
     function hide3() {
       $('.beauty').slideUp(90)
@@ -837,6 +840,7 @@
     function show4() {
       $('.bridal').slideDown()
       $('.bridal-good').show()
+      $('.fa-search').css('color','#333333')
     }
     function hide4() {
       $('.bridal').slideUp(90)
@@ -903,6 +907,8 @@
     })
   </script>
 
+  <script src="./js/logoRound.js"></script>
+
   <!-- 这是底部语言的选择模板 -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document" style="width: 820px;">
@@ -911,6 +917,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
               aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="myModalLabel">选择国家</h4>
+          <div class="modal-xian"></div>
         </div>
         <div class="modal-body">
           <div class="bian">
