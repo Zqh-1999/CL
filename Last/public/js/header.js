@@ -184,3 +184,26 @@ $(function () {
     })
 })
 
+function poRandom(ele) {
+    var timId;
+    $(ele).mouseenter(function () {
+      $(ele + ' span a').css('color', 'white')
+      timId = setInterval(function () {
+        var imgWhidth = document.body.offsetWidth
+        var max = Math.floor(Math.random() * 8 + 1)
+        var popx = imgWhidth * max + 'px'
+        $(ele).css('backgroundPosition', popx)
+      }, 300)
+    })
+    $(ele).mouseleave(function () {
+      $(ele + ' span a').css('color', 'black')
+      clearInterval(timId)
+    })
+  }
+  poRandom('.area li:nth-child(1)')
+  poRandom('.area li:nth-child(2)')
+  poRandom('.area li:nth-child(3)')
+  poRandom('.area li:nth-child(4)')
+  poRandom('.area li:nth-child(5)')
+  poRandom('.area li:nth-child(6)')
+
