@@ -926,6 +926,123 @@
   background-image: url('../images/Snipaste_2019-05-13_14-16-33.png')
 }
 
+.modal-xian {
+  position: absolute;
+  top: 68px;
+  width: 96.5%;
+  height: 1px;
+  background-color: #E1E1E1;
+  margin: 0 auto;
+}
+
+.bian {
+  position: relative;
+  padding-left: 28px;
+  height: 300px;
+}
+
+.bian>div {
+  float: left;
+  margin-right: 28px;
+}
+
+.ouzhou ul {
+  float: left;
+}
+
+.bian p {
+  margin-bottom: 36px;
+}
+
+.bian li {
+  width: 160px;
+  height: 30px;
+}
+
+.bian li i {
+  float: left;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-image: url('../images/cn.png');
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  background-size: contain;
+}
+
+.bian li span {
+  line-height: 21px;
+}
+
+
+.meizhou li:nth-child(1) i {
+  background-image: url('../images/us\ .png')
+}
+
+.meizhou li:nth-child(2) i {
+  background-image: url('../images/ca.png')
+}
+
+.meizhou li:nth-child(3) i {
+  background-image: url('../images/other.png')
+}
+
+.ouzhou li:nth-child(1) i {
+  background-image: url('../images/fr.png')
+}
+
+.ouzhou li:nth-child(2) i {
+  background-image: url('../images/gb.png')
+}
+
+.ouzhou li:nth-child(3) i {
+  background-image: url('../images/it.png')
+}
+
+.ouzhou li:nth-child(4) i {
+  background-image: url('../images/de.png')
+}
+
+.ouzhou li:nth-child(5) i {
+  background-image: url('../images/es.png')
+}
+
+.ouzhou li:nth-child(6) i {
+  background-image: url('../images/ch.png')
+}
+
+.ouzhou li:nth-child(7) i {
+  background-image: url('../images/nl.png')
+}
+
+.yatai li:nth-child(1) i {
+  background-image: url('../images/cn.png')
+}
+
+.yatai li:nth-child(2) i {
+  background-image: url('../images/sg.png')
+}
+
+.yatai li:nth-child(3) i {
+  background-image: url('../images/my.png')
+}
+
+.yatai li:nth-child(4) i {
+  background-image: url('../images/tw.png')
+}
+
+.yatai li:nth-child(5) i {
+  background-image: url('../images/jp.png')
+}
+
+.yatai li:nth-child(6) i {
+  background-image: url('../images/au.png')
+}
+
+.yatai li:nth-child(7) i {
+  background-image: url('../images/hk_and_mo.png')
+}
+
 
 /* 遮罩层start */
 .masklayer {

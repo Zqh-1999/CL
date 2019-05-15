@@ -76,6 +76,11 @@ const routerMyWishlist = require('./router/routerMyWishlist')
 app.use(routerMyWishlist)
 
 
+// 其他页面
+const routerOther = require("./router/routerOther");
+app.use(routerOther);
+
+
 //设置静态资源目录
 app.use(express.static('./public'));
 
