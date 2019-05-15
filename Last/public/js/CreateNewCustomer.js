@@ -70,7 +70,7 @@ $(document).ready(function () {
             }
         }
     });
-}).on('click', '#addbtn', function (e) {
+}).on('success.form.bv', function (e) {
     e.preventDefault();
     // Get the form instance
     var $form = $(e.target);
