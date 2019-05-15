@@ -69,9 +69,9 @@ module.exports.Parfums = (req, res) => {
     res.render('Parfums');
 }
 
-// 2.beauty页面
-module.exports.beauty = (req, res) => {
-    res.render('beauty');
+// 9.LipsRouge页面
+module.exports.LipsRouge = (req, res) => {
+    res.render('LipsRouge');
 }
 
 // 2.beauty页面

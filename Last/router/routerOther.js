@@ -49,8 +49,8 @@ router.get("/Nails", controller.Nails);
 // 8.Parfums 页面
 router.get("/Parfums", controller.Parfums);
 
-// 5.Groom 页面
-router.get("/Groom", controller.Groom);
+// 9.LipsRouge 页面
+router.get("/LipsRouge", controller.LipsRouge);
 
 // 5.Groom 页面
 router.get("/Groom", controller.Groom);
