@@ -102,6 +102,10 @@
     left: 70px;
 }
 
+#form-group {
+    margin-bottom: 35px;
+}
+
 .form-group {
     width: 824px;
     height: 38px;
@@ -111,6 +115,10 @@
 .input-box {
     width: 863px;
     height: 38px;
+}
+
+.input-text:hover {
+    border-color: #000;
 }
 
 .input-box input {
@@ -177,12 +185,6 @@
     text-decoration: underline;
 }
 
-.verif {
-    width: 863px;
-    height: 200px;
-    border: 1px solid red;
-    margin-bottom: 20px;
-}
 
 .form-buttons>.savebtn {
     float: right;

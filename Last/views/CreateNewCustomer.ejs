@@ -23,49 +23,48 @@
             <!-- 左边 -->
             <div class="content-centre-left">
                 <p>创建一个帐户并订阅CHRISTIANLOUBOUTIN.COM的独家信息，其中包括我们的最新产品，新闻更新和特别优惠。</p>
-                <form class="content-form">
+                <form class="content-form" id="add-user">
                     <div class="newadd-right-title">
                         <i class="fa fa-caret-down  fa-1x"></i>
                         <select name="prefix" id="prefix" class="prefix" title="招呼">
-                            <option value="Mr">先生</option>
-                            <option value="Mrs">太太</option>
-                            <option value="Ms">女士</option>
+                            <option>先生</option>
+                            <option>太太</option>
+                            <option>女士</option>
                             <option value="" selected="selected">标题</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="form-group">
                         <div class="input-box">
                             <input type="text" id="firstname" name="firstname" title="First Name"
-                                placeholder="First name *" class="input-text required-entry">
+                                placeholder="First name *" class="input-text required-entry caption">
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="form-group">
                         <div class="input-box">
                             <input type="text" id="lastname" name="lastname" title="Last Name" placeholder="last name *"
-                                class="input-text required-entry">
+                                class="input-text required-entry caption">
                         </div>
                     </div>
                     <div class="newadd-right-title newadd-right-title2">
                         <i class="fa fa-caret-down  fa-1x " id="fa-fw2"></i>
-                        <select name="prefix" id="prefix" class="prefix" title="国家">
-                            <option value="" selected="selected">美国</option>
-                            <option value="1">美国</option>
-                            <option value="2">澳大利亚</option>
-                            <option value="3">中国</option>
-                            <option value="4">夏威夷</option>
+                        <select name="prefox" id="prefox" class="prefix" title="国家">
+                            <option selected="selected">美国</option>
+                            <option>澳大利亚</option>
+                            <option>中国</option>
+                            <option>夏威夷</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="form-group">
                         <div class="input-box">
                             <input type="text" id="email" name="email" title="电子邮件地址" placeholder="Email*"
-                                class="input-text required-entry">
+                                class="input-text required-entry caption">
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" id="form-group">
                         <div class="input-box">
                             <input type="text" id="password" name="password" title="密码" placeholder="password*"
-                                class="input-text required-entry">
+                                class="input-text required-entry caption">
                         </div>
                     </div>
 
@@ -97,7 +96,7 @@
                         <div class="input-box2">
                             <input type="checkbox" id="" name="is_subscribed[]"
                                 title="我已阅读并同意使用条款打开一个新窗口。和隐私政策打开一个新窗口。Christian Louboutin在线精品店。" value="commerce"
-                                class="checkbox ae-checkable-group">
+                                class="checkbox ae-checkable-group" id="gien" checked>
                         </div>
                         <div class="subscr-wrapper">
                             <p> 我已阅读并同意 <a href="javascript:;">使用条款</a>和<a href="javascript:;">隐私政策</a>Christian
@@ -105,13 +104,10 @@
                             </p>
                         </div>
                     </div>
-                    <!-- 验证 -->
-                    <div class="verif">
-
-                    </div>
+                 
                     <!-- 按钮 -->
                     <div class="form-group form-buttons last">
-                        <input type="button" class="savebtn" value="创建">
+                        <input type="submit" class="savebtn" id="addbtn" value="创建">
                     </div>
                 </form>
             </div>
@@ -128,6 +124,9 @@
 
     <!-- 底部链接 -->
     <%- include('./layouts/footerLink.ejs')%>
+
+    <!-- 引入js -->
+    <script src="/js/CreateNewCustomer.js"></script>
 </body>
 
 </html>
