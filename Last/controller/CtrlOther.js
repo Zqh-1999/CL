@@ -21,9 +21,9 @@ module.exports.man = (req, res) => {
     res.render('man');
 }
 
-// 2.beauty页面
-module.exports.beauty = (req, res) => {
-    res.render('beauty');
+// 5.women页面
+module.exports.women = (req, res) => {
+    res.render('women');
 }
 
 // 2.beauty页面

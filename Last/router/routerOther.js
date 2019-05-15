@@ -18,8 +18,8 @@ router.get("/bridal", controller.bridal);
 // 4.man 页面
 router.get("/man", controller.man);
 
-// 2.beauty 页面
-router.get("/beauty", controller.beauty);
+// 5.women 页面
+router.get("/women", controller.women);
 
 // 2.beauty 页面
 router.get("/beauty", controller.beauty);
