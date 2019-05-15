@@ -8,6 +8,6 @@ exitbtn.addEventListener("click", function () {
     masklayer.style.display = "block";
     setTimeout(function () {
         masklayer.style.display = "none";
-        location.href = ""
+        location.href = "/"
     }, 5000)
 })

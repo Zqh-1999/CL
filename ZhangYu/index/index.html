@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/search.css">
   <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -240,10 +241,10 @@
         <div class="bridal-good">
           <ul>
             <li>
-              <div><a href=""><img src="./images/Expend2.jpg" alt=""><span class="new">新娘</span></a></div>
+              <div><a href=""><img src="./images/Expend3.jpg" alt=""><span class="new">新娘</span></a></div>
             </li>
             <li>
-              <div><a href=""><img src="./images/Expend3.jpg" alt=""><span style="right: 400px;">发现新娘！</span></a></div>
+              <div><a href=""><img src="./images/Expend2.jpg" alt=""><span style="right: 400px;">发现新娘！</span></a></div>
             </li>
           </ul>
         </div>
@@ -255,7 +256,7 @@
               <li><a href="">新来港定居人士</a></li>
               <li><a href="">Loubigraffiti</a></li>
               <li><a href="">Goldomania</a></li>
-              <li><a href="">Loubilaque Lip Lacquer Loubimiroir</a></li>
+              <li><a href="">Loubilaque Lip Lacquer</a></li>
               <li><a href="">Loubilaque唇彩</a></li>
               <li><a href="">Rouge Louboutin</a></li>
             </ol>
@@ -326,7 +327,7 @@
         <!-- 中间的logo -->
         <div class="center-logo">
           <a href="">
-            <img src="./images/logo.png" alt="">
+            <img src="./images/logo.png" alt="" id="wait-icon">
             <img src="./images/logo2.png" alt="" style="display: none">
           </a>
         </div>
@@ -344,10 +345,17 @@
       <div class="right">
         <div class="right-ico">
           <ul>
-            <li><a href=""><i class="fa fa-search fa-2x"></i></a></li>
+            <li><a href="javascript:;"><i class="fa fa-search fa-2x"></i></a></li>
             <li><a href=""><i class="fa fa-heart-o fa-2x"></i></a></li>
             <li><a href=""><i class="fa fa-shopping-cart fa-2x"></i></a></li>
           </ul>
+        </div>
+      </div>
+      <!-- 搜索 -->
+      <div class="search">
+        <div class="search-con">
+          <input type="text" placeholder="搜 索" title="搜索">
+          <button>×</button>
         </div>
       </div>
     </div>
@@ -668,7 +676,8 @@
         </div>
         <div class="np-right">
           <ul>
-            <li><a href=""><i></i><span>Mainland China</span></a></li>
+            <li><a href="javasirpt:;"><i></i><span data-toggle="modal" data-target="#myModal">Mainland China</span></a>
+            </li>
             <li><a href=""><i></i><span>Chinese</span></a></li>
           </ul>
         </div>
@@ -679,15 +688,15 @@
 
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="./js/index.js"></script>
+  <script src="./js/search.js"></script>
   <script>
-    // 底部input
+    // 底部input  无关紧要
     $('.contact input').focus(function () {
       $(this).attr('placeholder', '')
     })
 
 
-    // 头部hover帮助
+    // 头部hover帮助导航栏
     $('.help-a').mouseenter(function () {
       $('.help').show()
       $('.fa-caret-down').css('transform', 'rotate(-178deg)')
@@ -697,19 +706,26 @@
       $('.fa-caret-down').css('transform', '')
     })
 
-    // 固定导航栏 变化
+    // 下面是获取网页滚动出去多少 而有的一些指令
     var top1 = document.querySelector('.het-fixed');
     var topHeight = top1.offsetHeight;
-    console.log(topHeight)
     $(window).scroll(function () {
       var docScroll = $(document).scrollTop();
       if (docScroll >= topHeight) {
+        // 固定导航栏的高度变化
         $(".het-fixed").css({
           'height': '50px'
         });
+        // 搜索的高度变化
+        $('.search').css('top', '49px')
+        // 下拉高度变化
+        $('.women, .man, .beauty').css('margin-top', '0px');
+        // 图标左右的外边距变化
         $(".center-left").css("margin-top", '12px');
         $(".center-right").css("margin-top", '12px');
+        // 图标的变化
         $('.center-logo').css({
+          'transition': 'all 0.5s',
           'width': '50px',
           'height': '50px',
           'lineHeight': '50px'
@@ -718,11 +734,24 @@
         $('.center-logo img:nth-child(2)').show();
         $('.topLeft-list').css('top', '49px')
       } else {
+        // 固定导航栏的高度变化
         $(".het-fixed").css({
           'height': '90px'
         });
-        $(".center-left").css("margin-top", '40px');
-        $(".center-right").css("margin-top", '40px');
+        // 搜索的高度变化
+        $('.search').css('top', '89px')
+        // 下拉高度变化
+        $('.women, .man, .beauty').css('margin-top', '1px');
+        // 图标左右的外边距变化
+        $(".center-left").css({
+          "margin-top": '40px',
+          'transition': 'all 0.5s'
+        });
+        $(".center-right").css({
+          "margin-top": '40px',
+          'transition': 'all 0.5s'
+        });
+        // 图标的变化
         $('.center-logo').css({
           'width': '100px',
           'height': '100px',
@@ -732,6 +761,7 @@
         $('.center-logo img:nth-child(2)').hide();
         $('.topLeft-list').css('top', '89px')
       }
+      // 这是中间的 网页滚动出去一定高度时 做出的动画
       if (docScroll >= 300) {
         $('.up1').css({
           'top': '0px',
@@ -778,13 +808,12 @@
 
   </script>
 
-
   <script>
-    var flag = true
-    var flag1 = true
+    // 这是头部导航栏的下拉
     function show1() {
       $('.women').slideDown()
       $('.women-good').show()
+      $('.fa-search').css('color','#333333')
     }
     function hide1() {
       $('.women').slideUp(90)
@@ -793,6 +822,7 @@
     function show2() {
       $('.man').slideDown()
       $('.man-good').show()
+      $('.fa-search').css('color','#333333')
     }
     function hide2() {
       $('.man').slideUp(90)
@@ -801,6 +831,7 @@
     function show3() {
       $('.beauty').slideDown()
       $('.beauty-good').show()
+      $('.fa-search').css('color','#333333')
     }
     function hide3() {
       $('.beauty').slideUp(90)
@@ -809,16 +840,20 @@
     function show4() {
       $('.bridal').slideDown()
       $('.bridal-good').show()
+      $('.fa-search').css('color','#333333')
     }
     function hide4() {
       $('.bridal').slideUp(90)
       $('.bridal-good').hide()
     }
+
     // 头部下拉导航 women 鼠标移入对应的tab栏让对应的下拉显示 让所有的下拉隐藏
     $('.center-left li:nth-child(1) a').mouseenter(function () {
       show1()
       hide2()
       hide3()
+      hide4()
+      hide5()
     })
     // 鼠标移出下拉 隐藏
     $('.topLeft-list').mouseleave(function () {
@@ -831,6 +866,7 @@
       hide1()
       hide3()
       hide4()
+      hide5()
     })
     // 鼠标移出下拉 隐藏
     $('.topLeft-list').mouseleave(function () {
@@ -843,6 +879,7 @@
       hide1()
       hide2()
       hide4()
+      hide5()
     })
     // 鼠标移出下拉 隐藏
     $('.topLeft-list').mouseleave(function () {
@@ -855,6 +892,7 @@
       hide1()
       hide2()
       hide3()
+      hide5()
     })
     // 鼠标移出下拉 隐藏
     $('.topLeft-list').mouseleave(function () {
@@ -869,9 +907,9 @@
     })
   </script>
 
-  <script>
+  <script src="./js/logoRound.js"></script>
 
-  </script>
+  <!-- 这是底部语言的选择模板 -->
 
 </body>
 

@@ -1,0 +1,398 @@
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
+.THEBRIDA {
+  width: 90%;
+  margin: 0 auto;
+  /* height: 65px; */
+  padding-top: 50px;
+  margin-bottom: 120px;
+  margin-top: 60px;
+}
+
+/* 左 */
+.THEBRIDA_first_left {
+  width: 50%;
+  height: 65px;
+  float: left;
+}
+
+.THEBRIDA_first_left>ul>li {
+  float: left;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.THEBRIDA_first_left>ul>li:nth-child(1) i {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  border-bottom: 3px solid black;
+}
+
+.THEBRIDA_first_left .classify {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  position: relative;
+  padding: 0px;
+}
+
+.classify>i {
+  display: block;
+  padding-right: 30px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+.classify:hover>i {
+  border: 1px solid #ccc;
+  border-bottom: none;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 4;
+}
+
+.classify ul li a {
+  font-size: 14px;
+  letter-spacing: 1.56px;
+  font-weight: normal;
+  cursor: pointer;
+  color: black;
+}
+
+.THEBRIDA_first_left .fist {
+  display: none;
+  padding: 15px;
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  border: 1px solid #ccc;
+  width: 200px;
+  background-color: white;
+  z-index: 1;
+}
+
+.THEBRIDA_first_left .fist li {
+  font-size: 14px;
+  letter-spacing: 1.56px;
+  font-weight: normal;
+  color: #000;
+}
+
+.THEBRIDA_first_left .fist li a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.classify:hover .fist {
+  display: block;
+}
+
+.classify span {
+  border-top: 5px solid black;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  z-index: 5;
+}
+
+
+
+
+/* 右 */
+.THEBRIDA_first_right {
+  float: right;
+  height: 65px;
+
+}
+
+.THEBRIDA_first_right li {
+  float: left;
+  cursor: pointer;
+}
+
+.THEBRIDA_first_right .classify {
+  position: relative;
+  width: 100px;
+}
+
+.THEBRIDA_first_right .measure li {
+  padding-right: 80px;
+}
+
+.THEBRIDA_first_right .classify span {
+  border-top: 5px solid black;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 18px;
+  right: 22px;
+}
+
+.THEBRIDA_first_right .second {
+  display: none;
+  padding-left: 20px;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  border: 1px solid #ccc;
+  width: 300px;
+  z-index: 3;
+  background-color: white;
+}
+
+.THEBRIDA_first_right .second li {
+  width: 50px;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.THEBRIDA_first_right .second p {
+  display: block;
+  width: 50px;
+}
+
+.THEBRIDA_first_right .second a {
+  color: black;
+}
+
+.THEBRIDA_first_right .second a:hover {
+  color: red;
+  text-decoration: none
+}
+
+.THEBRIDA_first_right li:hover .second {
+  display: block;
+}
+
+.height .second li {
+  width: 100%;
+}
+
+.height .second i {
+  display: inline-block;
+}
+
+.height .second i:hover {
+  color: red;
+}
+
+.THEBRIDA_first_right .iem img {
+  position: absolute;
+  top: 7px;
+  left: 30px;
+}
+
+/* 鞋子展示 */
+.THEBRIDA_scend li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.THEBRIDA_scend li img {
+  width: 100%;
+}
+
+.THEBRIDA_scend li a {
+  color: #222;
+  font-size: 18px;
+}
+
+.THEBRIDA_scend li a:hover {
+  text-decoration: none;
+}
+
+.THEBRIDA_scend li p {
+  padding-top: 10px;
+  font-size: 13px;
+  color: #888;
+}
+
+.THEBRIDA_scend li i {
+  color: #ed1e24;
+}
+
+.THEBRIDA_scend li .img1 {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.THEBRIDA_scend li .img2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.THEBRIDA_scend li:hover>.img2 {
+  opacity: 0;
+}
+
+
+
+/* /眼部系类  开始*/
+.beauty_eye .first {
+  max-width: 496px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.beauty_eye img {
+  max-width: 496px;
+  width: 100%;
+}
+
+.beauty_eye .introduce {
+  text-align: center;
+  min-height: 54px;
+  margin: 0 20px;
+}
+
+.introduce .p1 {
+  font-weight: normal;
+  color: #222;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  margin: 4px 0 26px
+}
+
+.introduce .p2 {
+  color: #888;
+  font-size: 13px;
+}
+
+.color_three {
+  width: 90px;
+  margin: 10px auto;
+}
+
+.color_one {
+  margin: 10px auto;
+}
+
+.beauty_eye .color_one a,
+.beauty_eye .color_two a,
+.beauty_eye .color_three a,
+.beauty_eye .color_four a,
+.beauty_eye .color_fifth a {
+  border: 10px #05060B solid;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.beauty_eye .color_three li:nth-child(2) a {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.beauty_eye .second {
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin-bottom: 20PX;
+}
+
+.beauty_eye .color_two li,
+.beauty_eye .color_three li,
+.beauty_eye .color_four li,
+.beauty_eye .color_fifth li {
+  float: left;
+}
+
+.beauty_eye .color_two {
+  width: 55px;
+  margin: 10px auto;
+}
+
+.beauty_eye .color_two li:first-child a {
+  margin-right: 15px;
+}
+
+.beauty_eye .color_four li:nth-child(2) a {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.beauty_eye .color_four li:nth-child(3) a {
+  margin-right: 15px;
+}
+
+.beauty_eye .color_four {
+  width: 125px;
+  margin: 10px auto;
+}
+
+
+.beauty_eye .color_fifth li:nth-child(2) a {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.beauty_eye .color_fifth li:nth-child(4) a {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.beauty_eye .color_fifth {
+  width: 160px;
+  margin: 10px auto;
+}
+
+/* 眼部系列  结束 */
+
+
+/*  钉子指甲 开始  */
+.THEBRIDA_Nails li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.THEBRIDA_Nails li img {
+  width: 100%;
+}
+
+.THEBRIDA_Nails li .introduce {
+  max-width: 205px;
+  margin: 10px auto;
+}
+
+.THEBRIDA_Nails li p {
+  font-size: 13px;
+  color: #888;
+}
+
+.THEBRIDA_Nails li a {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  color: #222;
+}
+
+.THEBRIDA_Nails li a:hover {
+  text-decoration: none;
+}
+
+/* 钉子指甲结束 */
