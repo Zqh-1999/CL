@@ -166,3 +166,37 @@ module.exports.WOMENShoesSneakers = (req, res) => {
 module.exports.WOMENTopHandles = (req, res) => {
     res.render('WOMENTopHandles');
 }
+
+
+
+// xudengxuan
+// 1.help_concat 页面
+module.exports.help_concat = (req, res) => {
+    res.render('help_concat');
+}
+
+// 2.help 页面
+module.exports.help = (req, res) => {
+    res.render('help');
+}
+
+// 3.keeper 页面
+module.exports.keeper = (req, res) => {
+    res.render('keeper');
+}
+
+// 4.policy 页面
+module.exports.policy = (req, res) => {
+    res.render('policy');
+}
+
+// 5.secrecy 页面
+module.exports.secrecy = (req, res) => {
+    res.render('secrecy');
+}
+
+// 6.stopfake 页面
+module.exports.stopfake = (req, res) => {
+    res.render('stopfake');
+}
+

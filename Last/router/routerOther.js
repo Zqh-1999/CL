@@ -111,5 +111,26 @@ router.get("/WOMENShoesSneakers", controller.WOMENShoesSneakers);
 router.get("/WOMENTopHandles", controller.WOMENTopHandles);
 
 
+// xudengxuan
+// 1. help_concat 页面
+router.get("/help_concat", controller.help_concat);
+
+// 2. help 页面
+router.get("/help", controller.help);
+
+// 3. keeper 页面
+router.get("/keeper", controller.keeper);
+
+// 4. policy 页面
+router.get("/policy", controller.policy);
+
+// 5. secrecy 页面
+router.get("/secrecy", controller.secrecy);
+
+// 6. stopfake 页面
+router.get("/stopfake", controller.stopfake);
+
+
+
 // 暴露
 module.exports = router;

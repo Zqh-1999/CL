@@ -13,5 +13,7 @@ router.get("/", controller.index);
 // 显示页面
 router.get("/admin/DashBoaro", controller.DashBoaro);
 
+router.get('/admin/showNameS', controller.showNameS)
+
 // 暴露
 module.exports = router;
