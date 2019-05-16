@@ -97,6 +97,12 @@ const routerOther = require("./router/routerOther");
 app.use(routerOther);
 
 
+//挂载路由
+//搜索
+const routerSearch = require('./router/routerSearch');
+app.use(routerSearch);
+
+
 //设置静态资源目录
 app.use(express.static('./public'));
 
