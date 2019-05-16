@@ -9,5 +9,7 @@ const controller = require('../controller/CtrlMyWishlist')
 // 显示页面
 router.get("/admin/MyWishlist", controller.MyWishlist);
 
+router.get('/admin/showNameing', controller.showNameing)
+
 // 暴露
 module.exports = router;
