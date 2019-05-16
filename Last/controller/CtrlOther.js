@@ -74,22 +74,95 @@ module.exports.LipsRouge = (req, res) => {
     res.render('LipsRouge');
 }
 
-// 2.beauty页面
-module.exports.beauty = (req, res) => {
-    res.render('beauty');
+// 10.LipsSliky页面
+module.exports.LipsSliky = (req, res) => {
+    res.render('LipsSliky');
 }
 
-// 2.beauty页面
-module.exports.beauty = (req, res) => {
-    res.render('beauty');
+
+
+// liangguoping
+// 1.AccessoriesItems页面
+module.exports.AccessoriesItems = (req, res) => {
+    res.render('AccessoriesItems');
 }
 
-// 2.beauty页面
-module.exports.beauty = (req, res) => {
-    res.render('beauty');
+// 2.BagsItems页面
+module.exports.BagsItems = (req, res) => {
+    res.render('BagsItems');
 }
 
-// 2.beauty页面
-module.exports.beauty = (req, res) => {
-    res.render('beauty');
+// 3.BEAUTYLipsVelvetMatte页面
+module.exports.BEAUTYLipsVelvetMatte = (req, res) => {
+    res.render('BEAUTYLipsVelvetMatte');
+}
+
+// 4.bodyshoes页面
+module.exports.bodyshoes = (req, res) => {
+    res.render('bodyshoes');
+}
+
+// 5.ClassicsDandelion页面
+module.exports.ClassicsDandelion = (req, res) => {
+    res.render('ClassicsDandelion');
+}
+
+// 6.Corneille页面
+module.exports.Corneille = (req, res) => {
+    res.render('Corneille');
+}
+
+// 7.MENAccessoriesBelts页面
+module.exports.MENAccessoriesBelts = (req, res) => {
+    res.render('MENAccessoriesBelts');
+}
+
+// 8.MENAccessoriesNew页面
+module.exports.MENAccessoriesNew = (req, res) => {
+    res.render('MENAccessoriesNew');
+}
+
+// 9.MENBagsBackpacks页面
+module.exports.MENBagsBackpacks = (req, res) => {
+    res.render('MENBagsBackpacks');
+}
+
+// 10.MENBagsNew页面
+module.exports.MENBagsNew = (req, res) => {
+    res.render('MENBagsNew');
+}
+
+// 11.MENShoesOxfords页面
+module.exports.MENShoesOxfords = (req, res) => {
+    res.render('MENShoesOxfords');
+}
+
+// 12.MENShoesSneakers页面
+module.exports.MENShoesSneakers = (req, res) => {
+    res.render('MENShoesSneakers');
+}
+
+// 13.MENTheClassicsGreggo页面
+module.exports.MENTheClassicsGreggo = (req, res) => {
+    res.render('MENTheClassicsGreggo');
+}
+
+// 14.TheIconsEloise页面
+module.exports.TheIconsEloise = (req, res) => {
+    res.render('TheIconsEloise');
+}
+
+// 15.WOMENPouches页面
+module.exports.WOMENPouches = (req, res) => {
+    res.render('WOMENPouches');
+}
+
+// 16.WOMENShoesSneakers页面
+module.exports.WOMENShoesSneakers = (req, res) => {
+    res.render('WOMENShoesSneakers');
+}
+
+// 17.WOMENTopHandles页面
+module.exports.WOMENTopHandles = (req, res) => {
+    res.render('WOMENTopHandles');
 }

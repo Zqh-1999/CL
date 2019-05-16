@@ -7,6 +7,10 @@ const app = express();
 const bodyparser = require('body-parser')
 app.use(bodyparser.urlencoded({ extended: false }))
 
+// 网站标签图标
+const favicon = require('serve-favicon');
+app.use(favicon(__dirname + '/favicon.ico'));
+
 // 引入express-session
 const session = require('express-session');
 
@@ -74,6 +78,18 @@ app.use(routerMyReturns)
 //我的收藏
 const routerMyWishlist = require('./router/routerMyWishlist')
 app.use(routerMyWishlist)
+
+
+//挂载路由
+//联系信息
+const routerAccountInformation = require('./router/routerAccountInformation')
+app.use(routerAccountInformation)
+
+
+//挂载路由
+//更换密码
+const routerChangePassword = require('./router/routerChangePassword')
+app.use(routerChangePassword)
 
 
 // 其他页面

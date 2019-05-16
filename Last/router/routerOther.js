@@ -52,14 +52,63 @@ router.get("/Parfums", controller.Parfums);
 // 9.LipsRouge 页面
 router.get("/LipsRouge", controller.LipsRouge);
 
-// 5.Groom 页面
-router.get("/Groom", controller.Groom);
+// 10.LipsSliky 页面
+router.get("/LipsSliky", controller.LipsSliky);
 
-// 5.Groom 页面
-router.get("/Groom", controller.Groom);
 
-// 5.Groom 页面
-router.get("/Groom", controller.Groom);
+// liangguoping
+
+// 1.AccessoriesItems 页面
+router.get("/AccessoriesItems", controller.AccessoriesItems);
+
+// 2.BagsItems 页面
+router.get("/BagsItems", controller.BagsItems);
+
+// 3.BEAUTYLipsVelvetMatte 页面
+router.get("/BEAUTYLipsVelvetMatte", controller.BEAUTYLipsVelvetMatte);
+
+// 4.bodyshoes 页面
+router.get("/bodyshoes", controller.bodyshoes);
+
+// 5.ClassicsDandelion 页面
+router.get("/ClassicsDandelion", controller.ClassicsDandelion);
+
+
+// 6.Corneille 页面
+router.get("/Corneille", controller.Corneille);
+
+// 7.MENAccessoriesBelts 页面
+router.get("/MENAccessoriesBelts", controller.MENAccessoriesBelts);
+
+// 8.MENAccessoriesNew 页面
+router.get("/MENAccessoriesNew", controller.MENAccessoriesNew);
+
+// 9.MENBagsBackpacks 页面
+router.get("/MENBagsBackpacks", controller.MENBagsBackpacks);
+
+// 10.MENBagsNew 页面
+router.get("/MENBagsNew", controller.MENBagsNew);
+
+// 11.MENShoesOxfords 页面
+router.get("/MENShoesOxfords", controller.MENShoesOxfords);
+
+// 12.MENShoesSneakers 页面
+router.get("/MENShoesSneakers", controller.MENShoesSneakers);
+
+// 13.MENTheClassicsGreggo 页面
+router.get("/MENTheClassicsGreggo", controller.MENTheClassicsGreggo);
+
+// 14.TheIconsEloise 页面
+router.get("/TheIconsEloise", controller.TheIconsEloise);
+
+// 15.WOMENPouches 页面
+router.get("/WOMENPouches", controller.WOMENPouches);
+
+// 16.WOMENShoesSneakers 页面
+router.get("/WOMENShoesSneakers", controller.WOMENShoesSneakers);
+
+// 17.WOMENTopHandles 页面
+router.get("/WOMENTopHandles", controller.WOMENTopHandles);
 
 
 // 暴露

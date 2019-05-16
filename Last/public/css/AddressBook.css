@@ -2,7 +2,10 @@
 /* #content {
     height: 950px;
 } */
-
+/* 文本框 */
+#form-group{
+    margin-bottom: 25px;
+}
 /* 右边 start */
 .newadd-right {
     float: right;
