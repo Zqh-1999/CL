@@ -18,6 +18,7 @@ $('.btn-login').on('click', function () {
   let formData = $('.login-wrap').serialize();
   // console.log(formData);
   $.ajax({
+  
     type: 'post',
     url: '/admin/login',
     data: formData,

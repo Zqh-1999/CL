@@ -76,6 +76,12 @@ const routerMyWishlist = require('./router/routerMyWishlist')
 app.use(routerMyWishlist)
 
 
+//挂载路由
+//联系信息
+const routerAccountInformation = require('./router/routerAccountInformation')
+app.use(routerAccountInformation)
+
+
 // 其他页面
 const routerOther = require("./router/routerOther");
 app.use(routerOther);
