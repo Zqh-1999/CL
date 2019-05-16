@@ -7,6 +7,10 @@ const app = express();
 const bodyparser = require('body-parser')
 app.use(bodyparser.urlencoded({ extended: false }))
 
+// 网站标签图标
+const favicon = require('serve-favicon');
+app.use(favicon(__dirname + '/favicon.ico'));
+
 // 引入express-session
 const session = require('express-session');
 
