@@ -28,6 +28,11 @@ module.exports.women = (req, res) => {
     res.render('women');
 }
 
+// 6.LOUBOUTINWORLD页面
+module.exports.LOUBOUTINWORLD = (req, res) => {
+    res.render('LOUBOUTINWORLD');
+}
+
 // zhouyunzhuo
 // 1.AMonentLikeThie页面
 module.exports.AMonentLikeThie = (req, res) => {
@@ -78,6 +83,8 @@ module.exports.LipsRouge = (req, res) => {
 module.exports.LipsSliky = (req, res) => {
     res.render('LipsSliky');
 }
+
+
 
 
 

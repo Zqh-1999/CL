@@ -22,6 +22,9 @@ router.get("/man", controller.man);
 // 5.women 页面
 router.get("/women", controller.women);
 
+// 6.LOUBOUTINWORLD 页面
+router.get("/LOUBOUTINWORLD", controller.LOUBOUTINWORLD);
+
 
 // zhouyunzhuo
 // 1.AMonentLikeThie 页面
