@@ -600,6 +600,7 @@
   .contents-son-right-two span {
     display: block;
     margin-top: 10px;
+    margin-left: -21px;
   }
   
   .contents-son-right-two i {

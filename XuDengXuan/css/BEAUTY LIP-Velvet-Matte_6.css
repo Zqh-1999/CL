@@ -378,9 +378,10 @@
   
   .velvet-matte-right {
     float: left;
-    width: 78%;
+    width: 89%;
     height: 50px;
-  }
+    margin-left: -217px;
+}
   
   .velvet-matte-right div {
     width: 100%;
@@ -427,7 +428,7 @@
   .small_list {
     position: relative;
     float: left;
-    width: 412px;
+    width: 515px;
     height: 95px;
     text-align: center;
     overflow: hidden;
@@ -476,7 +477,7 @@
     width: 30px;
     height: 93px;
     margin-left: 54px;
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4-left.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_6-left.png);
     background-repeat: no-repeat;
     background-position: 4px 27px;
     cursor: pointer;
@@ -488,7 +489,7 @@
     display: block;
     width: 30px;
     height: 93px;
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4-right.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_6-right.png);
     background-repeat: no-repeat;
     background-position: 8px 27px;
     cursor: pointer;
@@ -568,14 +569,14 @@
     line-height: 30px;
     font-size: 14px;
     color: rgb(237, 30, 36);
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_5.11.jpg);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_6.11.png);
     background-repeat: no-repeat;
     background-position: 0px 2px;
   }
   
   .contents-son-right-one a:hover {
     color: #000;
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_5.12.jpg);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_6.12.png);
     background-repeat: no-repeat;
     background-position: 0px 2px;
   }

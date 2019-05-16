@@ -9,6 +9,9 @@ const controller = require('../controller/CtrlAccountInformation')
 // 显示页面
 router.get("/admin/AccountInformation", controller.AccountInformation);
 
+router.post('/admin/userAdder', controller.userAdder);
 
+
+router.get('/admin/showNamense', controller.showNamense)
 // 暴露
 module.exports = router;

@@ -8,13 +8,13 @@ module.exports.login = (req, res) => {
 
 // #region 显示用户登录页面
 module.exports.userLogin = (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
     let pramas = [req.body.email, req.body.password];
-    console.log(req.body.email)
+    // console.log(req.body.email)
     conn.query('select * from users where email=? and password=?', pramas, (error, results) => {
       if (error) return console.log(error);
   
-      console.log(results);
+      // console.log(results);
   
       if (results.length == 0) {
         res.json({
