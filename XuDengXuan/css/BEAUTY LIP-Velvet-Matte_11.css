@@ -365,7 +365,7 @@
   
   .velvet-matte-left {
     float: left;
-    width: 377px;
+    width: 490px;
     height: 50px;
   }
   
@@ -378,9 +378,10 @@
   
   .velvet-matte-right {
     float: left;
-    width: 78%;
+    width: 88%;
     height: 50px;
-  }
+    margin-left: -282px;
+}
   
   .velvet-matte-right div {
     width: 100%;
@@ -427,11 +428,11 @@
   .small_list {
     position: relative;
     float: left;
-    width: 412px;
+    width: 515px;
     height: 95px;
     text-align: center;
     overflow: hidden;
-  }
+}
   
   .small_list ul {
     height: 95px;
@@ -504,7 +505,7 @@
   }
   
   .contents-son-left-two {
-    width: 680px;
+    width: 707px;
     height: 190px;
   }
   

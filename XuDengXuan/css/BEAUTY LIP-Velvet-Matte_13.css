@@ -427,7 +427,7 @@
   .small_list {
     position: relative;
     float: left;
-    width: 412px;
+    width: 516px;
     height: 95px;
     text-align: center;
     overflow: hidden;
@@ -476,7 +476,7 @@
     width: 30px;
     height: 93px;
     margin-left: 54px;
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4-left.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2-left.png);
     background-repeat: no-repeat;
     background-position: 4px 27px;
     cursor: pointer;
@@ -488,7 +488,7 @@
     display: block;
     width: 30px;
     height: 93px;
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4-right.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2-right.png);
     background-repeat: no-repeat;
     background-position: 8px 27px;
     cursor: pointer;
@@ -568,22 +568,22 @@
     line-height: 30px;
     font-size: 14px;
     color: rgb(237, 30, 36);
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_5.11.jpg);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_13.11.png);
     background-repeat: no-repeat;
-    background-position: 0px 2px;
+    background-position: 0px 8px;
   }
   
   .contents-son-right-one a:hover {
     color: #000;
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_5.12.jpg);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_13.12.png);
     background-repeat: no-repeat;
-    background-position: 0px 2px;
+    background-position: 3px 9px;
   }
   
   /* 内容区域右面 第二部分 */
   .contents-son-right-two {
     width: 400px;
-    height: auto;
+    height: 348px;
     padding-left: 40px;
     color: rgb(120, 120, 120);
     font-family: "微软雅黑";
@@ -600,7 +600,6 @@
   .contents-son-right-two span {
     display: block;
     margin-top: 10px;
-    margin-left: -21px;
   }
   
   .contents-son-right-two i {
@@ -691,289 +690,289 @@
     display: block
   }
   
-  .contents-son-right-four-third-1st {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_5.19.png);
-    /* background-repeat: no-repeat;
-    background-position: -2px -63px; */
+  .contents-son-right-four-third-1st span:nth-child(1) {
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
+    background-repeat: no-repeat;
+    background-position: -2px -63px;
   }
   
-  /* .contents-son-right-four-third-1st span:nth-child(2) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+  .contents-son-right-four-third-1st span:nth-child(2) {
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -32px -63px;
   }
   
   .contents-son-right-four-third-1st span:nth-child(3) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -64px -63px;
   }
   
   .contents-son-right-four-third-1st span:nth-child(4) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -96px -63px;
   }
   
   .contents-son-right-four-third-1st span:nth-child(5) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -128px -63px;
   }
   
   .contents-son-right-four-third-1st span:nth-child(6) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -160px -63px;
   }
   
   .contents-son-right-four-third-1st span:nth-child(7) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -192px -63px;
   }
   
   .contents-son-right-four-third-1st span:nth-child(8) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -224px -63px;
   }
   
   .contents-son-right-four-third-1st span:nth-child(9) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -255px -63px;
   }
   
   .contents-son-right-four-third-1st span:nth-child(10) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -287px -63px;
   }
   
   .contents-son-right-four-third-1st span:nth-child(11) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: 0px -94px;
   }
   
   .contents-son-right-four-third-1st span:nth-child(12) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -32px -94px;
   }
   
   .contents-son-right-four-third-1st span:nth-child(13) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -64px -94px;
   }
   
   .contents-son-right-four-third-1st span:nth-child(14) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -96px -94px;
   }
   
   .contents-son-right-four-third-1st span:nth-child(15) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -128px -94px;
   }
   
   .contents-son-right-four-third-1st span:nth-child(16) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: 0px 0px;
   }
   
   .contents-son-right-four-third-1st span:nth-child(17) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: 0px 0px;
   }
   
   .contents-son-right-four-third-2nd span:nth-child(1) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: 0px 0px;
   }
   
   .contents-son-right-four-third-2nd span:nth-child(2) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -32px 0px;
   }
   
   .contents-son-right-four-third-2nd span:nth-child(3) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -64px 0px;
   }
   
   .contents-son-right-four-third-2nd span:nth-child(4) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -96px 0px;
   }
   
   .contents-son-right-four-third-2nd span:nth-child(5) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -128px 0px;
   }
   
   .contents-son-right-four-third-2nd span:nth-child(6) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -160px 0px;
   }
   
   .contents-son-right-four-third-2nd span:nth-child(7) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -192px 0px;
   }
   
   .contents-son-right-four-third-2nd span:nth-child(8) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -224px 0px;
   }
   
   .contents-son-right-four-third-2nd span:nth-child(9) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -256px 0px;
   }
   
   .contents-son-right-four-third-3rd span:nth-child(1) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -62px -63px;
   }
   
   
   .contents-son-right-four-third-4th span:nth-child(1) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -2px -31px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(2) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -32px -31px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(3) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -64px -31px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(4) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -96px -31px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(5) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -128px -31px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(6) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -160px -31px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(7) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -192px -31px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(8) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -224px -31px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(9) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -255px -31px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(10) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -255px 0px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(11) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -2px -63px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(12) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -32px -63px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(13) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -64px -63px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(14) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -96px -63px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(15) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -128px -63px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(16) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -160px -63px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(17) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -192px -63px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(18) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -224px -63px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(19) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -255px -63px;
   }
   
   .contents-son-right-four-third-4th span:nth-child(20) {
-    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_4.19.png);
+    background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_2.19.png);
     background-repeat: no-repeat;
     background-position: -287px -63px;
   }
-   */
+  
   /* 内容区域右面 第五部分 */
   .contents-son-right-five {
     width: 450px;
