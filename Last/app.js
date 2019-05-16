@@ -86,6 +86,12 @@ const routerAccountInformation = require('./router/routerAccountInformation')
 app.use(routerAccountInformation)
 
 
+//挂载路由
+//更换密码
+const routerChangePassword = require('./router/routerChangePassword')
+app.use(routerChangePassword)
+
+
 // 其他页面
 const routerOther = require("./router/routerOther");
 app.use(routerOther);
