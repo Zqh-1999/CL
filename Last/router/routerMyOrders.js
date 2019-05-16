@@ -9,5 +9,7 @@ const controller = require('../controller/CtrlMyOrders')
 // 显示页面
 router.get("/admin/MyOrders", controller.MyOrders);
 
+router.get('/admin/showNamen', controller.showNamen)
+
 // 暴露
 module.exports = router;

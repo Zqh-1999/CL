@@ -1,0 +1,109 @@
+
+  /* 联系内容*/
+.concat_font_font {
+    line-height: 245px;
+    font-weight: 300;
+    font-size: 24px;
+    font-family: "Microsoft YaHei";
+    letter-spacing: 2px;
+    color: #8888a7;
+    margin-left: 42px;
+}
+.concat_font_downline {
+    position: absolute;
+    border: 1px solid #f0f1f1;
+    width: 1696px;
+    height: 100px;
+    top: 29px;
+    left: 169px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.concat_content {
+    position: absolute;
+    width: 660px;
+    height: 877px;
+    top: 200px;
+    left: 618px;
+}
+.concat_center {
+    width: 100%;
+    height: 1253px;
+    /* border: 1px solid red; */
+}
+.concat_content-img {
+    position: absolute;
+    top: -53px;
+    left: 944px;
+}
+.concat_content-nature p{
+    font-size: 15px;
+    font-weight: 900;
+    font-family: "宋体";
+}
+.concat_content-nav li{
+    float: left;
+    color:#978888;
+    padding-right: 48px;
+}
+.concat_content-nature_content div{
+    font-size: 14px;
+    font-family: 'Microsoft YaHei';
+}
+.concat_content-nav label {
+    font-size: 15px;
+    font-family: 'Microsoft YaHei';
+}
+
+.Contact-information-option{
+    width: 140px;
+    height: 37px;
+    background-color: black;
+    color: white;
+    text-indent: 1em;
+    font-size: 15px;
+}
+.Contact-information-input input{
+    width: 100%;
+    height: 31px;
+    border: 1px solid #ccc;
+    text-indent: 1em;
+    font-size: 15px;
+}
+.order-information{
+    width: 100%;
+    height: 37px;
+    background-color: black;
+    color: white;
+    text-indent: 1em;
+    font-size: 15px;
+}
+.concat_content-nature_content textarea{
+    width: 100%;
+    height: 150px;
+    text-indent: 1em;
+    font-size: 15px;
+}
+.concat_submit{
+    margin-left: 566px;
+    margin-top: 32px;
+    width: 87px;
+    height: 34px;
+    color: #888;
+    font-family: 'Microsoft YaHei';
+    background: #F3F3F3;
+    border: 2px solid #dddddd;  
+    border-right: none;
+    border-top: none;
+    border-left: none;
+}
+.concat_submit:hover{
+    background: rgb(236, 233, 233);
+}
+.concat_content-nature_content .concat_main.selected{
+    display: block;
+}
+.concat_content-nature_content .concat_main{
+    display: none;
+}
