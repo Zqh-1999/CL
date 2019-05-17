@@ -112,23 +112,35 @@
 .THEBRIDA_first_right {
   float: right;
   height: 65px;
-
 }
 
 .THEBRIDA_first_right li {
   float: left;
   cursor: pointer;
+ 
 }
-
+.THEBRIDA_first_right .second i{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin-right: 5px;
+}
 .THEBRIDA_first_right .classify {
   position: relative;
   width: 100px;
 }
 
-.THEBRIDA_first_right .measure li {
-  padding-right: 80px;
+.THEBRIDA_first_right .fist li {
+  width:33%;
 }
-
+.THEBRIDA_first_right .color li {
+  width:50%;
+}
+.THEBRIDA_first_right .materials li {
+  width:100%;
+}
 .THEBRIDA_first_right .classify span {
   border-top: 5px solid black;
   border-left: 3px solid transparent;
@@ -151,9 +163,10 @@
   z-index: 3;
   background-color: white;
 }
-
+.THEBRIDA_first_right .classify:hover .second {
+  display: block;
+}
 .THEBRIDA_first_right .second li {
-  width: 50px;
   float: left;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -169,13 +182,13 @@
 }
 
 .THEBRIDA_first_right .second a:hover {
-  color: red;
   text-decoration: none
 }
-
-.THEBRIDA_first_right li:hover .second {
-  display: block;
+.THEBRIDA_first_right .second li:hover a , 
+.THEBRIDA_first_right .second li:hover i{
+  color: red;
 }
+
 
 .height .second li {
   width: 100%;
