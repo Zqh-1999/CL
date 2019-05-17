@@ -7,10 +7,14 @@ module.exports.search = (req, res) => {
 
 module.exports.searchGroom = (req, res) => {
     // let parmas = 'select * from Groom where Groom_names like %'+req.query.formdata+'%';
+   
    conn.query('select * from lgpSearch where Groom_names like "%'+req.query.formdata+'%"',(error,result) => {
        if(error) {
            console.log(error);
        } 
-      res.json(result);
+      res.json({
+          data: result,
+          length: result.length
+      });
    })
 }
