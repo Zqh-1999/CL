@@ -11,7 +11,7 @@ module.exports.DashBoaro = (req, res) => {
   res.render('DashBoaro');
 }
 
-
+// 显示h1
 module.exports.showNameS = (req, res) => {
   conn.query('select * from users where id=?', [req.session.user.id], (err, data) => {
     if (err) {
@@ -19,5 +19,15 @@ module.exports.showNameS = (req, res) => {
     }
     res.json(data)
 
+  })
+}
+
+// 显示h2
+module.exports.showNameA = (req, res) => {
+  conn.query('select * from users where id=?', [req.session.user.id], (err, data) => {
+      if (err) {
+          return console.log(err)
+      }
+      res.json(data)
   })
 }

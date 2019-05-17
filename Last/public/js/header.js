@@ -327,10 +327,18 @@ $(document).ready(function(){
                 url: '/lgp/searchGroom',
                 data: { formdata: formdata },
                 success: function (result) {
-                    console.log(result)
-                    let lgp = template('search_templatesssss', { list: result });
-                    console.log(lgp)
+                    console.log(result.length)
+                    let lgp = template('search_templatesssss', { 
+                        list: result.data,
+                        count: result.length
+                     });
                     $('#change').html(lgp);
+                    $('.search').hide()
+                    $('#change').css('paddingTop','140px')
+                    $('.fa-search').css('color', '#333333')
+                    $('body').find('.search-title-h2').css('textAlign','center')
+                    $('body').find('.search-title-h2').css('fontSize','30px');
+                    $('body').find('.search-title-h2').css('marginBottom','50px');
                 }
             });
         }

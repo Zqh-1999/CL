@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard &laquo; Admin</title>
+  <%- include('./layouts/header.ejs')%>
+</head>
+
+<body>
+  <script>NProgress.start()</script>
+
+  <div class="main">
+    <!-- 顶部的个人中心 -->
+
+    <%- include('./layouts/navbar.ejs') %>
+    <div class="container-fluid">
+      <div class="jumbotron text-center">
+        <h1>One Belt, One Road</h1>
+        <p>Thoughts, stories and ideas.</p>
+        <p><a class="btn btn-primary btn-lg" href="post-add.html" role="button" style="background-color: #ed2226; border-color: #ed2226;">欢迎来到CL</a></p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">站点内容统计：</h3>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item"><strong>368</strong>个商品</li>
+              <li class="list-group-item"><strong>32</strong>个分类</li>
+              <li class="list-group-item"><strong>3487</strong>个交易（<strong>1548</strong>条待交易）</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+  </div>
+
+  <%- include('./layouts/aside.ejs') %>
+
+  <%- include('./layouts/footer.ejs') %>
+</body>
+
+</html>
