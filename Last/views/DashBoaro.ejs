@@ -36,8 +36,8 @@
         <div class="wrapper-grid2-left">
           <div class="info">
             <h4>联系信息</h4>
-            <p>Dan Xu</p>
-            <p>2427873127@qq.com</p>
+            <p class="info_p"><%- include('./template/userNameA.ejs')%></p>
+
             <a href="/admin/ChangePassword" class="updata-ps">更改密码</a>
           </div>
           <!-- <button class="aditbtn">编辑</button> -->
@@ -88,6 +88,7 @@
   <%- include('./layouts/footerLink.ejs')%>
 
   <script>
+    // 显示h1
     function show() {
       $.ajax({
         type: 'get',
@@ -95,12 +96,30 @@
         data: '',
         success: function (data) {
           let nameDate = template('userName_template', data[0])
+          console.log(data);
           $('.page-header h1').text(nameDate)
           console.log(nameDate)
         }
       })
     }
     show();
+
+    // 显示h2
+    function showNameA() {
+      $.ajax({
+        type: 'get',
+        url: '/admin/showNameA',
+        data: '',
+        success: function (data) {
+          let nameDates = template('userNameA_template', data[0])
+          $('.info .info_p').text(nameDates)
+          console.log(nameDates)
+        }
+      })
+    }
+    showNameA();
+
+
   </script>
 </body>
 
