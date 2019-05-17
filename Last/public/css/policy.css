@@ -38,7 +38,7 @@
 /* 隐私政策 */
 .policy_content{
     background: white none repeat scroll 0 0;
-    border: 1px solid #666;
+    /* border: 1px solid #666; */
     /* margin: 5px;
     padding: 5px; */
     position: relative;
