@@ -400,12 +400,13 @@
     text-align: center;
     font-size: 14px;
     font-family: "微软雅黑";
+    margin-left: -19px;
   }
 
   .contents-son-left-two-first a img {
-    width: 110px;
-    height: 110px;
-    padding: 0px 30px;
+    width: 147px;
+    /* height: 110px; */
+    padding: 8px 28px;
   }
 
   /* 内容区域右面 */
@@ -420,7 +421,7 @@
   .contents-son-right-one {
     width: 450px;
     height: 30px;
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
     border-bottom: 1px dotted #ccc;
   }
 
@@ -562,25 +563,25 @@
   .contents-son-right-four-third-1st span:nth-child(1) {
     background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_1（19）.png);
     background-repeat: no-repeat;
-    background-position: -2px -63px;
+    background-position: -95px -125px;
   }
 
   .contents-son-right-four-third-1st span:nth-child(2) {
     background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_1（19）.png);
     background-repeat: no-repeat;
-    background-position: -32px -63px;
+    background-position: -1px -63px;
   }
 
   .contents-son-right-four-third-1st span:nth-child(3) {
     background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_1（19）.png);
     background-repeat: no-repeat;
-    background-position: -64px -63px;
+    background-position: -60px -32px;
   }
 
   .contents-son-right-four-third-1st span:nth-child(4) {
     background-image: url(../images/BEAUTY\ LIP-Velvet-Matte_1（19）.png);
     background-repeat: no-repeat;
-    background-position: -96px -63px;
+    background-position: -96px -32px;
   }
 
   .contents-son-right-four-third-1st span:nth-child(5) {

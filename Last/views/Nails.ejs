@@ -29,10 +29,10 @@
           <li class="classify"> <i>钉子</i> <span></span>
             <div class="fist">
               <ul>
-                <li> <a>钉子</a> </li>
-                <li> <a>嘴唇</a> </li>
-                <li> <a>眼部收藏</a> </li>
-                <li> <a>香水</a> </li>
+                <li> <a href='#'>钉子</a> </li>
+                <li> <a href='Lips'>嘴唇</a> </li>
+                <li> <a href='EyeCollection'>眼部收藏</a> </li>
+                <li> <a href='Parfums'>香水</a> </li>
               </ul>
             </div></i>
           </li>
@@ -53,36 +53,17 @@
     <!-- 钉子 指甲介绍-->
     <div class="THEBRIDA_Nails ">
       <ul class="clearfix">
-        <li><img src="/images/Nails1.jpg" alt="" class="img1">
+      <script type="text/template" id="Nails_template">
+      {{each list}}
+        <li>
+        <img src="/images/{{$value.img1}}" alt="" class="img1">
           <div class="introduce">
-            <a href="#">楼备平平</a>
-            <p>Loubiflash Collection SS18 Limited Edition</p>
+            <a href="#">{{$value.names}}</a>
+            <p>{{$value.introduce}}</p>
           </div>
         </li>
-        <li><img src="/images/Nails1.jpg" alt="" class="img1">
-          <div class="introduce">
-            <a href="#">楼备平平</a>
-            <p>Loubiflash Collection SS18 Limited Edition</p>
-          </div>
-        </li>
-        <li><img src="/images/Nails1.jpg" alt="" class="img1">
-          <div class="introduce">
-            <a href="#">楼备平平</a>
-            <p>Loubiflash Collection SS18 Limited Edition</p>
-          </div>
-        </li>
-        <li><img src="/images/Nails1.jpg" alt="" class="img1">
-          <div class="introduce">
-            <a href="#">楼备平平</a>
-            <p>Loubiflash Collection SS18 Limited Edition</p>
-          </div>
-        </li>
-        <li><img src="/images/Nails1.jpg" alt="" class="img1">
-          <div class="introduce">
-            <a href="#">楼备平平</a>
-            <p>Loubiflash Collection SS18 Limited Edition</p>
-          </div>
-        </li>
+        {{/each}}   
+        </script>
       </ul>
     </div>
   </div>
@@ -93,6 +74,9 @@
   <!-- 底部链接 -->
   <%- include('./layouts/footerLink.ejs')%>
 
-</body>
 
+
+
+</body>
+<script src="/js/Nails.js"></script>
 </html>

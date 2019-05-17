@@ -22,11 +22,11 @@ app.use(session({
   // 是否强制保存到存储区
   resave: false,
   // 是否在没有登录的时候先给前端一个sessionId
-  saveUninitialized: false,
-  cookie: {
-    // 60一分钟 60*5
-    maxAge: 60000
-  }
+  saveUninitialized: true,
+  // cookie: {
+  //   // 60一分钟 60*5
+  //   maxAge: 60000
+  // }
 }))
 //挂载路由
 //登陆
@@ -102,6 +102,35 @@ app.use(routerOther);
 const routerSearch = require('./router/routerSearch');
 app.use(routerSearch);
 
+
+//女装路由
+const routerBrida=require('./router/Brida');
+app.use(routerBrida);
+
+//男装路由
+const routerGroom=require('./router/Groom');
+app.use(routerGroom);
+
+//宝宝
+const routerbody=require('./router/body');
+app.use(routerbody);
+
+// 化妆品
+const routerNails=require('./router/Nails');
+app.use(routerNails)
+
+// 嘴唇
+const routerLips=require('./router/Lips');
+app.use(routerLips);
+
+// 香水
+const routerParfum=require('./router/Parfum');
+app.use(routerParfum);
+
+
+//所有服装
+const AMonent=require('./router/AMonent');
+app.use(AMonent)
 
 //设置静态资源目录
 app.use(express.static('./public'));

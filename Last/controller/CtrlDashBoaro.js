@@ -24,6 +24,7 @@ module.exports.showNameS = (req, res) => {
 
 // 显示h2
 module.exports.showNameA = (req, res) => {
+  // console.log(req.session.user.id)
   conn.query('select * from users where id=?', [req.session.user.id], (err, data) => {
       if (err) {
           return console.log(err)
