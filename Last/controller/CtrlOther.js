@@ -229,7 +229,7 @@ module.exports.BEAUTYLIPVelvetMatte4 = (req, res) => {
 
 // 11.BEAUTYLIPVelvetMatte5 页面
 module.exports.BEAUTYLIPVelvetMatte5 = (req, res) => {
-    res.render('stopfake');
+    res.render('BEAUTYLIPVelvetMatte5');
 }
 
 // 12.BEAUTYLIPVelvetMatte6 页面
