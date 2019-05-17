@@ -207,3 +207,78 @@ module.exports.stopfake = (req, res) => {
     res.render('stopfake');
 }
 
+// 7.BEAUTYLIPVelvetMatte1 页面
+module.exports.BEAUTYLIPVelvetMatte1 = (req, res) => {
+    res.render('BEAUTYLIPVelvetMatte1');
+}
+
+// 8.BEAUTYLIPVelvetMatte2 页面
+module.exports.BEAUTYLIPVelvetMatte2 = (req, res) => {
+    res.render('BEAUTYLIPVelvetMatte2');
+}
+
+// 9.BEAUTYLIPVelvetMatte3 页面
+module.exports.BEAUTYLIPVelvetMatte3 = (req, res) => {
+    res.render('BEAUTYLIPVelvetMatte3');
+}
+
+// 10.BEAUTYLIPVelvetMatte4 页面
+module.exports.BEAUTYLIPVelvetMatte4 = (req, res) => {
+    res.render('BEAUTYLIPVelvetMatte4');
+}
+
+// 11.BEAUTYLIPVelvetMatte5 页面
+module.exports.BEAUTYLIPVelvetMatte5 = (req, res) => {
+    res.render('stopfake');
+}
+
+// 12.BEAUTYLIPVelvetMatte6 页面
+module.exports.BEAUTYLIPVelvetMatte6 = (req, res) => {
+    res.render('BEAUTYLIPVelvetMatte6');
+}
+
+// 13.BEAUTYLIPVelvetMatte7 页面
+module.exports.BEAUTYLIPVelvetMatte7 = (req, res) => {
+    res.render('BEAUTYLIPVelvetMatte7');
+}
+
+// 14.BEAUTYLIPVelvetMatte8 页面
+module.exports.BEAUTYLIPVelvetMatte8 = (req, res) => {
+    res.render('BEAUTYLIPVelvetMatte8');
+}
+
+// 15.BEAUTYLIPVelvetMatte9 页面
+module.exports.BEAUTYLIPVelvetMatte9 = (req, res) => {
+    res.render('BEAUTYLIPVelvetMatte9');
+}
+
+// 16.BEAUTYLIPVelvetMatte10 页面
+module.exports.BEAUTYLIPVelvetMatte10 = (req, res) => {
+    res.render('BEAUTYLIPVelvetMatte10');
+}
+
+// 17.BEAUTYLIPVelvetMatte11 页面
+module.exports.BEAUTYLIPVelvetMatte11 = (req, res) => {
+    res.render('BEAUTYLIPVelvetMatte11');
+}
+
+// 18.BEAUTYLIPVelvetMatte12 页面
+module.exports.BEAUTYLIPVelvetMatte12 = (req, res) => {
+    res.render('BEAUTYLIPVelvetMatte12');
+}
+
+// 19.BEAUTYLIPVelvetMatte13 页面
+module.exports.BEAUTYLIPVelvetMatte13 = (req, res) => {
+    res.render('BEAUTYLIPVelvetMatte13');
+}
+
+// 20.BEAUTYLIPVelvetMatte14 页面
+module.exports.BEAUTYLIPVelvetMatte14 = (req, res) => {
+    res.render('BEAUTYLIPVelvetMatte14');
+}
+
+// 21.BEAUTYLIPVelvetMatte15 页面
+module.exports.BEAUTYLIPVelvetMatte15 = (req, res) => {
+    res.render('BEAUTYLIPVelvetMatte15');
+}
+

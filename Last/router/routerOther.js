@@ -133,6 +133,51 @@ router.get("/secrecy", controller.secrecy);
 // 6. stopfake 页面
 router.get("/stopfake", controller.stopfake);
 
+// 7. BEAUTYLIPVelvetMatte1 页面
+router.get("/BEAUTYLIPVelvetMatte1", controller.BEAUTYLIPVelvetMatte1);
+
+// 8. BEAUTYLIPVelvetMatte2 页面
+router.get("/BEAUTYLIPVelvetMatte2", controller.BEAUTYLIPVelvetMatte2);
+
+// 9. BEAUTYLIPVelvetMatte3 页面
+router.get("/BEAUTYLIPVelvetMatte3", controller.BEAUTYLIPVelvetMatte3);
+
+// 10. BEAUTYLIPVelvetMatte4 页面
+router.get("/BEAUTYLIPVelvetMatte4", controller.BEAUTYLIPVelvetMatte4);
+
+// 11. BEAUTYLIPVelvetMatte5 页面
+router.get("/BEAUTYLIPVelvetMatte5", controller.BEAUTYLIPVelvetMatte5);
+
+// 12. BEAUTYLIPVelvetMatte6 页面
+router.get("/BEAUTYLIPVelvetMatte6", controller.BEAUTYLIPVelvetMatte6);
+
+// 13. BEAUTYLIPVelvetMatte7 页面
+router.get("/BEAUTYLIPVelvetMatte7", controller.BEAUTYLIPVelvetMatte7);
+
+// 14. BEAUTYLIPVelvetMatte8 页面
+router.get("/BEAUTYLIPVelvetMatte8", controller.BEAUTYLIPVelvetMatte8);
+
+// 15. BEAUTYLIPVelvetMatte9 页面
+router.get("/BEAUTYLIPVelvetMatte9", controller.BEAUTYLIPVelvetMatte9);
+
+// 16. BEAUTYLIPVelvetMatte10 页面
+router.get("/BEAUTYLIPVelvetMatte10", controller.BEAUTYLIPVelvetMatte10);
+
+// 17. BEAUTYLIPVelvetMatte11 页面
+router.get("/BEAUTYLIPVelvetMatte11", controller.BEAUTYLIPVelvetMatte11);
+
+// 18. BEAUTYLIPVelvetMatte12 页面
+router.get("/BEAUTYLIPVelvetMatte12", controller.BEAUTYLIPVelvetMatte12);
+
+// 19. BEAUTYLIPVelvetMatte13 页面
+router.get("/BEAUTYLIPVelvetMatte13", controller.BEAUTYLIPVelvetMatte13);
+
+// 20. BEAUTYLIPVelvetMatte14 页面
+router.get("/BEAUTYLIPVelvetMatte14", controller.BEAUTYLIPVelvetMatte14);
+
+// 21. BEAUTYLIPVelvetMatte15 页面
+router.get("/BEAUTYLIPVelvetMatte15", controller.BEAUTYLIPVelvetMatte15);
+
 
 
 // 暴露
