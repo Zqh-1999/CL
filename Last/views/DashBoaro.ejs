@@ -19,7 +19,7 @@
   <div class="content clearfix">
     <!-- 标题 -->
     <div class="page-header">
-      <h1>你好，Dan Xu！</h1>
+      <h1><%- include('./template/userName.ejs')%></h1>
       <div class="hr"></div>
     </div>
 
@@ -38,16 +38,18 @@
             <h4>联系信息</h4>
             <p>Dan Xu</p>
             <p>2427873127@qq.com</p>
-            <a href="javascript:;" class="updata-ps">更改密码</a>
+            <a href="/admin/ChangePassword" class="updata-ps">更改密码</a>
           </div>
-          <button class="aditbtn">编辑</button>
+          <!-- <button class="aditbtn">编辑</button> -->
+          <a href="/admin/AccountInformation" class="aditbtn">编辑</a>
         </div>
         <div class="wrapper-grid2-right">
           <div class="info">
             <h4>简讯</h4>
             <p>您目前尚未订阅任何简报</p>
           </div>
-          <button class="aditbtn">编辑</button>
+          <!-- <button class="aditbtn">编辑</button> -->
+          <a href="javascript:;" class="aditbtn">编辑</a>
         </div>
       </div>
       <div class="wrapper-grid1">
@@ -60,18 +62,20 @@
             <h4>默认账单地址</h4>
             <p>您目前尚未设置默认账单邮寄地址</p>
           </div>
-          <button class="aditbtn">编辑</button>
+          <!-- <button class="aditbtn">编辑</button> -->
+          <a href="/admin/AddressBook" class="aditbtn">编辑</a>
         </div>
         <div class="wrapper-grid2-right">
           <div class="info">
             <h4>默认送货地址</h4>
             <p>您目前尚未设置默认送货地址</p>
           </div>
-          <button class="aditbtn">编辑</button>
+          <!-- <button class="aditbtn">编辑</button> -->
+          <a href="/admin/AddressBook" class="aditbtn">编辑</a>
         </div>
       </div>
     </div>
-    
+
     <!-- 遮罩层 start -->
     <%- include('./layouts/masklayer.ejs')%>
 
@@ -83,7 +87,21 @@
   <!-- 底部链接 -->
   <%- include('./layouts/footerLink.ejs')%>
 
-
+  <script>
+    function show() {
+      $.ajax({
+        type: 'get',
+        url: '/admin/showNameS',
+        data: '',
+        success: function (data) {
+          let nameDate = template('userName_template', data[0])
+          $('.page-header h1').text(nameDate)
+          console.log(nameDate)
+        }
+      })
+    }
+    show();
+  </script>
 </body>
 
 </html>
