@@ -331,6 +331,9 @@ $(document).ready(function(){
                     let lgp = template('search_templatesssss', { list: result });
                     console.log(lgp)
                     $('#change').html(lgp);
+                    $('.search').hide()
+                    $('#change').css('paddingTop','140px')
+                    $('.fa-search').css('color', '#333333')
                 }
             });
         }
