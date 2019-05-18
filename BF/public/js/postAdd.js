@@ -36,7 +36,7 @@ $('.btn-add').on('click', function () {
     success: function (data) {
       // console.log(data);
       if (data.code == '1401') {
-        alert(data.message);
+        alert('商品添加成功');
         location.href = "/admin/post-add";
       }
     }
