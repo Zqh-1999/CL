@@ -1,3 +1,4 @@
+ // 发起ajax请求后台数据
  let NailsUsers=function(){
     $.ajax({
         type:'get',

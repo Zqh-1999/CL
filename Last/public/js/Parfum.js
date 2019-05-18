@@ -1,3 +1,4 @@
+ // 发起ajax请求后台数据
  let ParfumUsers=function(){
     $.ajax({
         type:'get',

@@ -1,9 +1,9 @@
 const conn=require('../data');
-
+//显示页面
 module.exports.showBrida = (req, res) => {
     res.render('BRIDA')
 }
-
+//导入模板
 module.exports.Brideshow=(req,res)=>{
     conn.query('select * from bride',(error,results)=>{
          if(error){
@@ -25,6 +25,7 @@ module.exports.Bridesize=(req,res)=>{
     let height2=req.query.height2;
     //材质
     let mater=req.query.mater;
+    //如果颜色鞋跟高材质都没选
     if( colors=='' && height1=='' && height2=='' && mater==''){
         conn.query('select * from bride where Bride_size='+ size,(error,results)=>{
             if(error){
@@ -33,8 +34,7 @@ module.exports.Bridesize=(req,res)=>{
                 res.json(results)
             }
         })
-    }
-    else if( colors!='' && height1=='' && height2=='' && mater==''){
+    }else if( colors!='' && height1=='' && height2=='' && mater==''){
         conn.query('select * from bride where Bride_size=? and Bride_color=?',[size,colors],(error,results)=>{
             if(error){
                 console.log(error)
@@ -73,7 +73,7 @@ module.exports.Bridesize=(req,res)=>{
                             if(error){
                                 console.log(error)
                             }else{
-                                res.json(results)
+                     res.json(results)
               }
          })
     }
@@ -81,6 +81,9 @@ module.exports.Bridesize=(req,res)=>{
 
 
 
+
+
+//通过颜色筛选
 module.exports.Bridecolor=(req,res)=>{ 
     console.log(req.query.colors)
     conn.query('select * from bride where Bride_color=?',[req.query.colors] ,(error,results)=>{
@@ -91,6 +94,7 @@ module.exports.Bridecolor=(req,res)=>{
         }
     })
 }
+//通过高度筛选
 module.exports.Brideheight=(req,res)=>{
     let height1=req.query.height1;
     let height2=req.query.height2
@@ -104,7 +108,7 @@ module.exports.Brideheight=(req,res)=>{
         }
     })
 }
-
+//通过材质筛选
 module.exports.Bridematerials=(req,res)=>{
     console.log(req.query.materials)
     conn.query('select * from bride where Bride_Material=?' ,[req.query.materials] ,(error,results)=>{
