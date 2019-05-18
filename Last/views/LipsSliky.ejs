@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/THEBRIDA.css">
+    <link rel="stylesheet" href="/css/EyeandNails.css">
+    <!-- 链接 -->
+    <%- include('./layouts/hearderLink.ejs')%>
+</head>
+
+<body>
+
+    <!-- 顶部导航 -->
+    <%- include('./layouts/header.ejs')%>
+
+    <!-- 商品导航 -->
+    <div class="THEBRIDA clearfix">
+        <div class="THEBRIDA_first clearfix">
+            <!-- 左 -->
+            <div class="THEBRIDA_first_left clearfix">
+                <ul class="clearfix">
+                    <li><i>新娘</i></li>
+                    <li class="classify"> <i>嘴唇</i> <span></span>
+                        <div class="fist">
+                            <ul>
+                                <li> <a href="">钉子</a> </li>
+                                <li> <a href="">嘴唇</a> </li>
+                                <li> <a href="">眼部收藏</a> </li>
+                                <li> <a href="">香水</a> </li>
+                            </ul>
+                        </div></i>
+                    </li>
+                    <li class="classify"> <i>所有的嘴唇</i> <span></span>
+                        <div class="fist">
+                            <ul>
+                                <li> <a href="">Rouge Louboutin</a> </li>
+                                <li> <a href="">丝滑般</a> </li>
+                                <li> <a href="">天鹅绒哑光</a> </li>
+                                <li> <a href="">纯粹的Voile</a> </li>
+                                <li> <a href="">Loubilaque</a></li>
+                                <li> <a href="">Loubibelle</a></li>
+                                <li> <a href="">Lip Denfiner</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 商品导航结束 -->
+        <!-- 唇膏展示示-->
+        <div class="Lips-Sliky clearfix">
+            <div class="fist toleft">
+                <a href="#">
+                    <span class="lipstick-cap span2"></span>
+                    <img src="/images/lep2.png" alt="">
+                </a>
+                <span>
+                    <p>Silky Satin</p>
+                    <p>Rouge Louboutin</p>
+                </span>
+            </div>
+            <div class="send">
+                <span class="lipstick-cap span2"></span>
+                <div class="hong">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                    <span class="four"></span>
+                    <span class="five"></span>
+                    <span class="six"></span>
+                    <span class="seven"></span>
+                    <span class="eight"></span>
+                    <span class="nice"></span>
+                    <span class="ten"></span>
+                    <img src="/images/lep10.png" alt="">
+                </div>
+                <span>
+                    <p>Silky Satin</p>
+                    <p>Rouge Louboutin</p>
+                </span>
+                <div class="Lips">
+                    <ul class="clearfix">
+                        <li class="one"><span></span></li>
+                        <li class="two"><span></span></li>
+                        <li class="three"><span></span></li>
+                        <li class="four"><span></span></li>
+                        <li class="five"><span></span></li>
+                        <li class="six"><span></span></li>
+                        <li class="seven"><span></span></li>
+                        <li class="eight"><span></span></li>
+                        <li class="nice"><span></span></li>
+                        <li class="ten"><span></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <%- include('./layouts/footer.ejs')%>
+
+    <!-- 底部链接 -->
+    <%- include('./layouts/footerLink.ejs')%>
+</body>
+
+<script>
+    //获取上方展示口红
+    var aSpan = document.querySelectorAll('.Lips span');
+    //获取下方小口红
+    var aSpan2 = document.querySelectorAll('.hong span');
+    //当下方口红被选中时获取是第几个 给上方口红遍历
+    for (i = 0; i < aSpan.length; i++) {
+        aSpan[i].setAttribute('index', i)
+        aSpan[i].onmouseenter = function () {
+            for (j = 0; j < aSpan.length; j++) {
+                aSpan2[j].style.zIndex = 0;
+            }
+            aSpan2[this.getAttribute('index')].style.zIndex = 10;
+        }
+    }
+</script>
+
+</html>

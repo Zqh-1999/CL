@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="/css/THEBRIDA.css">
+  <link rel="stylesheet" href="/css/EyeandNails.css">
+  <!-- 链接 -->
+  <%- include('./layouts/hearderLink.ejs')%>
+
+</head>
+
+<body>
+
+  <!-- 顶部导航 -->
+  <%- include('./layouts/header.ejs')%>
+
+  <!-- 商品导航 -->
+  <div class="THEBRIDA clearfix">
+    <div class="THEBRIDA_first clearfix">
+      <!-- 左 -->
+      <div class="THEBRIDA_first_left clearfix">
+        <ul class="clearfix">
+          <li><i>新娘</i></li>
+          <li class="classify"> <i>钉子</i> <span></span>
+            <div class="fist">
+              <ul>
+                <li> <a href='#'>钉子</a> </li>
+                <li> <a href='Lips'>嘴唇</a> </li>
+                <li> <a href='EyeCollection'>眼部收藏</a> </li>
+                <li> <a href='Parfums'>香水</a> </li>
+              </ul>
+            </div></i>
+          </li>
+          <li class="classify"> <i>所有的指甲</i> <span></span>
+            <div class="fist">
+              <ul>
+                <li> <a>Rouge Louboutin</a> </li>
+                <li> <a>裸体</a> </li>
+                <li> <a>Noirs</a> </li>
+                <li> <a>流行音乐</a> </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 商品导航结束 -->
+    <!-- 钉子 指甲介绍-->
+    <div class="THEBRIDA_Nails ">
+      <ul class="clearfix">
+      <script type="text/template" id="Nails_template">
+      {{each list}}
+        <li>
+        <img src="/images/{{$value.img1}}" alt="" class="img1">
+          <div class="introduce">
+            <a href="#">{{$value.names}}</a>
+            <p>{{$value.introduce}}</p>
+          </div>
+        </li>
+        {{/each}}   
+        </script>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <%- include('./layouts/footer.ejs')%>
+
+  <!-- 底部链接 -->
+  <%- include('./layouts/footerLink.ejs')%>
+
+
+
+
+</body>
+<script src="/js/Nails.js"></script>
+</html>

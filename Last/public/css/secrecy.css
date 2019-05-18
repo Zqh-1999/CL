@@ -1,0 +1,62 @@
+
+/* 右边的图片设置 */
+  .secrecy-img {
+    position: absolute;
+    right: 0px;
+    top: 93px;
+    width: 756px;
+    height: 848px;
+}
+  /* 隐私政策*/
+  .secrecy_font_font {
+    line-height: 245px;
+    font-weight: 300;
+    font-size: 24px;
+    font-family: "Microsoft YaHei";
+    letter-spacing: 2px;
+    color: #8888a7;
+    margin-left: 42px;
+}
+.secrecy_font_downline {
+    position: absolute;
+    border: 1px solid #f0f1f1;
+    width: 934px;
+    height: 100px;
+    top: 29px;
+    left: 169px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.secrecy_font {
+    position: absolute;
+    top: 69px;
+
+}
+/* 隐私政策 */
+.secrecy_content{
+    background: white none repeat scroll 0 0;
+    /* border: 1px solid #666; */
+    /* margin: 5px;
+    padding: 5px; */
+    position: relative;
+    width: 1145px;
+    height: 939px;
+    overflow: auto;
+}
+.secrecy_content_content h1{
+    color: #222222;
+    line-height: 20px;
+}
+.secrecy_content_content {
+    color: #888888;
+    font-family: 'Microsoft YaHei';
+    font-size: 14px;
+    line-height: 34px;
+    margin-left: 43px;
+    margin-top: -64px;
+}
+.secrecy_content_content li{
+    text-indent: 2em;
+    margin-top: 3px;
+}
