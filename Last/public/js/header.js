@@ -318,23 +318,28 @@ $(document).ready(function(){
     
     
     
-    
+    // 键盘上弹事件
     $(document).keyup(function (event) {
+        // 13对应回车键
         if (event.keyCode == 13) {
+            // 获取搜索的内容
             let formdata = $('input').val();
+            // 发起ajax请求
             $.ajax({
                 type: 'get',
                 url: '/lgp/searchGroom',
                 data: { formdata: formdata },
                 success: function (result) {
-                    console.log(result.length)
+                    // console.log(result.length)
                     let lgp = template('search_templatesssss', { 
                         list: result.data,
                         count: result.length
                      });
                     $('#change').html(lgp);
+                    // 搜索框关闭
                     $('.search').hide()
                     $('#change').css('paddingTop','140px')
+                    // 搜索按钮颜色变化
                     $('.fa-search').css('color', '#333333')
                     $('body').find('.search-title-h2').css('textAlign','center')
                     $('body').find('.search-title-h2').css('fontSize','30px');
