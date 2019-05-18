@@ -9,6 +9,7 @@ $('.THEBRIDA_first_right .classify').mouseleave(function(){
 })
 
 //显示新娘页面
+// 发起ajax请求后台数据
 let BrideUsers=function(){
     $.ajax({
         type:'get',
@@ -115,6 +116,7 @@ $('.THEBRIDA_first_right .materials li').on('click',function(){
     $(this).attr( 'class' ,'mater' );
     $('.THEBRIDA_first_right .materials li').find('i').css('background-color','white');
     $(this).find('i').css('background-color','orange');
+    // 发起ajax请求后台数据
     $.ajax({
         type:'get',
         url:'/Bridematerials',

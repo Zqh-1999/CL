@@ -1,3 +1,4 @@
+ // 发起ajax请求后台数据
  let LipsUsers=function(){
     $.ajax({
         type:'get',

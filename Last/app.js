@@ -111,19 +111,19 @@ app.use(routerBrida);
 const routerGroom=require('./router/Groom');
 app.use(routerGroom);
 
-//宝宝
+//宝宝页面
 const routerbody=require('./router/body');
 app.use(routerbody);
 
-// 化妆品
+// 化妆品页面
 const routerNails=require('./router/Nails');
 app.use(routerNails)
 
-// 嘴唇
+// 嘴唇页面
 const routerLips=require('./router/Lips');
 app.use(routerLips);
 
-// 香水
+// 香水页面
 const routerParfum=require('./router/Parfum');
 app.use(routerParfum);
 

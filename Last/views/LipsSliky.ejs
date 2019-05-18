@@ -107,8 +107,11 @@
 </body>
 
 <script>
+    //获取上方展示口红
     var aSpan = document.querySelectorAll('.Lips span');
-    var aSpan2 = document.querySelectorAll('.hong span')
+    //获取下方小口红
+    var aSpan2 = document.querySelectorAll('.hong span');
+    //当下方口红被选中时获取是第几个 给上方口红遍历
     for (i = 0; i < aSpan.length; i++) {
         aSpan[i].setAttribute('index', i)
         aSpan[i].onmouseenter = function () {
