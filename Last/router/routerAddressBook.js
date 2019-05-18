@@ -9,7 +9,7 @@ const controller = require('../controller/CtrlAddressBook')
 // 显示页面
 router.get("/admin/AddressBook", controller.AddressBook);
 
-
+// 注册用户
 router.post('/admin/BEAddressBooks',controller.BEAddressBooks)
 
 router.get('/admin/showName', controller.showName)

@@ -8,7 +8,7 @@ const controller = require('../controller/CtrlAccountInformation')
 
 // 显示页面
 router.get("/admin/AccountInformation", controller.AccountInformation);
-
+// 增加地址
 router.post('/admin/userAdder', controller.userAdder);
 
 
