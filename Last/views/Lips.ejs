@@ -27,10 +27,10 @@
           <li class="classify"> <i>嘴唇</i> <span></span>
             <div class="fist">
               <ul>
-                <li> <a href="">钉子</a> </li>
-                <li> <a href="">嘴唇</a> </li>
-                <li> <a href="">眼部收藏</a> </li>
-                <li> <a href="">香水</a> </li>
+                <li> <a href="/Nais">钉子</a> </li>
+                <li> <a href="#">嘴唇</a> </li>
+                <li> <a href="/EyeCollection">眼部收藏</a> </li>
+                <li> <a href="Parfums">香水</a> </li>
               </ul>
             </div></i>
           </li>
@@ -54,15 +54,15 @@
     <!-- 唇膏展示示-->
     <div class="THEBRIDA_Nails ">
       <ul class="clearfix">
-        <li><img src="/images/Lips01.jpg" alt=""> <a href="#">Rouge Louboutin Velvet Matte</a>
+        <script type="text/template" id="Lips_template">
+      {{each list}}
+        <li>
+        <img src="/images/{{$value.img1}}" alt="" class="img1">
+            <a href="#">{{$value.names}}</a>
+          </div>
         </li>
-        <li><img src="/images/Lips01.jpg" alt=""> <a href="#">Rouge Louboutin Velvet Matte</a>
-        </li>
-        <li><img src="/images/Lips01.jpg" alt=""> <a href="#">Rouge Louboutin Velvet Matte</a>
-        </li>
-        <li><img src="/images/Lips01.jpg" alt=""> <a href="#">Rouge Louboutin Velvet Matte</a>
-        </li>
-        <li><img src="/images/Lips01.jpg" alt=""> <a href="#">Rouge Louboutin Velvet Matte</a>
+        {{/each}}   
+        </script>
         </li>
       </ul>
     </div>
@@ -75,5 +75,5 @@
   <%- include('./layouts/footerLink.ejs')%>
 
 </body>
-
+<script src="/js/Lips.js"></script>
 </html>
