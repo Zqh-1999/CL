@@ -7,12 +7,34 @@
   <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/lib/bootstrapvalidator-master/dist/css/bootstrapValidator.min.css">
   <link rel="stylesheet" href="/css/admin.css">
+  <style>
+    .login {
+      background-image: url('/img/poster.png');
+      background-position: center center;
+      /* background-repeat: no-repeat; */
+      background-color: transparent;
+    }
+
+    .login .login-wrap {
+      background-color: transparent;
+    }
+
+    .login .login-wrap .avatar {
+      border: 0px solid #fff;
+      border-radius: 50%;
+      box-shadow: 1px 2px 100px #ccc;
+    }
+
+    .login .login-wrap {
+      margin-top: 310px
+    }
+  </style>
 </head>
 
 <body>
   <div class="login">
     <form class="login-wrap" id="form">
-      <img class="avatar" src="/img/default.png">
+      <img class="avatar" src="/img/download.png">
       <!-- 有错误信息时展示 -->
       <!-- <div class="alert alert-danger">
         <strong>错误！</strong> 用户名或密码错误！

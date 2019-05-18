@@ -89,7 +89,6 @@ $(document).ready(function () {
             if (data.code == '1001') {
                 alert(data.message)
                 //   location.reload();
-                location.href = "/admin/DashBoaro";
             }
         }
     })
