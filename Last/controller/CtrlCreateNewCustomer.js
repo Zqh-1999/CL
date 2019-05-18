@@ -5,7 +5,7 @@ const conn = require('../data')
 module.exports.CreateNewCustomer = (req, res) => {
     res.render('CreateNewCustomer');
   }
-
+// 注册页面
   module.exports.BEUserAdd = (req, res) => {
     // console.log(req.body);
     let sqlData = [null, req.body.prefix, req.body.firstname,req.body.lastname,req.body.prefox,req.body.email, req.body.password];

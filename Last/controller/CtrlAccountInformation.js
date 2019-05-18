@@ -6,7 +6,7 @@ module.exports.AccountInformation = (req, res) => {
     res.render('AccountInformation');
 }
 
-
+// 增加地址
 module.exports.userAdder = (req, res) => {
     // console.log(req.body);
     let sqlData = [null, req.body.prefix, req.body.firstname,req.body.lastname,req.body.email, req.body.password];
@@ -27,7 +27,7 @@ module.exports.userAdder = (req, res) => {
       }
     })
   }
-
+//模板控制器
   module.exports.showNamense = (req, res) => {
     conn.query('select * from users where id=?', [req.session.user.id], (err, data) => {
       if (err) {

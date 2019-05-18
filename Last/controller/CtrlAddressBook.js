@@ -11,7 +11,7 @@ module.exports.AddressBook = (req, res) => {
 }
 
 // }
-
+// 主页
 module.exports.BEAddressBooks = (req, res) => {
     // console.log(req.body);
     let sqlData = [null, req.body.prefvx, req.body.firstname, req.body.lastname, req.body.company, req.body.telephone, req.body.contact_telephone, req.body.street1, req.body.street2, req.body.city, req.body.postcode, req.body.prefox, req.body.prefex];
@@ -29,7 +29,7 @@ module.exports.BEAddressBooks = (req, res) => {
         }
     })
 }
-
+//模板控制器
 module.exports.showName = (req, res) => {
     conn.query('select * from users where id=?', [req.session.user.id], (err, data) => {
         if (err) {
