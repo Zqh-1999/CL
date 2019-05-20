@@ -88,7 +88,7 @@ $(document).ready(function () {
         success: function (data) {
             if (data.code == '1001') {
                 alert(data.message)
-                //   location.reload();
+                location.href = '/admin/login'
             }
         }
     })
